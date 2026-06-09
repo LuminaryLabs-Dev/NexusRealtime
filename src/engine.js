@@ -272,6 +272,7 @@ export function createEngine(options = {}) {
     materialRegistry,
     kit: null,
     kits: [],
+    kitBindings: {},
     sequenceRuntime: options.sequenceRuntime ?? createSequenceRuntime(),
     registerSurface,
     unregisterSurface,
@@ -279,6 +280,9 @@ export function createEngine(options = {}) {
     resourceSurface,
     querySurface,
     lifecycleSurface,
+    installKit(kit, kitOptions = options) {
+      return installRuntimeKit(engine, kit, kitOptions);
+    },
     tick,
     step: tick
   };
@@ -290,11 +294,11 @@ export function createEngine(options = {}) {
   engine.sequenceRuntime.bind(engine);
 
   for (const kit of options.kits ?? []) {
-    installRuntimeKit(engine, kit, options);
+    engine.installKit(kit, options);
   }
 
   if (options.kit) {
-    installRuntimeKit(engine, options.kit, options);
+    engine.installKit(options.kit, options);
   }
 
   return engine;

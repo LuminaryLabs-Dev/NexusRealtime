@@ -8,6 +8,9 @@
   "exports": {
     ".": "./src/index.js"
   },
+  "scripts": {
+    "test": "node tests/procedural-navigation-smoke.mjs"
+  },
   "files": [
     "src",
     "README.md"

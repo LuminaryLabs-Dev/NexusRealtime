@@ -32,6 +32,19 @@ export {
 } from "./runtime-kit.js";
 
 export {
+  CommonGameComponents,
+  CommonGameEvents,
+  CommonGameResources,
+  commonGameDefinitions,
+  getCommonGameDefinitions
+} from "./common-game-definitions.js";
+
+export {
+  createGameKitComposer,
+  createRealtimeGame
+} from "./game-kit-composer.js";
+
+export {
   createCanvas2DRenderer,
   createCustomWebGLRenderer,
   createHeadlessRenderer,
@@ -77,6 +90,27 @@ export {
   createTerrainQuery,
   terrainLayers
 } from "./terrain-kit.js";
+
+export {
+  createProceduralKit,
+  createProceduralQuery,
+  createProceduralSnapshot,
+  proceduralAlgorithms
+} from "./procedural-kit.js";
+
+export {
+  create3DNavigationGraph,
+  createNavMeshFromWalkability,
+  createNavMeshKit
+} from "./navmesh-kit.js";
+
+export {
+  createAStarPathfinder,
+  createNavigationQuery,
+  createPathfindingKit,
+  navigationAdapters,
+  navigationHeuristics
+} from "./pathfinding-kit.js";
 
 export {
   createWorldPhysicsKit

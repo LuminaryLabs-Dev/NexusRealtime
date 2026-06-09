@@ -18,6 +18,20 @@ function normalizeSystemEntry(entry) {
   };
 }
 
+function normalizeTokenList(value, fieldName, kitId) {
+  if (value === undefined || value === null) {
+    return [];
+  }
+
+  const values = Array.isArray(value) ? value : [value];
+  return values.map((entry) => {
+    if (typeof entry !== "string" || entry.trim().length === 0) {
+      throw new TypeError(`Runtime kit ${kitId} has an invalid ${fieldName} entry.`);
+    }
+    return entry;
+  });
+}
+
 export function defineRuntimeKit(config = {}) {
   const kit = {
     id: config.id ?? "runtime-kit",
@@ -29,6 +43,9 @@ export function defineRuntimeKit(config = {}) {
     materials: config.materials ?? [],
     sequences: config.sequences ?? [],
     subscriptions: config.subscriptions ?? [],
+    requires: normalizeTokenList(config.requires, "requires", config.id ?? "runtime-kit"),
+    provides: normalizeTokenList(config.provides, "provides", config.id ?? "runtime-kit"),
+    bindings: Object.freeze({ ...(config.bindings ?? {}) }),
     initWorld: config.initWorld,
     install: config.install,
     metadata: Object.freeze({ ...(config.metadata ?? {}) })
@@ -66,6 +83,18 @@ export function validateRuntimeKit(kit) {
     }
   }
 
+  for (const token of kit.requires ?? []) {
+    if (typeof token !== "string" || token.trim().length === 0) {
+      throw new TypeError(`Runtime kit ${kit.id} has an invalid requires entry.`);
+    }
+  }
+
+  for (const token of kit.provides ?? []) {
+    if (typeof token !== "string" || token.trim().length === 0) {
+      throw new TypeError(`Runtime kit ${kit.id} has an invalid provides entry.`);
+    }
+  }
+
   return kit;
 }
 
@@ -77,6 +106,13 @@ export function installRuntimeKit(engine, kit, options = {}) {
   }
 
   engine.kit = kit;
+  if (!engine.kitBindings || typeof engine.kitBindings !== "object") {
+    engine.kitBindings = {};
+  }
+  for (const [name, binding] of Object.entries(kit.bindings ?? {})) {
+    engine.kitBindings[name] = binding;
+  }
+
   if (!Array.isArray(engine.kits)) {
     engine.kits = [];
   }

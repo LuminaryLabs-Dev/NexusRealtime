@@ -15,6 +15,9 @@ NexusRealtime is a single ESM realtime ECS package with a small deterministic co
 - `renderers` provides `headless`, `canvas2d`, and first-party `custom-webgl` adapters, including the `beach-side` scene mode for clear-water fishing games.
 - `sequences` provides deterministic linear sequence graphs with event-driven subscription control.
 - `terrain-kit` provides chunked layered terrain with additive layers, cache/version tracking, LOD snapshots, and terrain queries.
+- `procedural-kit` provides deterministic game-space descriptors for rooms, corridors, walkability, biomes, spawn points, and route markers.
+- `navmesh-kit` converts walkability descriptors into 2.5D navmesh cells, portals, and 3D waypoint/link graphs.
+- `pathfinding-kit` provides a shared A* solver with grid, 2.5D navmesh, and 3D navigation adapters.
 - `realism-kit` coordinates PBR lighting, water, atmosphere, scatter, wildlife visuals, and adaptive render budgets.
 - `fishing-kit` is the first reusable game kit built on top of those engine surfaces.
 - `character` kits add reusable movement, interaction, camera, and ragdoll control for arcade games that need a full embodied player stack.
@@ -35,6 +38,10 @@ import {
   createSequenceRuntime,
   createShaderRegistry,
   createTerrainKit,
+  createProceduralKit,
+  createNavMeshKit,
+  createPathfindingKit,
+  createRealtimeGame,
   realismPresets,
   terrainLayers,
   createEventSurface,
@@ -58,6 +65,47 @@ import {
   defineResource
 } from "nexusrealtime";
 ```
+
+## Procedural And Navigation Kits
+
+Use these kits when a host app needs generic generated game spaces and route planning without owning procedural or pathfinding algorithms locally.
+
+```js
+import {
+  createNavMeshKit,
+  createPathfindingKit,
+  createProceduralKit,
+  createRealtimeGame
+} from "nexusrealtime";
+
+const engine = createRealtimeGame({
+  kits: [
+    createProceduralKit({
+      seed: "route-lab",
+      width: 42,
+      height: 30,
+      roomCount: 8,
+      obstacleDensity: 0.07
+    }),
+    createNavMeshKit(),
+    createPathfindingKit({ mode: "navmesh2d" })
+  ]
+});
+
+engine.tick();
+
+const snapshot = engine.procedural.snapshot();
+engine.navigation.requestPath({
+  mode: "grid",
+  start: snapshot.objectiveMarkers.find((marker) => marker.kind === "start").position,
+  goal: snapshot.objectiveMarkers.find((marker) => marker.kind === "exit").position
+});
+engine.tick();
+
+console.log(engine.navigation.snapshot().lastPath);
+```
+
+Procedural output is render-agnostic descriptor data: regions, rooms, corridors, cells, blocked cells, spawn points, objective markers, render descriptors, walkability, and route graphs. Navigation uses the same request shape across `grid`, `navmesh2d`, and `navmesh3d`.
 
 ## AR Kit Usage
 

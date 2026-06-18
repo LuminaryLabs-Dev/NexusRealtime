@@ -32,6 +32,15 @@ export {
 } from "./runtime-kit.js";
 
 export {
+  DOMAIN_SERVICE_NAMESPACE,
+  createDomainServiceToken,
+  defineDomainServiceKit,
+  extendDomainServiceKit,
+  isDomainServiceKit,
+  validateDomainServiceKit
+} from "./domain-service-kit.js";
+
+export {
   CommonGameComponents,
   CommonGameEvents,
   CommonGameResources,

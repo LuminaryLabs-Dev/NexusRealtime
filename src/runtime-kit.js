@@ -124,6 +124,29 @@ export function installRuntimeKit(engine, kit, options = {}) {
   }
 
   engine.kit = kit;
+  if (!Array.isArray(engine.kits)) {
+    engine.kits = [];
+  }
+
+  if (engine.kits.includes(kit)) {
+    return kit;
+  }
+
+  if (kit.metadata?.kind === "domain-service-kit") {
+    if (!engine.domainServiceKits || typeof engine.domainServiceKits !== "object") {
+      engine.domainServiceKits = {};
+    }
+    if (engine.domainServiceKits[kit.id]) {
+      throw new TypeError(`Domain service kit ${kit.id} is already installed.`);
+    }
+    const installedProvides = new Set(engine.kits.flatMap((entry) => entry.provides ?? []));
+    const missing = (kit.requires ?? []).filter((token) => token.startsWith("n:") && !installedProvides.has(token));
+    if (missing.length) {
+      throw new TypeError(`Domain service kit ${kit.id} requires missing token(s): ${missing.join(", ")}.`);
+    }
+    engine.domainServiceKits[kit.id] = kit.metadata;
+  }
+
   if (!engine.kitBindings || typeof engine.kitBindings !== "object") {
     engine.kitBindings = {};
   }
@@ -131,12 +154,7 @@ export function installRuntimeKit(engine, kit, options = {}) {
     engine.kitBindings[name] = binding;
   }
 
-  if (!Array.isArray(engine.kits)) {
-    engine.kits = [];
-  }
-  if (!engine.kits.includes(kit)) {
-    engine.kits.push(kit);
-  }
+  engine.kits.push(kit);
 
   if (typeof kit.initWorld === "function") {
     kit.initWorld({ engine, world: engine.world, kit, options });

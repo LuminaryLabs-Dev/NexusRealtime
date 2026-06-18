@@ -8,6 +8,8 @@ Reply and intent preferences: keep replies small, direct, action-oriented, and t
 
 Architecture preference: keep simulation systems deterministic and render-agnostic. Engine features should be additive modules that install into `createEngine()` through kits, adapters, registries, or sequence runtime hooks instead of replacing the ECS core.
 
+Domain Service Kit architecture: `defineRuntimeKit()` remains the low-level installable kit primitive. `defineDomainServiceKit()` is the promoted DSK contract for reusable domains, with `n:` capability tokens, stable `n-<domain>-kit` ids, `engine.n.<domainApi>` installation, required version/stability metadata, linear execution today, and serializable reset/snapshot expectations for future async-ready partitioning. ProtoKits should import this contract directly and extend it through adapters or explicit DSK definitions, never by monkey-patching NexusRealtime runtime behavior.
+
 Generic kit pattern: NexusRealtime must not contain product-specific copy, routes, assets, level names, or app lore. Product apps pass authored datasets into generic kits; NexusRealtime interprets room, placement, objective, interaction, collectible, sorting, platformer, reveal-light, symbol-alignment, socket-lock, and render-descriptor data.
 
 Courier/logistics domain pattern: `RequestFulfillmentKit`, `CargoManifestKit`, `PursuitPressureKit`, `InputIntentKit`, `ScenarioDurationKit`, `WaterSurfaceKit`, `VehicleDynamicsKit`, `RouteFieldKit`, `HazardFieldKit`, `ResourcePressureKit`, `ScenarioDriverKit`, and `TelemetryKit` are neutral ECS/domain kits. Apps may use them for courier, transport, rescue, or logistics games, but NexusRealtime must keep them free of arcade UI, product fiction, retained-folder contracts, and game-specific loops.

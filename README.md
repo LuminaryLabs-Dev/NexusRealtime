@@ -14,6 +14,7 @@ NexusRealtime is a single ESM realtime ECS package with a small deterministic co
 - Generic gameplay kits cover greybox rooms, surface placement, objective flow, interaction targets, collectibles, sorting, symbol alignment, micro-platformers, reveal-light interactions, moving targets, lock-and-socket flows, and render descriptors.
 - `renderers` provides `headless`, `canvas2d`, and first-party `custom-webgl` adapters, including the `beach-side` scene mode for clear-water fishing games.
 - `sequences` provides deterministic linear sequence graphs with event-driven subscription control.
+- `domain-service-kit` is the promoted DSK contract for reusable domain modules; it wraps `runtime-kit` with `n:` tokens, `engine.n.*` APIs, version/stability metadata, and serializable reset/snapshot expectations.
 - `terrain-kit` provides chunked layered terrain with additive layers, cache/version tracking, LOD snapshots, terrain semantics, and terrain queries.
 - `physics-kit` provides grounded contact resolution, friction, impact, stability, carry mass, constraints, and fall classification.
 - `locomotion-kit` converts input intent into character, vehicle, flying, or swimming motion by reading terrain and physics state.
@@ -120,11 +121,23 @@ import {
   createObjectiveFlowKit,
   createRenderDescriptorKit,
   detectARSupport,
+  DOMAIN_SERVICE_NAMESPACE,
+  createDomainServiceToken,
+  defineDomainServiceKit,
+  extendDomainServiceKit,
+  isDomainServiceKit,
+  validateDomainServiceKit,
   defineComponent,
   defineEvent,
   defineResource
 } from "nexusrealtime";
 ```
+
+## RuntimeKit Vs DomainServiceKit
+
+`defineRuntimeKit()` remains the low-level plugin layer for components, resources, events, systems, materials, shaders, surfaces, sequences, and compatibility kits. `defineDomainServiceKit()` is the higher-fidelity path for reusable game domains that may start in ProtoKits and later promote into core without a rewrite.
+
+Domain Service Kits use stable `n-<domain>-kit` IDs, provide `n:<domain>` tokens by default, install their promoted API under `engine.n.<camelDomain>`, and declare linear execution plus async-ready metadata. DSKs still execute through the existing scheduler phases today; async execution is a future capability, not part of the current runtime path.
 
 ## Procedural And Navigation Kits
 

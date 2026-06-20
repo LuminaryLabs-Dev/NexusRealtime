@@ -10,16 +10,146 @@ This tracker records durable lessons from the idea expansion automation. It is a
 
 ## Latest Run
 
-- Status: fourth run complete.
-- Latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T02-02-08-0400-domain-kit-idea-expansion-packet.md`
-- Latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T02-02-08-0400-domain-kit-idea-node.md`
-- Added idea families: operations data integrity, immutable config, stable id allocation, finite transaction policy, restored resource state, and operations invariant proof.
-- Next search item: decide which operations data-integrity responsibilities should become standalone DSK services versus promotion fixture requirements on occupant, facility, economy, pressure, request, and proof domains.
+- Status: thirtieth run complete.
+- Latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T18-00-21-0400-domain-kit-idea-expansion-packet.md`
+- Latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T18-00-21-0400-domain-kit-idea-node.md`
+- Added idea families: Telemetry Command Evidence Ownership for telemetry selected values/path selectors, service command payload ownership, input frame ownership, and proof rows.
+- Next search item: wait for newer neighboring evidence after telemetry/command ownership, or move command/evidence ownership into a non-scout fixture tranche.
 
 ## Current Root Lessons
 
-- id: domain-kit-idea-root-2026-06-19-0202
+- id: domain-kit-idea-root-2026-06-20-1800
 - status: active
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T18-00-21-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T18-00-21-0400-domain-kit-idea-node.md`
+- summary: Fresh deep-bug evidence created a Telemetry Command Evidence Ownership planning family for telemetry selected-value/path snapshots and non-navigation service command/input metadata ownership.
+- id: domain-kit-idea-root-2026-06-20-1737
+- status: superseded-by-telemetry-command-evidence-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T17-37-38-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T17-37-38-0400-domain-kit-idea-node.md`
+- summary: Fresh review found no newer non-duplicative durable idea family; procedural/navigation ownership, scheduler/world mutation, and module-source proof blockers already map to existing idea rows.
+- id: domain-kit-idea-root-2026-06-20-0700
+- status: carried-by-no-new-durable-idea-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T07-00-46-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T07-00-46-0400-domain-kit-idea-node.md`
+- summary: Fresh deep-bug evidence created a procedural/navigation state ownership planning family for path request endpoint aliasing, navigation/procedural live snapshots, and live procedural regenerate return state.
+- id: domain-kit-idea-root-2026-06-20-0601
+- status: extended-by-procedural-navigation-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T06-01-42-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T06-01-42-0400-domain-kit-idea-node.md`
+- summary: Fresh deep-bug evidence created a scheduler/world mutation isolation planning family for active-run system and phase mutation, `runSystem()` removed-entity membership, and low-level `readEvents()` payload isolation.
+- id: domain-kit-idea-root-2026-06-20-0502
+- status: extended-by-scheduler-world-mutation-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T05-02-13-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T05-02-13-0400-domain-kit-idea-node.md`
+- summary: Fresh deep-bug evidence created a new query read-model isolation planning family for exported query helpers, engine read methods, nested metadata/hazard object isolation, and stored query proof snapshots across logistics, spatial, hazard, and water APIs.
+- id: domain-kit-idea-root-2026-06-20-0401
+- status: extended-by-query-read-model-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T04-01-35-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T04-01-35-0400-domain-kit-idea-node.md`
+- summary: Fresh deep-bug evidence created a new content boundary and objective contract planning family for product-themed public exports, preset runtime identity, invalid objective thresholds, and unified content dataset validation.
+- id: domain-kit-idea-root-2026-06-20-0301
+- status: extended-by-content-boundary-objective-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T03-01-44-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T03-01-44-0400-domain-kit-idea-node.md`
+- summary: Fresh deep-bug evidence created a new runtime identity and lifecycle ownership planning family for duplicate binding names, ECS definition-name aliasing, install-only SequenceNode kit idempotency, and disposed event-bus listener parity.
+- id: domain-kit-idea-root-2026-06-20-0201
+- status: extended-by-runtime-identity-lifecycle-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T02-01-55-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T02-01-55-0400-domain-kit-idea-node.md`
+- summary: Fresh deep-bug evidence created a new composition proof ownership planning family for duplicate capability provider ownership, SequenceNode type duplicate policy, event-bus history isolation, and AR runtime-source consistency.
+- id: domain-kit-idea-root-2026-06-20-0154
+- status: superseded-by-composition-proof-ownership-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T01-54-57-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T01-54-57-0400-domain-kit-idea-node.md`
+- summary: Fresh review found no newer neighboring evidence and no non-duplicative durable idea family; module-source, fetched-ref, browser proof, package-version, aggregate/targeted, and proof-signal findings remain covered by existing Proof Readiness Queue and Proof Signal Integrity rows.
+- id: domain-kit-idea-root-2026-06-20-0000
+- status: carried-by-no-new-evidence-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T00-00-47-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T00-00-47-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring evidence repeats module-source, fetched-ref, public browser proof, package-version, and aggregate-vs-targeted proof blockers, but these map to existing Proof Readiness Queue inventory; no non-duplicative durable idea family was added.
+- id: domain-kit-idea-root-2026-06-19-2201
+- status: carried-by-no-new-durable-idea-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T22-01-38-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T22-01-38-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring deep-bug evidence points to proof signal integrity around ARExperience terminal receipt idempotency, WebXR hit-test helper failures, negative normal tick deltas, non-finite greybox/SpatialRoom scale, and proof-signal rows.
+- id: domain-kit-idea-root-2026-06-19-2101
+- status: extended-by-proof-signal-integrity-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T21-01-07-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T21-01-07-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring deep-bug evidence points to AR launch and SpatialRoom read-model contracts around missing ARKit preconditions, explicit preferred-mode fallback policy, mutable launch support state, SpatialRoom live getters, and AR/spatial proof rows.
+- id: domain-kit-idea-root-2026-06-19-2000
+- status: extended-by-ar-spatial-read-model-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T20-00-12-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T20-00-12-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring deep-bug evidence points to legacy sequence and AR content compatibility around completed-root replay, any-loser cleanup, owning-kit lookup, AR text safety, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1900
+- status: extended-by-legacy-sequence-ar-compat-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T19-00-18-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T19-00-18-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring deep-bug evidence points to read-model orchestration isolation around registry descriptor aliasing, surface snapshot live payloads, SequenceNode race sibling cleanup, SequenceNode any receipt counts, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1801
+- status: extended-by-read-model-orchestration-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T18-01-47-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T18-01-47-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring architecture/proof evidence points to proof-readiness queueing around hardening fixture order, proof claim taxonomy, module-source gates, aggregate/targeted proof parity, and release evidence rows.
+- id: domain-kit-idea-root-2026-06-19-1701
+- status: extended-by-proof-readiness-queue-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T17-01-13-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T17-01-13-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to query/command semantics around terminal guidance receipts, proximity query transitions, rejected command state, route query snapshot isolation, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1601
+- status: extended-by-query-command-semantics-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T16-01-29-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T16-01-29-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to lifecycle parity and cleanup around movement start receipts, terrain query/chunk parity, partial camera startup cleanup, stopped AR session state, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1500
+- status: extended-by-lifecycle-parity-cleanup-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T15-00-41-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T15-00-41-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to experience edge contracts around repeated recovery receipts, AR launch fallback, custom quality profile handling, empty content dataset semantics, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1400
+- status: extended-by-experience-edge-contract-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T14-00-58-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T14-00-58-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to runtime failure-boundary planning around DSK namespace safety, install rollback, dependency parity, failed-tick event lifetime, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1301
+- status: extended-by-runtime-failure-boundary-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T13-01-05-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T13-01-05-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to traversal proof integrity around navigation cost policy, navmesh identity, procedural signature taxonomy, recovery receipt/state consistency, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1201
+- status: extended-by-traversal-proof-integrity-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T12-01-34-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T12-01-34-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to service lifecycle/config policy around command retarget/reset receipts, elapsed-rate semantics, descriptor normalization/source isolation, finite generated geometry, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-1002
+- status: extended-by-service-lifecycle-config-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T10-02-21-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T10-02-21-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to state signal contracts around descriptor invalidation, held/repeat actions, state-machine transition receipts, coordinate-axis policy, derived-state boundaries, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-0900
+- status: extended-by-state-signal-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T09-00-53-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T09-00-53-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to source-state integrity around nested authored dataset isolation, reset-from-source guarantees, retention-limit semantics, initial terminal receipts, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-0800
+- status: extended-by-source-state-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T08-00-55-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T08-00-55-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to bridge/state ownership around phase-safe event delivery, step-transition receipts, delegated-action reconciliation, wrapper state contracts, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-0701
+- status: extended-by-bridge-state-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T07-01-13-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T07-01-13-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to receipt integrity around action/result receipt ids, transition-only events, duplicate claim policy, generated request identity, and proof rows.
+- id: domain-kit-idea-root-2026-06-19-0600
+- status: extended-by-receipt-integrity-root
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T06-00-34-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T06-00-34-0400-domain-kit-idea-node.md`
+- summary: Fresh neighboring bug evidence points to spatial/mobility invariants around transition-state receipts, immediate threshold settlement, hazard generated identity, resource-bound normalization, and invariant proof rows.
+- id: domain-kit-idea-root-2026-06-19-0202
+- status: extended-by-spatial-mobility-invariant-root
 - latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-19T02-02-08-0400-domain-kit-idea-expansion-packet.md`
 - latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-19T02-02-08-0400-domain-kit-idea-node.md`
 - summary: Fresh neighboring bug evidence points to operations data integrity around immutable authored config, stable generated identity, finite transaction gates, restored resource state, and operations invariant proof rows.
@@ -41,6 +171,578 @@ This tracker records durable lessons from the idea expansion automation. It is a
 
 ## Branch Tree
 
+- parent: domain-kit-idea-root-2026-06-20-1800
+- child: telemetry-selected-value-snapshot-2026-06-20-1800
+- relationship: Telemetry selected resources and history entries need cloned/frozen proof values before telemetry evidence can be treated as immutable.
+- look further: `docs/kits_ideas.md`, `src/telemetry-kit.js`, telemetry proof snapshot fixtures
+- parent: domain-kit-idea-root-2026-06-20-1800
+- child: telemetry-path-selector-isolation-2026-06-20-1800
+- relationship: Nested telemetry path selectors need isolation so proof reads cannot mutate source resources.
+- look further: `docs/kits_ideas.md`, `src/telemetry-kit.js`, nested selector clone/freeze fixtures
+- parent: domain-kit-idea-root-2026-06-20-1800
+- child: service-command-payload-ownership-2026-06-20-1800
+- relationship: RequestQueue and TransportRoute command metadata ownership expands command payload isolation beyond procedural/navigation APIs.
+- look further: `docs/kits_ideas.md`, `src/request-queue-kit.js`, `src/transport-route-kit.js`, operations command ownership fixtures
+- parent: domain-kit-idea-root-2026-06-20-1800
+- child: input-frame-ownership-2026-06-20-1800
+- relationship: InputIntent submitted metadata and returned state need frame ownership policy before replay and automation evidence can trust input snapshots.
+- look further: `docs/kits_ideas.md`, `src/input-intent-kit.js`, input/replay ownership fixtures
+- parent: domain-kit-idea-root-2026-06-20-1800
+- child: telemetry-command-boundary-2026-06-20-1800
+- relationship: Telemetry and service command evidence ownership stays separate from query read models, procedural/navigation ownership, scheduler/world event queues, and public module-source proof.
+- look further: fixture tranche ordering after scheduler/world and procedural/navigation hardening
+- parent: domain-kit-idea-root-2026-06-20-1737
+- child: no-new-procedural-navigation-idea-2026-06-20-1737
+- relationship: Latest deep-bug procedural/navigation evidence was already converted into accepted planning rows at `2026-06-20T07-00-46-0400`.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, procedural/navigation hardening fixtures
+- parent: domain-kit-idea-root-2026-06-20-1737
+- child: no-new-module-source-idea-2026-06-20-1737
+- relationship: Repeated package resolution, fetched-ref, public browser, npm, package-version, and aggregate-vs-targeted proof blockers remain Proof Readiness Queue work.
+- look further: sibling Experiments proof route, sibling ProtoKits package metadata, CDN/raw URL choices
+- parent: domain-kit-idea-root-2026-06-20-1737
+- child: no-new-scheduler-world-idea-2026-06-20-1737
+- relationship: Scheduler/world mutation rows are already a core validation-surface hardening family, not a new idea family.
+- look further: `src/ecs.js`, `src/engine.js`, scheduler/world fixture tranche
+- parent: domain-kit-idea-root-2026-06-20-1737
+- child: no-new-doc-row-boundary-2026-06-20-1737
+- relationship: Duplicate-only evidence should produce lane packet/node/tracker evidence without editing idea docs.
+- look further: fresh neighboring packets after `2026-06-20T06-54-16-0400`
+- parent: domain-kit-idea-root-2026-06-20-0700
+- child: navigation-command-payload-ownership-2026-06-20-0700
+- relationship: `requestPath()` endpoint objects need clone/freeze or explicit mutable-request semantics before queued path commands can count as replay-safe.
+- look further: `docs/kits_ideas.md`, `src/pathfinding-kit.js`, path request endpoint ownership fixtures
+- parent: domain-kit-idea-root-2026-06-20-0700
+- child: navigation-proof-snapshot-isolation-2026-06-20-0700
+- relationship: Navigation snapshot/query outputs need isolated path history, `lastPath`, request, debug graph, and agent path read models before proof tools can inspect them safely.
+- look further: `docs/kits_ideas.md`, `src/pathfinding-kit.js`, navigation proof snapshot fixtures
+- parent: domain-kit-idea-root-2026-06-20-0700
+- child: procedural-proof-snapshot-isolation-2026-06-20-0700
+- relationship: Procedural cells, walkability, regions, descriptors, markers, and world positions need clone/freeze policy before generated-world proof can rely on them.
+- look further: `docs/kits_ideas.md`, `src/procedural-kit.js`, generated-space snapshot fixtures
+- parent: domain-kit-idea-root-2026-06-20-0700
+- child: procedural-command-return-state-2026-06-20-0700
+- relationship: `regenerate()` return values need cloned summaries or documented mutable-handle semantics so callers cannot mutate pending generation state accidentally.
+- look further: `docs/kits_ideas.md`, `src/procedural-kit.js`, regenerate return-state fixtures
+- parent: domain-kit-idea-root-2026-06-20-0700
+- child: procedural-navigation-core-boundary-2026-06-20-0700
+- relationship: The new rows are core validation-surface inventory for existing procedural/navigation APIs, not new gameplay/domain ProtoKit implementation requests.
+- look further: `docs/how-to-protokit.md`, traversal proof fixtures, DSK promotion hardening tranches
+- parent: domain-kit-idea-root-2026-06-20-0601
+- child: scheduler-active-run-policy-2026-06-20-0601
+- relationship: Systems added to an active scheduler phase need reject/defer/immediate policy before same-tick system order can count as deterministic proof.
+- look further: `docs/kits_ideas.md`, `src/ecs.js`, scheduler same-phase add fixtures
+- parent: domain-kit-idea-root-2026-06-20-0601
+- child: scheduler-phase-topology-2026-06-20-0601
+- relationship: Dynamic phase additions during `scheduler.run()` need next-pass or explicit immediate semantics before lifecycle and replay proof can trust phase order.
+- look further: `docs/kits_ideas.md`, `src/ecs.js`, lifecycle phase ordering fixtures
+- parent: domain-kit-idea-root-2026-06-20-0601
+- child: runsystem-membership-snapshot-2026-06-20-0601
+- relationship: `world.runSystem()` needs stable component snapshots or live membership rechecks before cleanup/despawn systems can trust handler inputs.
+- look further: `docs/kits_ideas.md`, `src/ecs.js`, entity/component removal during iteration fixtures
+- parent: domain-kit-idea-root-2026-06-20-0601
+- child: event-queue-payload-isolation-2026-06-20-0601
+- relationship: Low-level event queue reads need payload clone/freeze policy so diagnostics and proof probes cannot mutate queued events by inspection.
+- look further: `docs/kits_ideas.md`, `src/ecs.js`, event queue clone/freeze fixtures
+- parent: domain-kit-idea-root-2026-06-20-0601
+- child: scheduler-world-core-boundary-2026-06-20-0601
+- relationship: The new rows are core validation-surface inventory for ECS scheduler/world primitives, not new gameplay/domain ProtoKit implementation requests.
+- look further: `docs/how-to-protokit.md`, runtime failure-boundary fixtures, DSK promotion hardening tranches
+- parent: domain-kit-idea-root-2026-06-20-0502
+- child: public-query-helper-contract-2026-06-20-0502
+- relationship: Exported query helpers need deep read-model return contracts so nested metadata and hazard descriptors cannot mutate caller-owned or runtime state.
+- look further: `docs/kits_ideas.md`, `src/request-fulfillment-kit.js`, `src/cargo-manifest-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, `src/hazard-field-kit.js`, `src/water-surface-kit.js`
+- parent: domain-kit-idea-root-2026-06-20-0502
+- child: engine-read-method-snapshot-2026-06-20-0502
+- relationship: Engine read methods need cloned/frozen nearest, available, collision, and query snapshots before UI, telemetry, or proof readers can trust them as read-only.
+- look further: `docs/kits_ideas.md`, request/cargo/landmark/hazard/water engine APIs, read-versus-command fixtures
+- parent: domain-kit-idea-root-2026-06-20-0502
+- child: nested-metadata-read-isolation-2026-06-20-0502
+- relationship: Shallow top-level clones are insufficient for metadata-heavy authored datasets and nested hazard descriptors.
+- look further: `docs/kits_ideas.md`, metadata-heavy query helpers, content dataset validation, authored-source isolation rows
+- parent: domain-kit-idea-root-2026-06-20-0502
+- child: stored-query-proof-snapshot-2026-06-20-0502
+- relationship: `lastQuery` and `lastCollision` need stored snapshot policy so audit fields cannot alias returned mutable objects.
+- look further: `docs/kits_ideas.md`, `src/landmark-guidance-kit.js`, `src/hazard-field-kit.js`, `src/water-surface-kit.js`, route/query state kits
+- parent: domain-kit-idea-root-2026-06-20-0502
+- child: query-read-model-core-boundary-2026-06-20-0502
+- relationship: The new rows are core validation-surface inventory for existing public APIs, not new gameplay/domain ProtoKit implementation requests.
+- look further: `docs/how-to-protokit.md`, query/command fixtures, DSK promotion hardening tranches
+- parent: domain-kit-idea-root-2026-06-20-0401
+- child: public-api-product-boundary-2026-06-20-0401
+- relationship: Product-themed public exports need boundary diagnostics, migration labels, or compatibility status before core cleanliness claims are trusted.
+- look further: `docs/kits_ideas.md`, `src/index.js`, `src/reef-rescue-kit.js`, public API freeze and boundary fixtures
+- parent: domain-kit-idea-root-2026-06-20-0401
+- child: preset-runtime-identity-2026-06-20-0401
+- relationship: Content kit factories need explicit preset id policy before multiple variants can compose or be diagnosed reliably.
+- look further: `docs/kits_ideas.md`, `src/fishing-kit.js`, `src/reef-rescue-kit.js`, runtime kit identity fixtures
+- parent: domain-kit-idea-root-2026-06-20-0401
+- child: objective-threshold-policy-2026-06-20-0401
+- relationship: Objective target semantics need explicit normalization, rejection, or disabled-state policy before completion can count as proof.
+- look further: `docs/kits_ideas.md`, `src/fishing-kit.js`, objective normalization fixtures
+- parent: domain-kit-idea-root-2026-06-20-0401
+- child: content-dataset-validation-2026-06-20-0401
+- relationship: Required content fields, duplicate/unknown ids, placeholder prevention, and objective/content cross-validation need one proofable dataset validation path.
+- look further: `docs/kits_ideas.md`, `src/fishing-kit.js`, content contract fixtures
+- parent: domain-kit-idea-root-2026-06-20-0401
+- child: content-boundary-core-protokit-boundary-2026-06-20-0401
+- relationship: The new rows are validation and boundary inventory, not a reason to add product-specific content to NexusRealtime core.
+- look further: `docs/how-to-protokit.md`, `docs/how-to-experiment.md`, ProtoKits extraction planning, Experiments proof routing
+- parent: domain-kit-idea-root-2026-06-20-0301
+- child: runtime-binding-ownership-2026-06-20-0301
+- relationship: Duplicate binding names need owner diagnostics or explicit override semantics before binding-based services can count as composition proof.
+- look further: `docs/kits_ideas.md`, `src/game-kit-composer.js`, `src/runtime-kit.js`, binding collision fixtures
+- parent: domain-kit-idea-root-2026-06-20-0301
+- child: ecs-definition-identity-2026-06-20-0301
+- relationship: Same-named component/resource/event definitions need collision or explicit shared-identity policy before domain state isolation is trustworthy.
+- look further: `docs/kits_ideas.md`, `src/ecs.js`, `src/runtime-kit.js`, duplicate definition fixtures
+- parent: domain-kit-idea-root-2026-06-20-0301
+- child: sequence-install-only-idempotency-2026-06-20-0301
+- relationship: Raw install-only SequenceNode kits need installed-state records or normalization so repeated deployments do not replay side effects.
+- look further: `docs/kits_ideas.md`, `src/sequence-node-kit.js`, SequenceNode deployment fixtures
+- parent: domain-kit-idea-root-2026-06-20-0301
+- child: event-bus-disposed-parity-2026-06-20-0301
+- relationship: SequenceNode event-bus subscription APIs need one disposed-state policy before teardown proof can trust listener counts.
+- look further: `docs/kits_ideas.md`, `src/sequence-node.js`, event-bus lifecycle fixtures
+- parent: domain-kit-idea-root-2026-06-20-0301
+- child: runtime-identity-core-boundary-2026-06-20-0301
+- relationship: The new rows are core validation-surface inventory, not gameplay/domain ProtoKit implementation requests.
+- look further: `docs/how-to-protokit.md`, runtime failure-boundary fixture lanes, core validation surfaces
+- parent: domain-kit-idea-root-2026-06-20-0201
+- child: provider-ownership-proof-2026-06-20-0201
+- relationship: Duplicate provider tokens need owner diagnostics or explicit override semantics before service availability claims are trustworthy.
+- look further: `docs/kits_ideas.md`, `src/game-kit-composer.js`, `src/runtime-kit.js`, composer duplicate-provider fixtures
+- parent: domain-kit-idea-root-2026-06-20-0201
+- child: sequence-type-policy-2026-06-20-0201
+- relationship: SequenceNode type names need duplicate or explicit override policy before kit-provided orchestration semantics are stable.
+- look further: `docs/kits_ideas.md`, `src/sequence-node-library.js`, SequenceNode type registration fixtures
+- parent: domain-kit-idea-root-2026-06-20-0201
+- child: event-history-read-model-2026-06-20-0201
+- relationship: SequenceNode event-bus history needs cloned/frozen read models so proof readers cannot mutate diagnostics.
+- look further: `docs/kits_ideas.md`, `src/sequence-node.js`, proof/telemetry history fixtures
+- parent: domain-kit-idea-root-2026-06-20-0201
+- child: ar-runtime-source-consistency-2026-06-20-0201
+- relationship: AR support classification and mode startup need one runtime source or support/session reconciliation.
+- look further: `docs/kits_ideas.md`, `src/ar-device.js`, `src/ar-launcher.js`, `src/ar-modes/camera-overlay.js`
+- parent: domain-kit-idea-root-2026-06-20-0201
+- child: core-validation-boundary-2026-06-20-0201
+- relationship: The new rows are core validation-surface inventory, not gameplay/domain ProtoKit implementation requests.
+- look further: `docs/how-to-protokit.md`, DSK/runtime fixture lanes, core validation surfaces
+- parent: domain-kit-idea-root-2026-06-20-0154
+- child: no-new-neighboring-evidence-2026-06-20-0154
+- relationship: Latest neighboring packets remain the same evidence family already mapped by the prior duplicate-avoidance run.
+- look further: `state/automation/ecosystem_state_scout`, `state/automation/dsk_architecture_scout`, `state/automation/ecosystem_proof_scout`, `state/automation/deep_bug_report_scout`
+- parent: domain-kit-idea-root-2026-06-20-0154
+- child: proof-readiness-refinement-not-new-family-2026-06-20-0154
+- relationship: Package resolution, public browser loading, package-version policy, and aggregate/targeted proof inclusion are refinements of existing Proof Readiness Queue rows.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, ecosystem proof packets, release evidence checklists
+- parent: domain-kit-idea-root-2026-06-20-0154
+- child: proof-signal-wait-for-new-bug-family-2026-06-20-0154
+- relationship: Proof Signal Integrity already covers terminal receipts, hit-test failure, monotonic time, finite scale, and combined proof rows.
+- look further: `docs/described_examples.md`, `docs/domain_ideas.md`, `docs/kits_ideas.md`, future deep bug packets
+- parent: domain-kit-idea-root-2026-06-20-0154
+- child: core-boundary-still-preserved-2026-06-20-0154
+- relationship: Current evidence does not move reusable kit implementation, public proof routing, release checklist tooling, or product proof pages into NexusRealtime core.
+- look further: `docs/how-to-protokit.md`, `docs/how-to-experiment.md`, sibling proof routing
+- parent: domain-kit-idea-root-2026-06-20-0000
+- child: distribution-proof-source-deferred-2026-06-20-0000
+- relationship: Repeated module-source/fetched-ref/browser proof/package-version evidence mapped to existing proof-readiness inventory instead of a duplicate domain.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, ecosystem proof packets, release evidence checklists
+- parent: domain-kit-idea-root-2026-06-20-0000
+- child: proof-signal-no-duplicate-2026-06-20-0000
+- relationship: Latest deep-bug family was already converted into proof-signal idea docs in the prior run.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `docs/described_examples.md`, proof-signal fixture planning
+- parent: domain-kit-idea-root-2026-06-20-0000
+- child: duplicate-kit-names-avoided-2026-06-20-0000
+- relationship: Narrow distribution proof kit names deferred to existing module-source gate, claim taxonomy, aggregate/targeted parity, and release-evidence rows.
+- look further: `docs/kits_ideas.md`, Proof Readiness Queue Kits
+- parent: domain-kit-idea-root-2026-06-20-0000
+- child: core-boundary-preserved-2026-06-20-0000
+- relationship: Distribution-proof tooling remains ProtoKits proof tooling or Experiments proof routing unless a true core validation invariant appears.
+- look further: `docs/how-to-protokit.md`, `docs/how-to-experiment.md`, sibling proof routing
+- parent: domain-kit-idea-root-2026-06-19-2201
+- child: proof-signal-integrity-domain-2026-06-19-2201
+- relationship: Fresh ARExperience, hit-test, engine time, and greybox/spatial scale bug evidence converted into reusable proof-signal integrity planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `docs/described_examples.md`, `src/ar-experience-kit.js`, `src/ar-session.js`, `src/engine.js`, `src/greybox-building-kit.js`, `src/spatial-room-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-2201
+- child: experience-terminal-receipt-kit-2026-06-19-2201
+- relationship: ARExperience repeated final completion and manual double-emission converted into terminal receipt idempotency kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-experience-kit.js`, AR/objective receipt fixtures
+- parent: domain-kit-idea-root-2026-06-19-2201
+- child: webxr-hit-test-failure-policy-kit-2026-06-19-2201
+- relationship: `createHitTestSource()` rejection passthrough converted into WebXR hit-test failure policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-session.js`, `src/ar-modes/webxr-plane.js`, browser AR proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-2201
+- child: monotonic-tick-time-kit-2026-06-19-2201
+- relationship: Negative finite `engine.tick()` delta converted into monotonic normal tick policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/engine.js`, `src/ecs.js`, `src/sequence-node.js`, elapsed-time domain kits
+- parent: domain-kit-idea-root-2026-06-19-2201
+- child: finite-spatial-scale-kit-2026-06-19-2201
+- relationship: Greybox/SpatialRoom `scale:NaN` evidence converted into finite spatial scale normalization kit candidate.
+- look further: `docs/kits_ideas.md`, `src/greybox-building-kit.js`, `src/spatial-room-kit.js`, `src/render-descriptor-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-2201
+- child: proof-signal-integrity-kit-2026-06-19-2201
+- relationship: Terminal receipt, hit-test failure, monotonic time, and finite scale rows converted into proof-signal proof row candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-2101
+- child: ar-launch-spatial-read-model-domain-2026-06-19-2101
+- relationship: Fresh AR launch and SpatialRoom bug evidence converted into reusable AR/spatial capability and read-model planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `docs/described_examples.md`, `src/ar-launcher.js`, `src/ar-device.js`, `src/spatial-room-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-2101
+- child: ar-launch-precondition-kit-2026-06-19-2101
+- relationship: Missing `createARKit()` precondition converted into launcher composition contract kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-launcher.js`, `src/ar-kit.js`, `src/ar-modes/`, AR launch precondition fixtures
+- parent: domain-kit-idea-root-2026-06-19-2101
+- child: ar-mode-selection-policy-kit-2026-06-19-2101
+- relationship: Silent fallback for unsupported explicit preferred modes converted into AR mode selection policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-device.js`, AR browser proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-2101
+- child: ar-launch-state-isolation-kit-2026-06-19-2101
+- relationship: Mutable launcher support/read state converted into AR launch-state isolation kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-launcher.js`, renderer/update callback fixtures
+- parent: domain-kit-idea-root-2026-06-19-2101
+- child: spatial-room-getter-isolation-kit-2026-06-19-2101
+- relationship: SpatialRoom live building/anchor getters converted into spatial read-model isolation kit candidate.
+- look further: `docs/kits_ideas.md`, `src/spatial-room-kit.js`, `src/greybox-building-kit.js`, spatial descriptor fixtures
+- parent: domain-kit-idea-root-2026-06-19-2101
+- child: ar-spatial-read-model-proof-kit-2026-06-19-2101
+- relationship: Launch precondition, mode policy, launch state, and SpatialRoom getter rows converted into AR/spatial proof row candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, AR/spatial proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-2000
+- child: legacy-sequence-ar-compatibility-domain-2026-06-19-2000
+- relationship: Fresh legacy sequence and AR DOM bug evidence converted into reusable compatibility/content-safety planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `docs/described_examples.md`, `src/sequences.js`, `src/runtime-kit.js`, `src/fishing-kit.js`, `src/ar-renderer.js`
+- parent: domain-kit-idea-root-2026-06-19-2000
+- child: legacy-sequence-replay-reset-kit-2026-06-19-2000
+- relationship: Completed-root restart skipping unloaded descendants converted into legacy replay/reset kit candidate.
+- look further: `docs/kits_ideas.md`, `src/sequences.js`, legacy sequence restart fixtures
+- parent: domain-kit-idea-root-2026-06-19-2000
+- child: legacy-any-sibling-cleanup-kit-2026-06-19-2000
+- relationship: Legacy `AnyChild` parent completion with running losers converted into sibling cleanup kit candidate.
+- look further: `docs/kits_ideas.md`, `src/sequences.js`, any-child lifecycle fixtures
+- parent: domain-kit-idea-root-2026-06-19-2000
+- child: legacy-sequence-owning-kit-context-kit-2026-06-19-2000
+- relationship: Legacy UI/entity controller lookup through latest `engine.kit` converted into owning-kit context kit candidate.
+- look further: `docs/kits_ideas.md`, `src/sequences.js`, `src/runtime-kit.js`, `src/fishing-kit.js`, multi-kit sequence fixtures
+- parent: domain-kit-idea-root-2026-06-19-2000
+- child: ar-default-text-safety-kit-2026-06-19-2000
+- relationship: AR default templates inserting authored text through `innerHTML` converted into text-safety kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-renderer.js`, AR/browser renderer fixtures
+- parent: domain-kit-idea-root-2026-06-19-2000
+- child: compatibility-content-safety-proof-kit-2026-06-19-2000
+- relationship: Legacy replay, any cleanup, owning-kit lookup, and AR text-safety rows converted into compatibility/content-safety proof row candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1900
+- child: read-model-orchestration-isolation-domain-2026-06-19-1900
+- relationship: Fresh registry/surface/SequenceNode bug evidence converted into reusable read-model and orchestration isolation planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `docs/described_examples.md`, `src/shaders.js`, `src/surfaces.js`, `src/sequence-node.js`
+- parent: domain-kit-idea-root-2026-06-19-1900
+- child: registry-descriptor-isolation-kit-2026-06-19-1900
+- relationship: Shader/material descriptor aliasing and nested uniform reuse converted into registry descriptor isolation kit candidate.
+- look further: `docs/kits_ideas.md`, `src/shaders.js`, renderer descriptor fixtures
+- parent: domain-kit-idea-root-2026-06-19-1900
+- child: surface-snapshot-isolation-kit-2026-06-19-1900
+- relationship: Event/resource surface snapshot live payload mutation converted into surface read-model isolation kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ecs.js`, `src/engine.js`, `src/surfaces.js`, surface snapshot fixtures
+- parent: domain-kit-idea-root-2026-06-19-1900
+- child: sequence-race-cleanup-kit-2026-06-19-1900
+- relationship: Race failure leaving running sibling under failed parent converted into SequenceNode race cleanup kit candidate.
+- look further: `docs/kits_ideas.md`, `src/sequence-node.js`, SequenceNode race fixtures
+- parent: domain-kit-idea-root-2026-06-19-1900
+- child: sequence-any-receipt-policy-kit-2026-06-19-1900
+- relationship: Any skipped loser overcounting as child-finished converted into SequenceNode any receipt policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/sequence-node.js`, SequenceNode any fixtures
+- parent: domain-kit-idea-root-2026-06-19-1900
+- child: read-model-orchestration-proof-kit-2026-06-19-1900
+- relationship: Registry, surface, race, and any rows converted into targeted read-model/orchestration proof row candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1801
+- child: proof-readiness-queue-domain-2026-06-19-1801
+- relationship: DSK architecture and ecosystem proof evidence converted into reusable proof-readiness ordering and claim-separation planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `docs/described_examples.md`, ecosystem proof packets, DSK architecture packets
+- parent: domain-kit-idea-root-2026-06-19-1801
+- child: hardening-fixture-queue-kit-2026-06-19-1801
+- relationship: Ordered runtime failure-boundary, lifecycle parity, query/command semantics, and experience-edge tranches converted into fixture queue kit candidate.
+- look further: `docs/kits_ideas.md`, DSK hardening fixtures, core tests, ProtoKits proof tooling
+- parent: domain-kit-idea-root-2026-06-19-1801
+- child: proof-claim-taxonomy-kit-2026-06-19-1801
+- relationship: Local, fetched-ref, aggregate, targeted, browser-complete, npm, package-version, and hardening claims converted into proof taxonomy kit candidate.
+- look further: `docs/kits_ideas.md`, ecosystem proof packets, release checklists
+- parent: domain-kit-idea-root-2026-06-19-1801
+- child: module-source-gate-kit-2026-06-19-1801
+- relationship: Shared ProtoKits fetched-ref, Experiments targeted proof, and public browser module-source blocker converted into module-source gate kit candidate.
+- look further: sibling Experiments proof route, sibling ProtoKits metadata, CDN/raw URL choices
+- parent: domain-kit-idea-root-2026-06-19-1801
+- child: aggregate-targeted-proof-parity-kit-2026-06-19-1801
+- relationship: Aggregate check passing while targeted DSK proof fails converted into aggregate/targeted parity kit candidate.
+- look further: sibling Experiments `package.json`, targeted DSK smoke, generated route scripts
+- parent: domain-kit-idea-root-2026-06-19-1801
+- child: release-evidence-checklist-kit-2026-06-19-1801
+- relationship: Repeated not-claimed and blocker categories converted into release evidence checklist kit candidate.
+- look further: automation trackers, proof packets, package metadata, public proof routes
+- parent: domain-kit-idea-root-2026-06-19-1701
+- child: query-command-semantics-domain-2026-06-19-1701
+- relationship: Landmark terminal receipt, repeated affordance query, rejected affordance activation, and live RouteField query mutation bugs converted into reusable query/command semantics planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, `src/route-field-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-1701
+- child: terminal-receipt-policy-kit-2026-06-19-1701
+- relationship: Inactive completed LandmarkGuidance transition receipts converted into terminal receipt policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/landmark-guidance-kit.js`, guidance/objective proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1701
+- child: proximity-query-transition-kit-2026-06-19-1701
+- relationship: Repeated EnvironmentalAffordance `nearby()` entered events converted into query-versus-transition policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/environmental-affordance-kit.js`, proximity/query proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1701
+- child: rejected-command-state-kit-2026-06-19-1701
+- relationship: Missing affordance activation active-state corruption converted into rejected command state kit candidate.
+- look further: `docs/kits_ideas.md`, `src/environmental-affordance-kit.js`, command lifecycle and mutation acceptance fixtures
+- parent: domain-kit-idea-root-2026-06-19-1701
+- child: query-snapshot-isolation-kit-2026-06-19-1701
+- relationship: RouteField query result live-object mutation converted into public query snapshot isolation kit candidate.
+- look further: `docs/kits_ideas.md`, `src/route-field-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, read API fixtures
+- parent: domain-kit-idea-root-2026-06-19-1701
+- child: query-command-semantics-proof-kit-2026-06-19-1701
+- relationship: Terminal receipt, query/transition, rejected command, and query isolation bugs converted into targeted query/command semantics proof row candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, ProtoKits policy tests, Experiments proof routes
+- parent: domain-kit-idea-root-2026-06-19-1601
+- child: lifecycle-parity-cleanup-domain-2026-06-19-1601
+- relationship: Held glide receipts, far spline terrain parity, camera-overlay partial cleanup, and AR stop-state bugs converted into reusable lifecycle parity planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/action-movement-kit.js`, `src/terrain-kit.js`, `src/ar-modes/camera-overlay.js`, `src/ar-launcher.js`, `src/ar-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-1601
+- child: movement-receipt-transition-kit-2026-06-19-1601
+- relationship: Repeated held glide `GlideStarted` events converted into movement receipt transition kit candidate.
+- look further: `docs/kits_ideas.md`, `src/action-movement-kit.js`, locomotion, tutorial, objective, and telemetry proof rows
+- parent: domain-kit-idea-root-2026-06-19-1601
+- child: terrain-query-chunk-parity-kit-2026-06-19-1601
+- relationship: Far spline carve query/baked chunk mismatch converted into terrain query/chunk parity kit candidate.
+- look further: `docs/kits_ideas.md`, `src/terrain-kit.js`, spline/path/route/shoreline chunk fixtures
+- parent: domain-kit-idea-root-2026-06-19-1601
+- child: partial-start-cleanup-kit-2026-06-19-1601
+- relationship: Camera-overlay stream retention after failed partial startup converted into resource cleanup kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-modes/camera-overlay.js`, device startup and fallback proof rows
+- parent: domain-kit-idea-root-2026-06-19-1601
+- child: session-stop-state-kit-2026-06-19-1601
+- relationship: AR launch stop leaving running session state converted into stopped-session state kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-launcher.js`, `src/ar-kit.js`, AR lifecycle fixtures
+- parent: domain-kit-idea-root-2026-06-19-1601
+- child: lifecycle-parity-proof-kit-2026-06-19-1601
+- relationship: Movement receipt, terrain parity, startup cleanup, and stopped-session gaps converted into targeted lifecycle parity proof row candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, ProtoKits policy tests, Experiments proof routes
+- parent: domain-kit-idea-root-2026-06-19-1500
+- child: experience-edge-contract-domain-2026-06-19-1500
+- relationship: Ragdoll receipt, AR launch fallback, custom quality profile, and empty content bugs converted into reusable domain-kit edge contract planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/character-ragdoll-kit.js`, `src/ar-launcher.js`, `src/realism-kit.js`, `src/fishing-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-1500
+- child: control-recovery-receipt-kit-2026-06-19-1500
+- relationship: Repeated CharacterRagdoll `Staggered` events converted into recovery receipt/idempotency kit candidate.
+- look further: `docs/kits_ideas.md`, `src/character-ragdoll-kit.js`, recovery, tutorial, objective, and telemetry proof rows
+- parent: domain-kit-idea-root-2026-06-19-1500
+- child: launch-fallback-chain-kit-2026-06-19-1500
+- relationship: WebXR start failure without camera/fallback retry converted into launch fallback chain kit candidate.
+- look further: `docs/kits_ideas.md`, `src/ar-launcher.js`, `src/ar-modes/*`, public AR proof routes
+- parent: domain-kit-idea-root-2026-06-19-1500
+- child: quality-profile-contract-kit-2026-06-19-1500
+- relationship: RealismKit custom quality object replacement converted into presentation quality profile contract kit candidate.
+- look further: `docs/kits_ideas.md`, `src/realism-kit.js`, renderer and presentation proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1500
+- child: content-dataset-contract-kit-2026-06-19-1500
+- relationship: Empty FishingKit species/lure placeholder state converted into content dataset contract kit candidate.
+- look further: `docs/kits_ideas.md`, `src/fishing-kit.js`, `src/reef-rescue-kit.js`, authored experiment datasets
+- parent: domain-kit-idea-root-2026-06-19-1500
+- child: experience-edge-proof-kit-2026-06-19-1500
+- relationship: Recovery receipt, launch fallback, quality profile, and content dataset gaps converted into targeted domain-kit edge proof row candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, ProtoKits policy tests, Experiments proof routes
+- parent: domain-kit-idea-root-2026-06-19-1400
+- child: runtime-failure-boundary-domain-2026-06-19-1400
+- relationship: DSK namespace/install/dependency and scheduler failed-tick bugs converted into reusable runtime failure-boundary planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/domain-service-kit.js`, `src/runtime-kit.js`, `src/game-kit-composer.js`, `src/engine.js`, `src/ecs.js`
+- parent: domain-kit-idea-root-2026-06-19-1400
+- child: dsk-namespace-policy-kit-2026-06-19-1400
+- relationship: Reserved `apiName:"__proto__"` prototype mutation converted into DSK namespace policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/domain-service-kit.js`, service registry and DSK hardening fixtures
+- parent: domain-kit-idea-root-2026-06-19-1400
+- child: dsk-install-rollback-kit-2026-06-19-1400
+- relationship: Failed late DSK API install partial state converted into install rollback and retryability kit candidate.
+- look further: `docs/kits_ideas.md`, `src/runtime-kit.js`, install hooks, registries, scheduler, sequence runtime, and rollback fixtures
+- parent: domain-kit-idea-root-2026-06-19-1400
+- child: dsk-dependency-parity-kit-2026-06-19-1400
+- relationship: Direct DSK install missing-runtime requirement bypass converted into direct/composer dependency parity kit candidate.
+- look further: `docs/kits_ideas.md`, `src/runtime-kit.js`, `src/game-kit-composer.js`, dependency-bearing DSKs
+- parent: domain-kit-idea-root-2026-06-19-1400
+- child: scheduler-failure-lifetime-kit-2026-06-19-1400
+- relationship: Failed-tick event replay converted into scheduler failure event lifetime kit candidate.
+- look further: `docs/kits_ideas.md`, `src/engine.js`, `src/ecs.js`, event surfaces, lifecycle surfaces, SequenceNode bridges
+- parent: domain-kit-idea-root-2026-06-19-1400
+- child: runtime-failure-boundary-proof-kit-2026-06-19-1400
+- relationship: Namespace, rollback, dependency, and failed-tick gaps converted into targeted runtime failure-boundary proof row kit candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, DSK hardening fixtures
+- parent: domain-kit-idea-root-2026-06-19-1301
+- child: traversal-proof-integrity-domain-2026-06-19-1301
+- relationship: Pathfinding, navmesh, procedural signature, and WorldPhysics recovery bugs converted into reusable traversal proof integrity planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/pathfinding-kit.js`, `src/navmesh-kit.js`, `src/procedural-kit.js`, `src/world-physics-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-1301
+- child: navigation-cost-policy-kit-2026-06-19-1301
+- relationship: Negative-cost pathfinding route bug converted into finite non-negative traversal cost policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/pathfinding-kit.js`, terrain and route adapters
+- parent: domain-kit-idea-root-2026-06-19-1301
+- child: navmesh-identity-policy-kit-2026-06-19-1301
+- relationship: Duplicate walkability key and graph id collapse converted into navmesh identity policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/navmesh-kit.js`, imported walkability and procedural datasets
+- parent: domain-kit-idea-root-2026-06-19-1301
+- child: procedural-signature-taxonomy-kit-2026-06-19-1301
+- relationship: Algorithm descriptor signature gap converted into content/topology/algorithm/proof signature taxonomy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/procedural-kit.js`, procedural, placement, navmesh, and route proof metadata
+- parent: domain-kit-idea-root-2026-06-19-1301
+- child: recovery-receipt-state-kit-2026-06-19-1301
+- relationship: Duplicate WorldPhysics respawn events and stale final state converted into recovery receipt/state consistency kit candidate.
+- look further: `docs/kits_ideas.md`, `src/world-physics-kit.js`, recovery, traversal, replay, analytics, and SequenceNode bridge proof rows
+- parent: domain-kit-idea-root-2026-06-19-1301
+- child: traversal-proof-integrity-kit-2026-06-19-1301
+- relationship: Cost, identity, signature, and recovery gaps converted into targeted traversal proof row kit candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling proof routes, DSK hardening fixtures
+- parent: domain-kit-idea-root-2026-06-19-1201
+- child: service-lifecycle-config-domain-2026-06-19-1201
+- relationship: Companion, world-state, spatial-room, and runner bugs converted into reusable service lifecycle/config planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/companion-command-kit.js`, `src/corruption-world-kit.js`, `src/spatial-room-kit.js`, `src/tree-runner-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-1201
+- child: command-lifecycle-kit-2026-06-19-1201
+- relationship: CompanionCommand second-command lockout converted into command accepted/duplicate/retarget/arrived/reset receipt kit candidate.
+- look further: `docs/kits_ideas.md`, companion, guide, assistance, AR training, and interaction command services
+- parent: domain-kit-idea-root-2026-06-19-1201
+- child: elapsed-rate-policy-kit-2026-06-19-1201
+- relationship: CorruptionWorld tick-rate-dependent cleanse progress converted into per-second/per-tick rate policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/corruption-world-kit.js`, time/progression proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1201
+- child: descriptor-normalization-kit-2026-06-19-1201
+- relationship: SpatialRoom anchor normalization/source leak bug converted into canonical descriptor normalization and source isolation kit candidate.
+- look further: `docs/kits_ideas.md`, `src/spatial-room-kit.js`, `src/greybox-building-kit.js`, room/building/AR descriptor fixtures
+- parent: domain-kit-idea-root-2026-06-19-1201
+- child: generated-geometry-bounds-kit-2026-06-19-1201
+- relationship: TreeRunner invalid generation bounds converted into finite generated geometry policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/tree-runner-kit.js`, traversal/procedural generation proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1201
+- child: service-lifecycle-config-proof-kit-2026-06-19-1201
+- relationship: Command lifecycle, elapsed-rate, descriptor normalization, and generated geometry gaps converted into targeted proof row kit candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling proof routes, DSK hardening fixtures
+- parent: domain-kit-idea-root-2026-06-19-1002
+- child: state-signal-contract-domain-2026-06-19-1002
+- relationship: Placement, interaction, puzzle/combat, validation-driver, and camera bugs converted into reusable state-signal contract planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/forest-placement-kit.js`, `src/interaction-kit.js`, `src/shrine-puzzle-kit.js`, `src/light-combat-kit.js`, `src/scenario-driver-kit.js`, `src/camera-occlusion-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-1002
+- child: descriptor-invalidation-kit-2026-06-19-1002
+- relationship: ForestPlacement same-length route invalidation bug converted into descriptor rebuild signature kit candidate.
+- look further: `docs/kits_ideas.md`, route-aware placement, terrain descriptors, object streaming, proof snapshots
+- parent: domain-kit-idea-root-2026-06-19-1002
+- child: action-repeat-policy-kit-2026-06-19-1002
+- relationship: Held Interaction gather/activate repeat bug converted into edge/held/repeat service-action policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/interaction-kit.js`, `src/input-intent-kit.js`, `src/interaction-target-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-1002
+- child: state-machine-transition-kit-2026-06-19-1002
+- relationship: Shrine charged-repeat receipts and LightCombat initial zero-health contradiction converted into transition and initial terminal state-machine kit candidate.
+- look further: `docs/kits_ideas.md`, `src/shrine-puzzle-kit.js`, `src/light-combat-kit.js`, puzzle/combat/objective proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-1002
+- child: coordinate-axis-policy-kit-2026-06-19-1002
+- relationship: ScenarioDriver `{ x, z }` steering loss converted into coordinate axis contract kit candidate.
+- look further: `docs/kits_ideas.md`, `src/scenario-driver-kit.js`, route-field, terrain, mobility, and camera validation helpers
+- parent: domain-kit-idea-root-2026-06-19-1002
+- child: derived-state-boundary-kit-2026-06-19-1002
+- relationship: CameraOcclusion cumulative lookAt mutation converted into source-versus-derived state ownership kit candidate.
+- look further: `docs/kits_ideas.md`, `src/camera-occlusion-kit.js`, `src/camera-kit.js`, render descriptor and presentation safety services
+- parent: domain-kit-idea-root-2026-06-19-1002
+- child: state-signal-contract-proof-kit-2026-06-19-1002
+- relationship: Invalidation, action repeat, state-machine transition, coordinate axis, and derived-state gaps converted into targeted proof row kit candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- parent: domain-kit-idea-root-2026-06-19-0900
+- child: source-state-integrity-domain-2026-06-19-0900
+- relationship: Dataset/reset, ledger retention, and pursuit initial-state bugs converted into reusable source-state integrity planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/water-surface-kit.js`, `src/route-field-kit.js`, `src/render-descriptor-kit.js`, `src/economy-kit.js`, `src/pursuit-pressure-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0900
+- child: authored-source-isolation-kit-2026-06-19-0900
+- relationship: Nested metadata and render descriptor caller-config leaks converted into authored-source isolation kit candidate.
+- look further: `docs/kits_ideas.md`, dataset-heavy kits, immutable config fixtures
+- parent: domain-kit-idea-root-2026-06-19-0900
+- child: reset-source-policy-kit-2026-06-19-0900
+- relationship: Reset output rebuilding from mutated captured config converted into reset-source policy kit candidate.
+- look further: `docs/kits_ideas.md`, reset APIs, snapshot/reset proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-0900
+- child: retention-limit-policy-kit-2026-06-19-0900
+- relationship: Economy ledger `slice(-0)` retention inversion converted into shared retention-limit semantics kit candidate.
+- look further: `docs/kits_ideas.md`, `src/economy-kit.js`, `src/telemetry-kit.js`, proof history surfaces
+- parent: domain-kit-idea-root-2026-06-19-0900
+- child: initial-terminal-receipt-kit-2026-06-19-0900
+- relationship: PursuitPressure caught-band/caught-boolean contradiction converted into initial terminal receipt kit candidate.
+- look further: `docs/kits_ideas.md`, `src/pursuit-pressure-kit.js`, recovery/objective/scenario pressure kits
+- parent: domain-kit-idea-root-2026-06-19-0900
+- child: source-state-integrity-proof-kit-2026-06-19-0900
+- relationship: Source isolation, reset source, retention limit, and initial terminal gaps converted into targeted proof row kit candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- parent: domain-kit-idea-root-2026-06-19-0800
+- child: bridge-state-ownership-domain-2026-06-19-0800
+- relationship: AR/objective bridge, step receipt, and wrapper state bugs converted into reusable bridge and state ownership planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/surface-placement-kit.js`, `src/objective-flow-kit.js`, wrapper kits
+- parent: domain-kit-idea-root-2026-06-19-0800
+- child: bridge-phase-policy-kit-2026-06-19-0800
+- relationship: SurfacePlacement resolve-phase event relay converted into same-tick/next-tick/direct-call bridge policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/surface-placement-kit.js`, `src/objective-flow-kit.js`, `src/ar-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0800
+- child: step-transition-receipt-kit-2026-06-19-0800
+- relationship: Missing ObjectiveFlow and ARExperience step-completion events converted into shared transition receipt kit candidate.
+- look further: `docs/kits_ideas.md`, `src/objective-flow-kit.js`, `src/ar-experience-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0800
+- child: delegated-action-reconciliation-kit-2026-06-19-0800
+- relationship: Puzzle and platformer delegated actions converted into wrapper reconciliation kit candidate.
+- look further: `docs/kits_ideas.md`, `src/interaction-target-kit.js`, `src/symbol-alignment-kit.js`, `src/micro-platformer-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0800
+- child: wrapper-state-contract-kit-2026-06-19-0800
+- relationship: Inert wrapper snapshots converted into stateful/stateless adapter contract kit candidate.
+- look further: `docs/kits_ideas.md`, wrapper kits, composition audit fixtures
+- parent: domain-kit-idea-root-2026-06-19-0800
+- child: bridge-state-proof-kit-2026-06-19-0800
+- relationship: Bridge delivery, step receipt, delegated action, and wrapper state gaps converted into targeted proof row kit candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- parent: domain-kit-idea-root-2026-06-19-0701
+- child: receipt-integrity-domain-2026-06-19-0701
+- relationship: Timing, interaction, collectible, and request receipt/idempotency bugs converted into reusable receipt integrity planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/timing-window-kit.js`, `src/interaction-target-kit.js`, `src/collectible-kit.js`, `src/request-fulfillment-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0701
+- child: receipt-identity-kit-2026-06-19-0701
+- relationship: TimingWindow result id overwrite converted into action/result receipt identity kit candidate.
+- look further: `docs/kits_ideas.md`, `src/timing-window-kit.js`, telemetry/replay proof fixtures
+- parent: domain-kit-idea-root-2026-06-19-0701
+- child: event-idempotency-kit-2026-06-19-0701
+- relationship: Repeated interaction completion and collectible claim events converted into transition-only event policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/interaction-target-kit.js`, `src/objective-flow-kit.js`, `src/collectible-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0701
+- child: claim-receipt-policy-kit-2026-06-19-0701
+- relationship: Duplicate collectible claim events converted into reward/claim receipt policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/collectible-kit.js`, `src/objective-flow-kit.js`, `src/economy-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0701
+- child: request-identity-policy-kit-2026-06-19-0701
+- relationship: RequestFulfillment generated id collision converted into request/logistics identity policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/request-fulfillment-kit.js`, `src/request-queue-kit.js`, `src/cargo-manifest-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0701
+- child: receipt-integrity-proof-kit-2026-06-19-0701
+- relationship: Receipt identity, event idempotency, claim policy, and request identity gaps converted into targeted proof row kit candidate.
+- look further: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- parent: domain-kit-idea-root-2026-06-19-0600
+- child: spatial-mobility-invariant-domain-2026-06-19-0600
+- relationship: SpatialScale, ScenarioDuration, HazardField, and VehicleDynamics invariant bugs converted into reusable spatial/mobility invariant planning boundary.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/spatial-scale-kit.js`, `src/scenario-duration-kit.js`, `src/hazard-field-kit.js`, `src/vehicle-dynamics-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0600
+- child: transition-state-policy-kit-2026-06-19-0600
+- relationship: Missed SpatialScale anchor-entry event converted into query-state versus transition-state policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/spatial-scale-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0600
+- child: immediate-threshold-policy-kit-2026-06-19-0600
+- relationship: Zero-duration ScenarioDuration bug converted into immediate-threshold settlement policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/scenario-duration-kit.js`, `src/timing-window-kit.js`, `src/objective-flow-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0600
+- child: hazard-identity-policy-kit-2026-06-19-0600
+- relationship: HazardField generated id collision converted into hazard-specific identity policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/hazard-field-kit.js`, `src/route-field-kit.js`, `src/telemetry-kit.js`
+- parent: domain-kit-idea-root-2026-06-19-0600
+- child: resource-bound-normalization-kit-2026-06-19-0600
+- relationship: Vehicle zero-max boost bug converted into resource-bound normalization policy kit candidate.
+- look further: `docs/kits_ideas.md`, `src/vehicle-dynamics-kit.js`, `src/resource-pressure-kit.js`
 - parent: domain-kit-idea-root-2026-06-19-0202
 - child: operations-data-integrity-domain-2026-06-19-0202
 - relationship: Occupant/facility/economy/resource-pressure invariant bugs converted into reusable operations data-integrity planning boundary.
@@ -108,6 +810,358 @@ This tracker records durable lessons from the idea expansion automation. It is a
 
 ## Open Search Branches
 
+- branch: fresh-neighboring-evidence-check
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `state/automation/*/packets`, `state/automation/*/knowledge_nodes`, `docs/domain_ideas.md`, `docs/kits_ideas.md`
+- branch: navigation-command-payload-ownership
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/pathfinding-kit.js`, path request endpoint/event/agent assignment fixtures
+- branch: navigation-proof-snapshot-isolation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/pathfinding-kit.js`, `src/navmesh-kit.js`, navigation proof snapshot fixtures
+- branch: procedural-proof-snapshot-isolation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/procedural-kit.js`, generated-space snapshot and downstream adapter fixtures
+- branch: procedural-command-return-state
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/procedural-kit.js`, regenerate dirty/seed/config return-state fixtures
+- branch: scheduler-active-run-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ecs.js`, `src/engine.js`, scheduler fixtures
+- branch: scheduler-phase-topology
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ecs.js`, lifecycle surface fixtures
+- branch: runsystem-membership-snapshot
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ecs.js`, cleanup/despawn-heavy kit fixtures
+- branch: event-queue-payload-isolation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ecs.js`, `src/engine.js`, `src/surfaces.js`, SequenceNode bridge fixtures
+- branch: query-read-model-isolation-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/request-fulfillment-kit.js`, `src/cargo-manifest-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, `src/hazard-field-kit.js`, `src/water-surface-kit.js`
+- branch: public-query-helper-contract
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, exported `query*` helpers, nested metadata/hazard fixtures
+- branch: engine-read-method-snapshot
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, engine nearest/available/collision/query methods, command/read boundary fixtures
+- branch: stored-query-proof-snapshot
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `lastQuery`, `lastCollision`, telemetry/proof snapshot fixtures
+- branch: proof-signal-integrity-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/ar-experience-kit.js`, `src/ar-session.js`, `src/engine.js`, `src/greybox-building-kit.js`, `src/spatial-room-kit.js`
+- branch: experience-terminal-receipts
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ar-experience-kit.js`, AR/objective receipt fixtures
+- branch: webxr-hit-test-failure-policy
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/ar-session.js`, `src/ar-modes/webxr-plane.js`, browser AR proof fixtures
+- branch: monotonic-tick-time
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/engine.js`, `src/ecs.js`, `src/sequence-node.js`, elapsed-time domain kits
+- branch: finite-spatial-scale
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/greybox-building-kit.js`, `src/spatial-room-kit.js`, `src/render-descriptor-kit.js`
+- branch: legacy-sequence-ar-compatibility-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/sequences.js`, `src/runtime-kit.js`, `src/fishing-kit.js`, `src/ar-renderer.js`
+- branch: legacy-sequence-replay-reset
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/sequences.js`, legacy sequence restart fixtures
+- branch: legacy-any-sibling-cleanup
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/sequences.js`, legacy any-child fixtures
+- branch: legacy-sequence-owning-kit-context
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/sequences.js`, `src/runtime-kit.js`, `src/fishing-kit.js`, multi-kit sequence fixtures
+- branch: ar-default-text-safety
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/ar-renderer.js`, AR/browser renderer fixtures
+- branch: read-model-orchestration-isolation-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/shaders.js`, `src/surfaces.js`, `src/sequence-node.js`
+- branch: registry-descriptor-isolation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/shaders.js`, renderer descriptor fixtures
+- branch: surface-snapshot-isolation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ecs.js`, `src/engine.js`, `src/surfaces.js`, surface fixtures
+- branch: sequence-race-cleanup
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/sequence-node.js`, SequenceNode race fixtures
+- branch: sequence-any-receipt-policy
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/sequence-node.js`, SequenceNode any fixtures
+- branch: read-model-orchestration-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, proof fixtures
+- branch: hardening-fixture-queue
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, DSK hardening fixtures, core tests, ProtoKits proof tooling
+- branch: proof-claim-taxonomy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, ecosystem proof packets, release checklists
+- branch: module-source-gate
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: sibling Experiments DSK proof route, sibling ProtoKits package metadata, CDN/raw URLs
+- branch: aggregate-targeted-proof-parity
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: sibling Experiments `package.json`, targeted DSK smoke, generated route scripts
+- branch: release-evidence-checklist
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: automation trackers, proof packets, package metadata, public proof routes
+- branch: query-command-semantics-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, `src/route-field-kit.js`
+- branch: terminal-receipt-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/landmark-guidance-kit.js`, guidance/objective proof fixtures
+- branch: proximity-query-transition-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/environmental-affordance-kit.js`, proximity/query fixtures
+- branch: rejected-command-state-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/environmental-affordance-kit.js`, command/rejection fixtures
+- branch: query-snapshot-isolation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/route-field-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, public read API fixtures
+- branch: query-command-semantics-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, ProtoKits policy tests, Experiments proof routes
+- branch: lifecycle-parity-cleanup-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/action-movement-kit.js`, `src/terrain-kit.js`, `src/ar-modes/camera-overlay.js`, `src/ar-launcher.js`, `src/ar-kit.js`
+- branch: movement-receipt-transitions
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/action-movement-kit.js`, locomotion/control proof fixtures
+- branch: terrain-query-chunk-parity
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/terrain-kit.js`, streamed terrain proof fixtures
+- branch: partial-start-cleanup
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ar-modes/camera-overlay.js`, AR/device startup fixtures
+- branch: session-stop-state
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ar-launcher.js`, `src/ar-kit.js`, AR/session lifecycle fixtures
+- branch: lifecycle-parity-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, ProtoKits policy tests, Experiments proof routes
+- branch: experience-edge-contract-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/character-ragdoll-kit.js`, `src/ar-launcher.js`, `src/realism-kit.js`, `src/fishing-kit.js`
+- branch: control-recovery-receipts
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/character-ragdoll-kit.js`, character-control and recovery proof fixtures
+- branch: launch-fallback-chain
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/ar-launcher.js`, `src/ar-modes/*`, public AR proof routes
+- branch: presentation-quality-profile-contract
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/realism-kit.js`, renderer and presentation proof fixtures
+- branch: content-dataset-contract
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/fishing-kit.js`, `src/reef-rescue-kit.js`, authored experiment datasets
+- branch: experience-edge-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, core tests, ProtoKits policy tests, Experiments proof routes
+- branch: service-lifecycle-config-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/companion-command-kit.js`, `src/corruption-world-kit.js`, `src/spatial-room-kit.js`, `src/tree-runner-kit.js`
+- branch: command-lifecycle-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, companion, guide, assistance, AR training, and interaction command services
+- branch: elapsed-rate-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/corruption-world-kit.js`, time/progression proof fixtures
+- branch: descriptor-normalization-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/spatial-room-kit.js`, `src/greybox-building-kit.js`, room/building/AR descriptor fixtures
+- branch: generated-geometry-bounds
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/tree-runner-kit.js`, traversal/procedural generation proof fixtures
+- branch: service-lifecycle-config-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes, DSK hardening fixtures
+- branch: state-signal-contract-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/forest-placement-kit.js`, `src/interaction-kit.js`, `src/shrine-puzzle-kit.js`, `src/light-combat-kit.js`, `src/scenario-driver-kit.js`, `src/camera-occlusion-kit.js`
+- branch: descriptor-invalidation-signatures
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, route-aware placement, terrain descriptors, object streaming, proof snapshots
+- branch: action-repeat-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/interaction-kit.js`, `src/input-intent-kit.js`, `src/interaction-target-kit.js`
+- branch: state-machine-transition-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/shrine-puzzle-kit.js`, `src/light-combat-kit.js`, objective/puzzle/combat proof fixtures
+- branch: coordinate-axis-policy
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/scenario-driver-kit.js`, route, terrain, mobility, and camera validation helpers
+- branch: derived-state-boundary
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/camera-occlusion-kit.js`, `src/camera-kit.js`, render descriptor and presentation safety services
+- branch: state-signal-contract-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- branch: source-state-integrity-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/water-surface-kit.js`, `src/route-field-kit.js`, `src/render-descriptor-kit.js`, `src/economy-kit.js`, `src/pursuit-pressure-kit.js`
+- branch: authored-source-isolation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, dataset-heavy kits, immutable config and reset proof fixtures
+- branch: reset-source-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, reset APIs, snapshot/reset proof fixtures
+- branch: retention-limit-policy
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/economy-kit.js`, `src/telemetry-kit.js`, proof and replay history surfaces
+- branch: initial-terminal-receipts
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/pursuit-pressure-kit.js`, recovery, objective, scenario, and pressure services
+- branch: source-state-integrity-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- branch: bridge-state-ownership-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/surface-placement-kit.js`, `src/objective-flow-kit.js`, `src/ar-experience-kit.js`, wrapper kits
+- branch: bridge-phase-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/surface-placement-kit.js`, `src/objective-flow-kit.js`, `src/ar-kit.js`
+- branch: step-transition-receipts
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/objective-flow-kit.js`, `src/ar-experience-kit.js`, proof fixtures
+- branch: delegated-action-reconciliation
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/interaction-target-kit.js`, `src/symbol-alignment-kit.js`, `src/lock-and-socket-kit.js`, `src/reveal-light-kit.js`, `src/sorting-kit.js`, `src/moving-target-kit.js`, `src/micro-platformer-kit.js`
+- branch: wrapper-state-contract
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, wrapper kits, composition audit/proof fixtures
+- branch: bridge-state-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- branch: receipt-integrity-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/timing-window-kit.js`, `src/interaction-target-kit.js`, `src/collectible-kit.js`, `src/request-fulfillment-kit.js`
+- branch: receipt-identity-separation
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/timing-window-kit.js`, telemetry/replay proof fixtures
+- branch: event-idempotency-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/interaction-target-kit.js`, `src/objective-flow-kit.js`, `src/collectible-kit.js`
+- branch: claim-receipt-policy
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/collectible-kit.js`, `src/objective-flow-kit.js`, `src/economy-kit.js`
+- branch: request-identity-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/request-fulfillment-kit.js`, `src/request-queue-kit.js`, `src/cargo-manifest-kit.js`
+- branch: receipt-integrity-proof
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/described_examples.md`, `docs/kits_ideas.md`, sibling Experiments proof routes
+- branch: spatial-mobility-invariant-boundary
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/domain_ideas.md`, `docs/kits_ideas.md`, `src/spatial-scale-kit.js`, `src/scenario-duration-kit.js`, `src/hazard-field-kit.js`, `src/vehicle-dynamics-kit.js`
+- branch: transition-state-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/spatial-scale-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`
+- branch: immediate-threshold-policy
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/scenario-duration-kit.js`, `src/timing-window-kit.js`, `src/objective-flow-kit.js`
+- branch: hazard-identity-policy
+- owner: domain_kit_idea_expander
+- priority: high
+- next files: `docs/kits_ideas.md`, `src/hazard-field-kit.js`, `src/route-field-kit.js`, `src/telemetry-kit.js`
+- branch: mobility-resource-bound-policy
+- owner: domain_kit_idea_expander
+- priority: medium
+- next files: `docs/kits_ideas.md`, `src/vehicle-dynamics-kit.js`, `src/resource-pressure-kit.js`
 - branch: operations-data-integrity-boundary
 - owner: domain_kit_idea_expander
 - priority: high
@@ -175,6 +1229,33 @@ This tracker records durable lessons from the idea expansion automation. It is a
 
 ## Resolved Or Superseded
 
+- id: domain-kit-idea-root-2026-06-19-1801
+- reason: Extended, not superseded, by the read-model orchestration isolation expansion run; proof readiness queueing remains active claim-management context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T19-00-18-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-1701
+- reason: Extended, not superseded, by the proof readiness queue expansion run; query/command semantics ideas remain active hardening context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T18-01-47-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-1601
+- reason: Extended, not superseded, by the query command semantics expansion run; lifecycle parity and cleanup ideas remain active context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T17-01-13-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-1500
+- reason: Extended, not superseded, by the lifecycle parity cleanup expansion run; experience edge contract ideas remain active context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T16-01-29-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-1400
+- reason: Extended, not superseded, by the experience edge contract expansion run; runtime failure-boundary ideas remain active context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T15-00-41-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-0900
+- reason: Extended, not superseded, by the state-signal contract expansion run; source-state integrity ideas remain active context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T10-02-21-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-0800
+- reason: Extended, not superseded, by the source-state integrity expansion run; bridge/state ownership ideas remain active context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T09-00-53-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-0600
+- reason: Extended, not superseded, by the receipt-integrity expansion run; spatial/mobility invariant ideas remain active context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T07-01-13-0400-domain-kit-idea-expansion-packet.md`
+- id: domain-kit-idea-root-2026-06-19-0202
+- reason: Extended, not superseded, by the spatial/mobility invariant expansion run; operations data integrity ideas remain active context.
+- evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T06-00-34-0400-domain-kit-idea-expansion-packet.md`
 - id: domain-kit-idea-root-2026-06-19-0100
 - reason: Extended, not superseded, by the operations data-integrity expansion run; accepted mutation, idempotency, time, and config ideas remain active context.
 - evidence: `state/automation/domain_kit_idea_expander/packets/2026-06-19T02-02-08-0400-domain-kit-idea-expansion-packet.md`

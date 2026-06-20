@@ -1,8 +1,138 @@
 # Master DSK Architecture Tracker
 
 ## Current Root Lessons
-- id: dsk-operations-data-integrity-root-2026-06-19-0224
+- id: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
 - status: active
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T18-23-40-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T18-23-40-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; telemetry selected-value snapshots, telemetry path selector isolation, RequestQueue/TransportRoute command metadata ownership, and InputIntent frame ownership now join the DSK hardening queue as Telemetry Command Evidence Ownership, while procedural/navigation ownership remains separate generated-world inventory and module-source proof stays separate.
+- id: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- status: superseded-by-telemetry-command-evidence-context-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T17-38-41-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T17-38-41-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; procedural/navigation command and snapshot ownership now joins the DSK hardening queue after fresh live probes showed `requestPath()` caller-owned endpoint aliasing, live navigation/procedural snapshots, and live `regenerate()` return state, while scheduler/world mutation remains lower-level tranche 1 and module-source proof stays separate.
+- id: dsk-scheduler-world-mutation-context-root-2026-06-20-0623
+- status: superseded-by-procedural-navigation-ownership-context-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T06-23-50-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T06-23-50-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; runtime failure-boundary remains tranche 1 and now explicitly includes scheduler/world mutation isolation for active-run scheduler system/phase mutation, `runSystem()` removed-entity membership, and `readEvents()` payload aliasing, while query read-model isolation and public module-source proof stay separate.
+- id: dsk-query-read-model-context-root-2026-06-20-0524
+- status: superseded-by-scheduler-world-mutation-context-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T05-24-33-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T05-24-33-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; runtime failure-boundary remains tranche 1, while fresh public query helper, engine read-method, nested metadata/hazard, and stored query snapshot evidence joins later hardening inventory and public module-source proof stays separate.
+- id: dsk-content-boundary-objective-context-root-2026-06-20-0422
+- status: superseded-by-query-read-model-context-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T04-22-52-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T04-22-52-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; runtime failure-boundary remains tranche 1, while fresh Fishing/ReefRescue content boundary, preset runtime identity, objective threshold, and content dataset validation evidence joins later hardening inventory and public module-source proof stays separate.
+- id: dsk-runtime-identity-lifecycle-context-root-2026-06-20-0323
+- status: superseded-by-content-boundary-objective-context-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T03-23-42-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T03-23-42-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; runtime failure-boundary remains tranche 1, while fresh binding ownership, ECS definition identity, SequenceNode install-only idempotency, and event-bus disposed parity evidence joins later runtime identity/lifecycle hardening inventory and public module-source proof stays separate.
+- id: dsk-composition-proof-ownership-root-2026-06-20-0223
+- status: superseded-by-runtime-identity-lifecycle-context-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T02-23-35-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T02-23-35-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; live probes keep runtime failure-boundary as tranche 1, while fresh composer/SequenceNode/AR evidence adds composition-proof ownership as a later validation tranche and ecosystem module-source regressions stay separate from DSK runtime hardening.
+- id: dsk-distribution-boundary-still-root-2026-06-20-0154
+- status: superseded-by-composition-proof-ownership-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-20T01-54-13-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-20T01-54-13-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; live probes still keep runtime failure-boundary as tranche 1 and proof-signal integrity as tranche 8, while the freshest neighboring idea pass adds no new durable distribution-proof family, so module-source, fetched-ref, public browser, npm, package-version, and aggregate/targeted rows stay under proof-readiness claim management rather than replacing base DSK runtime hardening.
+- id: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- status: superseded-by-distribution-boundary-still-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T22-25-35-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T22-25-35-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; live probes still keep runtime failure-boundary as tranche 1, lifecycle parity as tranche 2, query/command semantics as tranche 3, experience-edge as tranche 4, read-model/orchestration as tranche 5, compatibility/content-safety as tranche 6, and AR/spatial read-model as tranche 7, while the newest ARExperience, hit-test, negative-time, and finite-scale rows join as tranche 8 proof-signal integrity rather than replacing base DSK runtime hardening.
+- id: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- status: superseded-by-proof-signal-integrity-tranche-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T21-25-07-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T21-25-07-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; live probes still keep runtime failure-boundary as tranche 1, lifecycle parity as tranche 2, query/command semantics as tranche 3, experience-edge as tranche 4, read-model/orchestration as tranche 5, and compatibility/content-safety as tranche 6, while the newest AR launch and SpatialRoom read-model rows join as a later AR/spatial proof tranche rather than replacing base DSK runtime hardening.
+- id: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- status: superseded-by-ar-spatial-readmodel-tranche-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T20-24-13-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T20-24-13-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; live probes still keep runtime failure-boundary as tranche 1, lifecycle parity as tranche 2, query/command semantics as tranche 3, experience-edge as tranche 4, and read-model/orchestration as tranche 5, while the newest legacy sequence and AR DOM content-safety rows join as a later compatibility/content-safety tranche rather than replacing base DSK runtime hardening.
+- id: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- status: superseded-by-compatibility-content-safety-tranche-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T19-24-37-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T19-24-37-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; live probes still keep runtime failure-boundary as tranche 1, lifecycle parity as tranche 2, query/command semantics as tranche 3, and experience-edge as tranche 4, while the newest registry/surface/SequenceNode read-model-orchestration isolation rows join as a separate follow-on tranche rather than replacing base DSK runtime hardening.
+- id: dsk-proof-readiness-queue-root-2026-06-19-1824
+- status: superseded-by-read-model-orchestration-tranche-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T18-24-11-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T18-24-11-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green; corrected live probes still keep runtime failure-boundary as tranche 1, lifecycle parity as tranche 2, query/command semantics as tranche 3, and experience-edge as tranche 4, while the newest proof-readiness queueing, module-source gate, aggregate/targeted parity, and release-evidence taxonomy remain separate claim-management layers rather than DSK hardening proof.
+- id: dsk-query-command-queue-split-root-2026-06-19-1722
+- status: superseded-by-proof-readiness-queue-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T17-22-41-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T17-22-41-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and smoke-green, but the ordered DSK fixture queue now needs an explicit query/command semantics category after runtime failure-boundary and lifecycle parity: tranche 1 base runtime failure-boundary fixtures, tranche 2 lifecycle parity fixtures, tranche 3 query/command semantics fixtures for terminal receipts, query-versus-transition, rejected-command state, and query snapshot isolation, tranche 4 experience-edge rows; public/fetched-ref/module-source proof remains separate.
+- id: dsk-layered-fixture-queue-root-2026-06-19-1623
+- status: superseded-by-query-command-queue-split-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T16-23-39-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T16-23-39-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but the next useful DSK architecture state is an ordered fixture queue: tranche 1 base runtime failure-boundary fixtures for namespace reserved keys, failed-install rollback/retryability, direct/composer dependency parity, scheduler failed-tick lifetime, and reset/snapshot/async metadata truth; tranche 2 lifecycle parity fixtures for held-input receipts, terrain query/chunk parity, partial-start cleanup, and stopped-session state; tranche 3 experience-edge rows; public/fetched-ref/module-source proof remains separate.
+- id: dsk-hardening-boundary-split-root-2026-06-19-1525
+- status: superseded-by-layered-fixture-queue-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T15-25-28-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T15-25-28-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but the next useful DSK architecture state is a proof-boundary split: write core runtime failure-boundary fixtures first for namespace reserved keys, failed-install rollback/retryability, direct/composer dependency parity, scheduler failed-tick event lifetime, and metadata truth; carry newest experience-edge rows as downstream proof inventory; keep public/fetched-ref/module-source proof separate.
+- id: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- status: superseded-by-hardening-boundary-split-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T14-24-17-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T14-24-17-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but the non-scout DSK hardening fixture handoff must now include runtime failure-boundary rows for namespace reserved keys, failed-install rollback/retryability, direct/composer dependency parity, and scheduler failed-tick event lifetime alongside traversal, lifecycle/config, source-state, state-signal, receipt, bridge, operations, spatial, and base install/dependency gates.
+- id: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- status: superseded-by-runtime-failure-boundary-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T13-24-43-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T13-24-43-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but the non-scout DSK hardening fixture handoff must now include traversal proof integrity rows for finite non-negative traversal costs, navmesh/graph identity, procedural signature taxonomy, and recovery receipt/state consistency alongside namespace/install/dependency, source-state, state-signal, receipt, bridge, operations, spatial, and lifecycle/config gates.
+- id: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- status: superseded-by-traversal-proof-fixture-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T12-23-47-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T12-23-47-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but the non-scout DSK hardening fixture handoff must now include lifecycle/config rows for command lifecycle receipts, elapsed-rate semantics, descriptor normalization/source isolation, and finite generated geometry alongside namespace/install/dependency, source-state, state-signal, receipt, bridge, operations, and spatial gates.
+- id: dsk-fixture-boundary-root-2026-06-19-1123
+- status: superseded-by-lifecycle-config-fixture-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T11-23-07-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T11-23-07-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but repeated live evidence now points to one non-scout handoff: write executable DSK hardening fixtures covering namespace/install/dependency boundaries plus reset/snapshot metadata truth, source-state integrity, state-signal contracts, and proof-boundary separation.
+- id: dsk-state-signal-fixture-root-2026-06-19-1023
+- status: superseded-by-fixture-boundary-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T10-23-10-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T10-23-10-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but DSK promotion fixtures must now include state-signal contracts: descriptor invalidation, action repeat policy, small state-machine transition receipts, coordinate-axis policy, and derived-state boundaries alongside prior namespace, install, dependency, state-contract, service-call, operations data, spatial/mobility, receipt, bridge, wrapper-state, and source-state gates.
+- id: dsk-source-state-fixture-root-2026-06-19-0925
+- status: superseded-by-state-signal-fixture-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T09-25-20-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T09-25-20-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but DSK promotion fixtures must now include source-state integrity: authored-source isolation, reset-source guarantees, retention-limit normalization, and initial terminal-state receipts alongside prior namespace, install, dependency, state-contract, service-call, operations data, spatial/mobility, receipt, bridge, step, and wrapper-state gates.
+- id: dsk-bridge-state-fixture-root-2026-06-19-0823
+- status: superseded-by-source-state-fixture-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T08-23-23-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T08-23-23-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but DSK promotion fixtures must now include bridge phase delivery, step-transition receipts, delegated-action reconciliation, and wrapper state contracts alongside prior namespace, install, dependency, state-contract, service-call, operations data, spatial/mobility, and receipt-integrity gates.
+- id: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- status: superseded-by-bridge-state-fixture-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T07-24-53-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T07-24-53-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but DSK promotion fixtures must now include receipt identity, event idempotency, claim policy, and request identity alongside prior namespace, install, dependency, state-contract, service-call, operations-data, and spatial/mobility gates.
+- id: dsk-spatial-mobility-fixture-root-2026-06-19-0624
+- status: superseded-by-receipt-integrity-fixture-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T06-24-24-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T06-24-24-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` remains release-aligned and test-green, but DSK promotion fixtures must now include spatial/mobility invariant gates for transition receipts, immediate thresholds, hazard identity, and resource bounds alongside prior install/service/operations gates.
+- id: dsk-fixture-plan-ready-root-2026-06-19-0540
+- status: superseded-by-spatial-mobility-fixture-root
+- latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T05-40-58-0400-dsk-architecture-state-packet.md`
+- latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T05-40-58-0400-dsk-architecture-node.md`
+- summary: Current `origin/0.0.2` has advanced to `96a0c16340c50832cdb5c4c81101b87b3f0c6fa0` and remains test-green, but live probes reconfirm DSK promotion is blocked by one concrete hardening fixture plan across namespace, install, dependency, state-contract, service-call, and operations data invariants.
+- id: dsk-operations-data-integrity-root-2026-06-19-0224
+- status: superseded-by-fixture-plan-ready-root
 - latest packet: `state/automation/dsk_architecture_scout/packets/2026-06-19T02-24-48-0400-dsk-architecture-state-packet.md`
 - latest node: `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T02-24-48-0400-dsk-architecture-node.md`
 - summary: Current checkout remains release-aligned and test-green, but production DSK promotion now needs one hardening fixture plan that joins install safety, service-call policy, and operations data integrity.
@@ -43,6 +173,678 @@
 - summary: DSK is present, exported, documented, and smoke-tested, but install atomicity and namespace hardening are the next production-viability gates.
 
 ## Branch Tree
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, scheduler/world mutation, event queue isolation, procedural/navigation ownership, telemetry/command evidence ownership, and reset/snapshot/async metadata truth.
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-telemetry-command-evidence-core
+- relationship: command/proof evidence ownership row
+- look further: Add fixtures for telemetry selected-value snapshots, telemetry path selector isolation, RequestQueue and TransportRoute command metadata ownership, InputIntent submitted-frame ownership, returned command state mutation, and emitted payload ownership.
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-procedural-navigation-ownership-still-separate
+- relationship: generated-world command/read ownership row
+- look further: Keep `requestPath()` endpoint ownership, navigation/procedural snapshot isolation, and `regenerate()` return-state isolation separate from telemetry/command proof capture rows.
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-scheduler-world-mutation-still-lower
+- relationship: lower-level runtime hardening row
+- look further: Preserve scheduler/world fixtures for same-phase add, same-run phase add, removed-entity `runSystem()` membership, and queued event payload mutation before trusting higher-level command/proof rows.
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-query-read-model-still-later
+- relationship: later query read-model validation tranche
+- look further: Keep exported query helper, engine read method, nested metadata/hazard clone/freeze, and stored `lastQuery`/`lastCollision` snapshot fixtures separate from telemetry/command evidence ownership.
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-module-source-regression-separate
+- relationship: distribution/proof boundary
+- look further: Keep package/workspace/CDN/same-origin/build-step import-map decisions in ecosystem/proof lanes, separate from runtime, scheduler/world, procedural/navigation, telemetry/command, identity, composition, content-boundary, and query-read-model hardening.
+- parent: dsk-telemetry-command-evidence-context-root-2026-06-20-1823
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route new reusable implementation to ProtoKits and playable/browser proof to Experiments; keep core changes to runtime/DSK/composer/ECS/scheduler/procedural/navigation/telemetry/command primitives and validation invariants.
+- parent: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, active-run scheduler mutation, phase topology mutation, `runSystem()` membership, event queue payload isolation, procedural/navigation ownership, and reset/snapshot/async metadata truth.
+- parent: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- child: dsk-procedural-navigation-ownership-core
+- relationship: generated-world command/read ownership row
+- look further: Add fixtures for `requestPath()` endpoint ownership, returned request mutation, event payload ownership, navigation snapshot/query isolation, procedural snapshot/query isolation, and `regenerate()` return-state isolation.
+- parent: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- child: dsk-scheduler-world-mutation-still-lower
+- relationship: lower-level runtime hardening row
+- look further: Preserve scheduler/world fixtures for same-phase add, same-run phase add, removed-entity `runSystem()` membership, and queued event payload mutation before trusting generated-world proof rows.
+- parent: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- child: dsk-query-read-model-still-later
+- relationship: later query read-model validation tranche
+- look further: Keep exported query helper, engine read method, nested metadata/hazard clone/freeze, and stored `lastQuery`/`lastCollision` snapshot fixtures separate from procedural/navigation ownership.
+- parent: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- child: dsk-module-source-regression-separate
+- relationship: distribution/proof boundary
+- look further: Keep package/workspace/CDN/same-origin/build-step import-map decisions in ecosystem/proof lanes, separate from runtime, scheduler/world, procedural/navigation, identity, composition, content-boundary, and query-read-model hardening.
+- parent: dsk-procedural-navigation-ownership-context-root-2026-06-20-1738
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route new reusable implementation to ProtoKits and playable/browser proof to Experiments; keep core changes to runtime/DSK/composer/ECS/scheduler/procedural/navigation primitives and validation invariants.
+- parent: dsk-scheduler-world-mutation-context-root-2026-06-20-0623
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-scheduler-world-mutation-context-root-2026-06-20-0623
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, active-run scheduler mutation, phase topology mutation, `runSystem()` membership, event queue payload isolation, and reset/snapshot/async metadata truth.
+- parent: dsk-scheduler-world-mutation-context-root-2026-06-20-0623
+- child: dsk-scheduler-world-mutation-core
+- relationship: lower-level runtime hardening row
+- look further: Add scheduler/world fixtures for same-phase add, same-run phase add, entity/component removal during `runSystem()`, and queued event payload mutation before higher-level proof rows are trusted.
+- parent: dsk-scheduler-world-mutation-context-root-2026-06-20-0623
+- child: dsk-query-read-model-still-later
+- relationship: later query read-model validation tranche
+- look further: Keep exported query helper, engine read method, nested metadata/hazard clone/freeze, and stored `lastQuery`/`lastCollision` snapshot fixtures after tranche 1 starts.
+- parent: dsk-scheduler-world-mutation-context-root-2026-06-20-0623
+- child: dsk-module-source-regression-separate
+- relationship: distribution/proof boundary
+- look further: Keep package/workspace/CDN/same-origin/build-step import-map decisions in ecosystem/proof lanes, separate from runtime, scheduler/world, identity, composition, content-boundary, and query-read-model hardening.
+- parent: dsk-scheduler-world-mutation-context-root-2026-06-20-0623
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route new reusable implementation to ProtoKits and playable/browser proof to Experiments; keep core changes to runtime/DSK/composer/ECS/scheduler primitives and validation invariants.
+- parent: dsk-query-read-model-context-root-2026-06-20-0524
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-query-read-model-context-root-2026-06-20-0524
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-query-read-model-context-root-2026-06-20-0524
+- child: dsk-query-read-model-isolation-later
+- relationship: later query read-model validation tranche
+- look further: Add exported query helper, engine read method, nested metadata/hazard clone/freeze, and stored `lastQuery`/`lastCollision` snapshot fixtures after tranche 1 starts.
+- parent: dsk-query-read-model-context-root-2026-06-20-0524
+- child: dsk-content-boundary-objective-still-later
+- relationship: separate later content-boundary/objective tranche
+- look further: Keep ReefRescue boundary status, FishingKit preset identity, objective threshold policy, and content dataset validation separate from query read-model isolation.
+- parent: dsk-query-read-model-context-root-2026-06-20-0524
+- child: dsk-module-source-regression-separate
+- relationship: distribution/proof boundary
+- look further: Keep package/workspace/CDN/same-origin/build-step import-map decisions in ecosystem/proof lanes, separate from runtime, identity, composition, content-boundary, and query-read-model hardening.
+- parent: dsk-query-read-model-context-root-2026-06-20-0524
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route new query-heavy reusable implementations to ProtoKits and playable/browser proof to Experiments; keep core changes to existing public read contracts and validation invariants.
+- parent: dsk-content-boundary-objective-context-root-2026-06-20-0422
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-content-boundary-objective-context-root-2026-06-20-0422
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-content-boundary-objective-context-root-2026-06-20-0422
+- child: dsk-content-boundary-objective-later
+- relationship: later content-boundary/objective validation tranche
+- look further: Add public API product-boundary, FishingKit/ReefRescue preset identity, objective threshold policy, and content dataset validation fixtures after tranche 1 starts.
+- parent: dsk-content-boundary-objective-context-root-2026-06-20-0422
+- child: dsk-runtime-identity-lifecycle-still-later
+- relationship: later runtime identity/lifecycle tranche
+- look further: Keep duplicate binding diagnostics, ECS definition identity policy, raw SequenceNode install-only idempotency, and disposed event-bus listener parity separate from content-boundary rows.
+- parent: dsk-content-boundary-objective-context-root-2026-06-20-0422
+- child: dsk-module-source-regression-separate
+- relationship: distribution/proof boundary
+- look further: Keep package/workspace/CDN/same-origin/build-step import-map decisions in ecosystem/proof lanes, separate from runtime, identity, composition, and content-boundary hardening.
+- parent: dsk-content-boundary-objective-context-root-2026-06-20-0422
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route new content-kit implementations to ProtoKits and playable/browser proof to Experiments; keep core changes to runtime primitives, boundary compatibility, and validation invariants.
+- parent: dsk-runtime-identity-lifecycle-context-root-2026-06-20-0323
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-runtime-identity-lifecycle-context-root-2026-06-20-0323
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-runtime-identity-lifecycle-context-root-2026-06-20-0323
+- child: dsk-runtime-identity-lifecycle-later
+- relationship: later validation tranche
+- look further: Add duplicate binding diagnostics, ECS definition identity policy, raw SequenceNode install-only idempotency, and disposed event-bus listener parity fixtures after tranche 1 starts.
+- parent: dsk-runtime-identity-lifecycle-context-root-2026-06-20-0323
+- child: dsk-composition-proof-ownership-still-later
+- relationship: later composition-proof tranche
+- look further: Add duplicate provider diagnostics, SequenceNode duplicate type policy, SequenceNode event-history clone/freeze, and AR support/session source consistency fixtures after tranche 1 starts.
+- parent: dsk-runtime-identity-lifecycle-context-root-2026-06-20-0323
+- child: dsk-module-source-regression-separate
+- relationship: distribution/proof boundary
+- look further: Keep package/workspace/CDN/same-origin/build-step import-map decisions in ecosystem/proof lanes, separate from runtime and composition hardening.
+- parent: dsk-runtime-identity-lifecycle-context-root-2026-06-20-0323
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route implementation kits to ProtoKits and playable/browser proof to Experiments unless a true core invariant is identified.
+- parent: dsk-composition-proof-ownership-root-2026-06-20-0223
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-composition-proof-ownership-root-2026-06-20-0223
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-composition-proof-ownership-root-2026-06-20-0223
+- child: dsk-composition-proof-ownership-later
+- relationship: later validation tranche
+- look further: Add duplicate provider diagnostics, SequenceNode duplicate type policy, SequenceNode event-history clone/freeze, and AR support/session source consistency fixtures after tranche 1 starts.
+- parent: dsk-composition-proof-ownership-root-2026-06-20-0223
+- child: dsk-module-source-regression-separate
+- relationship: distribution/proof boundary
+- look further: Keep package/workspace/CDN/same-origin/build-step import-map decisions in ecosystem/proof lanes, separate from runtime and composition hardening.
+- parent: dsk-composition-proof-ownership-root-2026-06-20-0223
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route implementation kits to ProtoKits and playable/browser proof to Experiments unless a true core invariant is identified.
+- parent: dsk-distribution-boundary-still-root-2026-06-20-0154
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-distribution-boundary-still-root-2026-06-20-0154
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-distribution-boundary-still-root-2026-06-20-0154
+- child: dsk-proof-signal-integrity-eighth
+- relationship: tranche 8 proof-signal inventory
+- look further: Add ARExperience terminal receipt idempotency, WebXR hit-test rejection policy, monotonic normal tick time, SequenceNode/surface propagation, and finite greybox/spatial scale fixtures after base hardening work starts.
+- parent: dsk-distribution-boundary-still-root-2026-06-20-0154
+- child: dsk-distribution-proof-separate
+- relationship: proof-readiness/claim-management boundary
+- look further: Keep module-source strategy, fetched-ref validation, public browser proof, npm availability, package-version policy, and aggregate/targeted parity separate from DSK runtime hardening and proof-signal integrity.
+- parent: dsk-distribution-boundary-still-root-2026-06-20-0154
+- child: dsk-core-boundary-preserved
+- relationship: repo ownership boundary
+- look further: Route proof-source helpers to ProtoKits proof tooling or Experiments proof routing unless a true core validation invariant is identified.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-lifecycle-parity-second
+- relationship: tranche 2 core validation-surface target
+- look further: Add held-input receipt transition, terrain query/chunk parity, partial-start cleanup, and stopped-session state fixtures after tranche 1 starts.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-query-command-semantics-third
+- relationship: tranche 3 core validation-surface target
+- look further: Add terminal receipt, query-versus-transition, rejected-command state, and query snapshot isolation fixtures after runtime failure-boundary and lifecycle parity categories are explicit.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-experience-edge-fourth
+- relationship: tranche 4 downstream proof inventory
+- look further: Carry recovery receipts, launch fallback, quality profiles, and content dataset rows after runtime, lifecycle, and query/command categories begin.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-read-model-orchestration-fifth
+- relationship: tranche 5 read-model/orchestration fixture inventory
+- look further: Add shader/material descriptor isolation, surface snapshot isolation, SequenceNode race cleanup, and SequenceNode any receipt-policy fixtures after base runtime failure-boundary work starts.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-compatibility-content-safety-sixth
+- relationship: tranche 6 legacy compatibility/browser content-safety inventory
+- look further: Add legacy root restart descendant reset/replay, AnyChild loser cleanup, owning-kit lookup, and AR text-versus-trusted-HTML fixtures after base runtime/read-model work starts.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-ar-spatial-readmodel-seventh
+- relationship: tranche 7 AR/spatial proof-hardening inventory
+- look further: Add missing-ARKit diagnostics, strict/permissive fallback labels, cloned/frozen launch state, render/update callback snapshots, and SpatialRoom getter isolation fixtures after base hardening work starts.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-proof-signal-integrity-eighth
+- relationship: tranche 8 proof-signal integrity inventory
+- look further: Add ARExperience terminal receipt idempotency, WebXR hit-test rejection policy, monotonic normal tick time, SequenceNode/surface propagation, and finite greybox/spatial scale fixtures after base hardening work starts.
+- parent: dsk-proof-signal-integrity-tranche-root-2026-06-19-2225
+- child: dsk-proof-readiness-separate-layer
+- relationship: claim-management boundary
+- look further: Keep proof-readiness queueing, proof claim taxonomy, module-source gates, aggregate/targeted parity, release evidence, npm metadata, and package-version policy separate from DSK runtime hardening and proof-signal integrity.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-lifecycle-parity-second
+- relationship: tranche 2 core validation-surface target
+- look further: Add held-input receipt transition, terrain query/chunk parity, partial-start cleanup, and stopped-session state fixtures after tranche 1 starts.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-query-command-semantics-third
+- relationship: tranche 3 core validation-surface target
+- look further: Add terminal receipt, query-versus-transition, rejected-command state, and query snapshot isolation fixtures after runtime failure-boundary and lifecycle parity categories are explicit.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-experience-edge-fourth
+- relationship: tranche 4 downstream proof inventory
+- look further: Carry recovery receipts, launch fallback, quality profiles, and content dataset rows after runtime, lifecycle, and query/command categories begin.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-read-model-orchestration-fifth
+- relationship: tranche 5 read-model/orchestration fixture inventory
+- look further: Add shader/material descriptor isolation, surface snapshot isolation, SequenceNode race cleanup, and SequenceNode any receipt-policy fixtures after base runtime failure-boundary work starts.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-compatibility-content-safety-sixth
+- relationship: tranche 6 legacy compatibility/browser content-safety inventory
+- look further: Add legacy root restart descendant reset/replay, AnyChild loser cleanup, owning-kit lookup, and AR text-versus-trusted-HTML fixtures after base runtime/read-model work starts.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-ar-spatial-readmodel-seventh
+- relationship: tranche 7 AR/spatial proof-hardening inventory
+- look further: Add missing-ARKit diagnostics, strict/permissive fallback labels, cloned/frozen launch state, render/update callback snapshots, and SpatialRoom getter isolation fixtures after base hardening work starts.
+- parent: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- child: dsk-proof-readiness-separate-layer
+- relationship: claim-management boundary
+- look further: Keep proof-readiness queueing, proof claim taxonomy, module-source gates, aggregate/targeted parity, release evidence, npm metadata, and package-version policy separate from DSK runtime hardening, read-model/orchestration proof, compatibility/content-safety proof, and AR/spatial read-model proof.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-lifecycle-parity-second
+- relationship: tranche 2 core validation-surface target
+- look further: Add held-input receipt transition, terrain query/chunk parity, partial-start cleanup, and stopped-session state fixtures after tranche 1 starts.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-query-command-semantics-third
+- relationship: tranche 3 core validation-surface target
+- look further: Add terminal receipt, query-versus-transition, rejected-command state, and query snapshot isolation fixtures after runtime failure-boundary and lifecycle parity categories are explicit.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-experience-edge-fourth
+- relationship: tranche 4 downstream proof inventory
+- look further: Carry recovery receipts, AR launch fallback, quality profile, and content dataset rows after runtime, lifecycle, and query/command categories begin.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-read-model-orchestration-fifth
+- relationship: tranche 5 read-model/orchestration fixture inventory
+- look further: Add shader/material descriptor isolation, surface snapshot isolation, SequenceNode race cleanup, and SequenceNode any receipt-policy fixtures after base runtime failure-boundary work starts.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-compatibility-content-safety-sixth
+- relationship: tranche 6 legacy compatibility/browser content-safety inventory
+- look further: Add legacy root restart descendant reset/replay, AnyChild loser cleanup, owning-kit lookup, and AR text-versus-trusted-HTML fixtures after base runtime/read-model work starts.
+- parent: dsk-compatibility-content-safety-tranche-root-2026-06-19-2024
+- child: dsk-proof-readiness-separate-layer
+- relationship: claim-management boundary
+- look further: Keep proof-readiness queueing, proof claim taxonomy, module-source gates, aggregate/targeted parity, release evidence, npm metadata, and package-version policy separate from DSK runtime hardening, read-model/orchestration proof, and compatibility/content-safety proof.
+- parent: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- child: dsk-lifecycle-parity-second
+- relationship: tranche 2 core validation-surface target
+- look further: Add held-input receipt transition, terrain query/chunk parity, partial-start cleanup, and stopped-session state fixtures after tranche 1 starts.
+- parent: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- child: dsk-query-command-semantics-third
+- relationship: tranche 3 core validation-surface target
+- look further: Add terminal receipt, query-versus-transition, rejected-command state, and query snapshot isolation fixtures after runtime failure-boundary and lifecycle parity categories are explicit.
+- parent: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- child: dsk-experience-edge-fourth
+- relationship: tranche 4 downstream proof inventory
+- look further: Carry recovery receipts, AR launch fallback, quality profile, and content dataset rows after runtime, lifecycle, and query/command categories begin.
+- parent: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- child: dsk-read-model-orchestration-fifth
+- relationship: tranche 5 read-model/orchestration fixture inventory
+- look further: Add shader/material descriptor isolation, surface snapshot isolation, SequenceNode race cleanup, and SequenceNode any receipt-policy fixtures after base runtime failure-boundary work starts.
+- parent: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- child: dsk-proof-readiness-separate-layer
+- relationship: claim-management boundary
+- look further: Keep proof-readiness queueing, proof claim taxonomy, module-source gates, aggregate/targeted parity, release evidence, npm metadata, and package-version policy separate from DSK runtime hardening and read-model/orchestration proof.
+- parent: dsk-proof-readiness-queue-root-2026-06-19-1824
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-proof-readiness-queue-root-2026-06-19-1824
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-proof-readiness-queue-root-2026-06-19-1824
+- child: dsk-lifecycle-parity-second
+- relationship: tranche 2 core validation-surface target
+- look further: Add held-input receipt transition, terrain query/chunk parity, partial-start cleanup, and stopped-session state fixtures after tranche 1 starts.
+- parent: dsk-proof-readiness-queue-root-2026-06-19-1824
+- child: dsk-query-command-semantics-third
+- relationship: tranche 3 core validation-surface target
+- look further: Add terminal receipt, query-versus-transition, rejected-command state, and query snapshot isolation fixtures after runtime failure-boundary and lifecycle parity categories are explicit.
+- parent: dsk-proof-readiness-queue-root-2026-06-19-1824
+- child: dsk-experience-edge-fourth
+- relationship: tranche 4 downstream proof inventory
+- look further: Carry recovery receipts, AR launch fallback, quality profile, and content dataset rows after runtime, lifecycle, and query/command categories begin.
+- parent: dsk-proof-readiness-queue-root-2026-06-19-1824
+- child: dsk-proof-readiness-separate-layer
+- relationship: claim-management boundary
+- look further: Keep proof-readiness queueing, proof claim taxonomy, module-source gates, aggregate/targeted parity, release evidence, npm metadata, and package-version policy separate from DSK runtime hardening proof.
+- parent: dsk-query-command-queue-split-root-2026-06-19-1722
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-query-command-queue-split-root-2026-06-19-1722
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-query-command-queue-split-root-2026-06-19-1722
+- child: dsk-lifecycle-parity-second
+- relationship: tranche 2 core validation-surface target
+- look further: Add held-input receipt transition, terrain query/chunk parity, partial-start cleanup, and stopped-session state fixtures after tranche 1 starts.
+- parent: dsk-query-command-queue-split-root-2026-06-19-1722
+- child: dsk-query-command-semantics-third
+- relationship: tranche 3 core validation-surface target
+- look further: Add terminal receipt, query-versus-transition, rejected-command state, and query snapshot isolation fixtures after runtime failure-boundary and lifecycle parity categories are explicit.
+- parent: dsk-query-command-queue-split-root-2026-06-19-1722
+- child: dsk-experience-edge-fourth
+- relationship: tranche 4 downstream proof inventory
+- look further: Carry recovery receipts, AR launch fallback, quality profile, and content dataset rows after runtime, lifecycle, and query/command categories begin.
+- parent: dsk-query-command-queue-split-root-2026-06-19-1722
+- child: dsk-proof-boundary-separation
+- relationship: proof category split
+- look further: Keep runtime hardening, lifecycle parity proof, query/command semantics proof, experience-edge proof, public browser proof, fetched-ref sibling proof, aggregate proof, npm metadata, and package-version policy separate.
+- parent: dsk-layered-fixture-queue-root-2026-06-19-1623
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-layered-fixture-queue-root-2026-06-19-1623
+- child: dsk-runtime-failure-boundary-first
+- relationship: tranche 1 executable fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, failed-install rollback/preflight, direct/composer dependency parity, failed-tick cleanup/diagnostics, and reset/snapshot/async metadata truth.
+- parent: dsk-layered-fixture-queue-root-2026-06-19-1623
+- child: dsk-lifecycle-parity-second
+- relationship: tranche 2 core validation-surface target
+- look further: Add held-input receipt transition, terrain query/chunk parity, partial-start cleanup, and stopped-session state fixtures after tranche 1 starts.
+- parent: dsk-layered-fixture-queue-root-2026-06-19-1623
+- child: dsk-experience-edge-third
+- relationship: tranche 3 downstream proof inventory
+- look further: Carry recovery receipts, AR launch fallback, quality profile, and content dataset rows after base runtime and lifecycle fixtures start.
+- parent: dsk-layered-fixture-queue-root-2026-06-19-1623
+- child: dsk-proof-boundary-separation
+- relationship: proof category split
+- look further: Keep runtime hardening, lifecycle parity proof, experience-edge proof, public browser proof, fetched-ref sibling proof, aggregate proof, npm metadata, and package-version policy separate.
+- parent: dsk-hardening-boundary-split-root-2026-06-19-1525
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-hardening-boundary-split-root-2026-06-19-1525
+- child: dsk-runtime-failure-boundary-still-open
+- relationship: first non-scout fixture target
+- look further: Write fixtures for reserved keys, null-prototype or own-key policy, rollback/preflight, direct/composer dependency parity, and failed-tick cleanup/diagnostics.
+- parent: dsk-hardening-boundary-split-root-2026-06-19-1525
+- child: dsk-metadata-truth-gap
+- relationship: reset/snapshot/async contract truth
+- look further: Add absence, failure, non-serializable, restore, reset, and metadata-only async fixtures before replay, worker, network, or long-session claims.
+- parent: dsk-hardening-boundary-split-root-2026-06-19-1525
+- child: dsk-experience-edge-downstream
+- relationship: downstream proof inventory
+- look further: Carry recovery receipts, AR launch fallback, quality profile, and content dataset rows after base runtime failure-boundary fixtures start.
+- parent: dsk-hardening-boundary-split-root-2026-06-19-1525
+- child: dsk-proof-boundary-separation
+- relationship: proof category split
+- look further: Keep runtime hardening, experience-edge proof, public browser proof, fetched-ref sibling proof, aggregate proof, npm metadata, and package-version policy separate.
+- parent: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- child: dsk-namespace-reserved-key-gap
+- relationship: DSK namespace safety
+- look further: Add fixtures for `__proto__`, `constructor`, `prototype`, inherited keys, null-prototype behavior, and own-property service lookup.
+- parent: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- child: dsk-install-rollback-retry-gap
+- relationship: DSK install transaction boundary
+- look further: Add rollback/preflight fixtures for API collision, `initWorld` throw, registry throw, scheduler add throw, sequence runtime throw, sequence node runtime throw, and install hook throw.
+- parent: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- child: dsk-dependency-policy-parity-gap
+- relationship: direct install versus composer install
+- look further: Decide whether direct install rejects every missing token or intentionally diverges with explicit diagnostics and tests.
+- parent: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- child: dsk-scheduler-failure-lifetime-gap
+- relationship: runtime proof event lifetime
+- look further: Add fixtures for throw-before-emit, throw-after-emit, clock rollback/commit, event clearing, journal clearing, lifecycle diagnostics, and SequenceNode bridge inputs.
+- parent: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- child: dsk-prior-hardening-rows-carried
+- relationship: cumulative promotion fixture scope
+- look further: Carry traversal, lifecycle/config, source-state, state-signal, receipt, bridge, wrapper, operations, and spatial rows into the non-scout fixture plan without treating them as fixed.
+- parent: dsk-runtime-failure-boundary-root-2026-06-19-1424
+- child: dsk-proof-boundary-separation
+- relationship: proof and distribution boundary
+- look further: Keep runtime fixtures separate from sibling latest-ref validation, public browser proof, aggregate checks, npm availability, and package-version policy.
+- parent: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- child: dsk-install-hardening-still-open
+- relationship: base DSK install contract
+- look further: Write fixtures for reserved API names, null-prototype or reserved-key policy, failed-install rollback, and direct-install dependency parity.
+- parent: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- child: dsk-navigation-cost-policy-gap
+- relationship: traversal/pathfinding proof
+- look further: Add fixtures for negative, zero, non-finite, and unbounded traversal costs across grid, navmesh, terrain, and route adapters.
+- parent: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- child: dsk-navmesh-identity-policy-gap
+- relationship: traversal/graph identity proof
+- look further: Add fixtures for duplicate source keys, duplicate coordinates, emitted navmesh cell ids, portal ids, waypoint ids, and link ids.
+- parent: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- child: dsk-procedural-signature-taxonomy-gap
+- relationship: procedural/proof metadata
+- look further: Add content, topology, algorithm/config, and proof signature fixtures for generated snapshots and rebuild skips.
+- parent: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- child: dsk-recovery-receipt-state-gap
+- relationship: traversal/physics recovery proof
+- look further: Add one-shot fall/boundary recovery receipt fixtures and final-state consistency assertions.
+- parent: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- child: dsk-proof-boundary-separation
+- relationship: proof and distribution boundary
+- look further: Keep runtime fixtures separate from sibling module-source strategy, fetched-ref validation, public browser proof, aggregate checks, npm availability, and package-version policy.
+- parent: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- child: dsk-install-hardening-still-open
+- relationship: base DSK install contract
+- look further: Write fixtures for reserved API names, null-prototype or reserved-key policy, failed-install rollback, and direct-install dependency parity.
+- parent: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- child: dsk-command-lifecycle-gap
+- relationship: reusable service lifecycle
+- look further: Add accepted, duplicate, retargeted, arrived, reset, and rejected command fixtures before companion/guide/assistance command services are promoted.
+- parent: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- child: dsk-elapsed-rate-policy-gap
+- relationship: time/progression semantics
+- look further: Add equal-elapsed-time fixtures and declare per-second, per-tick, or fixed-step-only progression policy.
+- parent: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- child: dsk-descriptor-normalization-source-gap
+- relationship: descriptor/source-state policy
+- look further: Add canonical-field, clone/freeze, snapshot, and reset-safe descriptor fixtures for room, building, AR, and render descriptor services.
+- parent: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- child: dsk-generated-geometry-bounds-gap
+- relationship: procedural/traversal config bounds
+- look further: Add reject-or-clamp and finite snapshot fixtures for positive counts, lanes, spacing, branch/player positions, and generated geometry.
+- parent: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- child: dsk-proof-boundary-separation
+- relationship: proof and distribution boundary
+- look further: Keep runtime fixtures separate from sibling latest-ref validation, public browser proof, aggregate checks, npm availability, and package-version policy.
+- parent: dsk-fixture-boundary-root-2026-06-19-1123
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-fixture-boundary-root-2026-06-19-1123
+- child: dsk-install-hardening-still-open
+- relationship: base DSK install contract
+- look further: Write fixtures for reserved API names, null-prototype or reserved-key policy, failed-install rollback, and direct-install dependency parity.
+- parent: dsk-fixture-boundary-root-2026-06-19-1123
+- child: dsk-source-state-and-signal-gates
+- relationship: promoted service correctness
+- look further: Convert authored-source, reset-source, retention, initial-terminal, invalidation, action-repeat, transition, coordinate, and derived-state rows into executable fixture coverage.
+- parent: dsk-fixture-boundary-root-2026-06-19-1123
+- child: dsk-proof-boundary-separation
+- relationship: proof and distribution boundary
+- look further: Keep runtime fixtures separate from Experiments fetched-ref validation, public browser proof, aggregate checks, npm availability, and package-version policy.
+- parent: dsk-fixture-boundary-root-2026-06-19-1123
+- child: dsk-non-scout-handoff
+- relationship: next work mode
+- look further: Use a non-scout lane to write the smallest executable hardening fixture set before more broad architecture scouting.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-install-hardening-unchanged
+- relationship: base DSK install contract
+- look further: Implement fixtures for reserved API names, install rollback, and direct-install dependency policy before new DSK claims.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-descriptor-invalidation-gap
+- relationship: descriptor/source signal contract
+- look further: Add fixtures for output-affecting content signatures, route/filter config, terrain query identity, and rebuild cause reporting.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-action-repeat-policy-gap
+- relationship: action signal contract
+- look further: Add fixtures for edge, held, repeatable, ignored, and duplicate-attempt semantics before interaction-style services are promoted.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-state-machine-transition-gap
+- relationship: terminal/transition signal contract
+- look further: Add fixtures for false-to-true receipts and initial terminal normalization before puzzle, combat, objective, pressure, or recovery domains are promoted.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-coordinate-axis-policy-gap
+- relationship: spatial validation signal contract
+- look further: Add fixtures for `{ x, y }` versus `{ x, z }` helpers, or split 2D and 3D route/world APIs.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-derived-state-boundary-gap
+- relationship: presentation/source-state signal contract
+- look further: Add fixtures for source target immutability, derived output paths, reset/replay behavior, and camera/render safety boundaries.
+- parent: dsk-state-signal-fixture-root-2026-06-19-1023
+- child: dsk-proof-boundary-still-separated
+- relationship: proof and distribution boundary
+- look further: Keep runtime hardening fixtures, targeted proof, aggregate validation, npm availability, package policy, latest-ref Experiments proof, and browser-complete public proof as separate evidence categories.
+- parent: dsk-source-state-fixture-root-2026-06-19-0925
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-source-state-fixture-root-2026-06-19-0925
+- child: dsk-install-hardening-unchanged
+- relationship: base DSK install contract
+- look further: Implement fixtures for reserved API names, install rollback, and direct-install dependency policy before new DSK claims.
+- parent: dsk-source-state-fixture-root-2026-06-19-0925
+- child: dsk-authored-source-isolation-gap
+- relationship: dataset-heavy DSK state ownership
+- look further: Add fixtures for clone/freeze isolation of nested caller-owned config before reset/replay/proof services are promoted.
+- parent: dsk-source-state-fixture-root-2026-06-19-0925
+- child: dsk-reset-source-policy-gap
+- relationship: reset/snapshot contract
+- look further: Add fixtures that mutate nested runtime state, reset, and assert caller config plus reset output stay clean or declare shared mutable datasets.
+- parent: dsk-source-state-fixture-root-2026-06-19-0925
+- child: dsk-retention-limit-policy-gap
+- relationship: proof/history ledger semantics
+- look further: Define zero, negative, non-finite, and positive retention-limit behavior before economy, telemetry, or proof ledgers are trusted.
+- parent: dsk-source-state-fixture-root-2026-06-19-0925
+- child: dsk-initial-terminal-receipt-gap
+- relationship: pressure/recovery scenario proof
+- look further: Add install/reset receipt or normalization fixtures for domains that can start caught, lost, completed, or recovered.
+- parent: dsk-source-state-fixture-root-2026-06-19-0925
+- child: dsk-proof-boundary-still-separated
+- relationship: proof and distribution boundary
+- look further: Keep runtime hardening fixtures, targeted proof, aggregate validation, npm availability, and browser-complete public proof as separate evidence categories.
+- parent: dsk-bridge-state-fixture-root-2026-06-19-0823
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-bridge-state-fixture-root-2026-06-19-0823
+- child: dsk-install-hardening-unchanged
+- relationship: base DSK install contract
+- look further: Implement fixtures for reserved API names, install rollback, and direct-install dependency policy before new DSK claims.
+- parent: dsk-bridge-state-fixture-root-2026-06-19-0823
+- child: dsk-bridge-phase-delivery-gap
+- relationship: AR/objective bridge semantics
+- look further: Add fixtures for same-tick, next-tick, or direct-service delivery before raw bridge events are promoted.
+- parent: dsk-bridge-state-fixture-root-2026-06-19-0823
+- child: dsk-step-transition-receipt-gap
+- relationship: objective/AR receipt semantics
+- look further: Add one-step, final-step, reset, and duplicate-attempt step receipt fixtures before lesson/objective DSK promotion.
+- parent: dsk-bridge-state-fixture-root-2026-06-19-0823
+- child: dsk-wrapper-state-contract-gap
+- relationship: delegated wrapper state ownership
+- look further: Add fixtures for owned state, mirrored delegated state, or explicit stateless adapter declarations.
+- parent: dsk-bridge-state-fixture-root-2026-06-19-0823
+- child: dsk-proof-boundary-still-separated
+- relationship: proof and distribution boundary
+- look further: Keep browser-complete public proof, aggregate DSK smoke coverage, npm metadata, package-version policy, and runtime hardening as separate review gates.
+- parent: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- child: dsk-install-hardening-unchanged
+- relationship: base DSK install contract
+- look further: Implement fixtures for reserved API names, install rollback, and direct-install dependency policy before new DSK claims.
+- parent: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- child: dsk-receipt-id-separation-gap
+- relationship: timing/action receipt semantics
+- look further: Add fixtures for result id versus window/query id separation before timing/action DSK promotion.
+- parent: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- child: dsk-event-and-claim-idempotency-gap
+- relationship: interaction/reward event semantics
+- look further: Add fixtures for transition-only completion events and duplicate claim policy before interaction/reward DSK promotion.
+- parent: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- child: dsk-request-identity-gap
+- relationship: logistics generated identity semantics
+- look further: Add generated request id allocation fixtures across authored, restored, and manual requests before request/logistics DSK promotion.
+- parent: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- child: dsk-proof-boundary-updated
+- relationship: proof and distribution boundary
+- look further: Keep public browser proof, aggregate DSK smoke coverage, npm metadata, package-version policy, and runtime hardening as separate review gates.
+- parent: dsk-spatial-mobility-fixture-root-2026-06-19-0624
+- child: dsk-release-aligned-still-context
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-spatial-mobility-fixture-root-2026-06-19-0624
+- child: dsk-install-hardening-unchanged
+- relationship: base DSK install contract
+- look further: Implement fixtures for reserved API names, install rollback, and direct-install dependency policy before new DSK claims.
+- parent: dsk-spatial-mobility-fixture-root-2026-06-19-0624
+- child: dsk-spatial-transition-threshold-gap
+- relationship: spatial/time promoted service semantics
+- look further: Add fixtures for outside-nearest to inside entry receipts and zero-duration/zero-threshold settlement policy.
+- parent: dsk-spatial-mobility-fixture-root-2026-06-19-0624
+- child: dsk-identity-resource-bound-gap
+- relationship: hazard/mobility promoted service semantics
+- look further: Add fixtures for generated hazard id uniqueness and zero-capacity/over-capacity resource normalization.
+- parent: dsk-spatial-mobility-fixture-root-2026-06-19-0624
+- child: dsk-proof-boundary-still-separated
+- relationship: proof and distribution boundary
+- look further: Keep public browser proof and sibling latest-ref validation separate from runtime hardening fixtures.
+- parent: dsk-fixture-plan-ready-root-2026-06-19-0540
+- child: dsk-release-head-drift-revalidated
+- relationship: branch/preflight authority
+- look further: Keep resolving latest release branch every run and treat old packet commit hashes as context only.
+- parent: dsk-fixture-plan-ready-root-2026-06-19-0540
+- child: dsk-namespace-transaction-dependency-gap
+- relationship: base DSK install contract
+- look further: Implement fixtures for reserved API names, install rollback, and direct-install dependency policy before new DSK claims.
+- parent: dsk-fixture-plan-ready-root-2026-06-19-0540
+- child: dsk-state-service-policy-gap
+- relationship: promoted service semantics
+- look further: Add fixtures for reset/snapshot policy, completion idempotency, time catch-up, and config normalization.
+- parent: dsk-fixture-plan-ready-root-2026-06-19-0540
+- child: dsk-operations-data-integrity-gap
+- relationship: data-heavy promoted domains
+- look further: Add fixtures for immutable authored data, collision-free generated ids, finite ledger mutation gates, and initial/restored aggregate-state consistency.
+- parent: dsk-fixture-plan-ready-root-2026-06-19-0540
+- child: dsk-fixture-plan-over-more-scouting
+- relationship: next work mode
+- look further: Use a non-scout lane to write fixture coverage and source hardening instead of repeating broad audits.
 - parent: dsk-operations-data-integrity-root-2026-06-19-0224
 - child: dsk-namespace-policy-gap
 - relationship: engine API namespace ownership
@@ -201,6 +1003,66 @@
 - look further: Decide whether all `requires` tokens should be enforced by direct install.
 
 ## Open Search Branches
+- branch: DSK proof signal integrity fixtures
+- owner: automation
+- priority: high
+- next files: `src/ar-experience-kit.js`, `src/ar-session.js`, `src/engine.js`, `src/greybox-building-kit.js`, `src/spatial-room-kit.js`, proof fixtures
+- branch: DSK compatibility/content-safety fixtures
+- owner: automation
+- priority: high
+- next files: `src/sequences.js`, `src/runtime-kit.js`, `src/fishing-kit.js`, `src/ar-renderer.js`, selected smoke coverage
+- branch: DSK read-model/orchestration isolation fixtures
+- owner: automation
+- priority: high
+- next files: `src/shaders.js`, `src/ecs.js`, `src/engine.js`, `src/surfaces.js`, `src/sequence-node.js`, selected smoke coverage
+- branch: DSK proof-readiness claim taxonomy
+- owner: automation
+- priority: high
+- next files: ecosystem proof packets, domain idea proof-readiness rows, release evidence checklists, sibling proof route evidence
+- branch: DSK query/command semantics fixtures
+- owner: automation
+- priority: high
+- next files: `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, `src/route-field-kit.js`, query/read API smoke coverage
+- branch: DSK runtime failure-boundary fixtures
+- owner: automation
+- priority: critical
+- next files: `src/domain-service-kit.js`, `src/runtime-kit.js`, `src/game-kit-composer.js`, `src/engine.js`, `src/ecs.js`, `tests/domain-service-kit-smoke.mjs`
+- branch: DSK traversal proof integrity fixtures
+- owner: automation
+- priority: critical
+- next files: `src/pathfinding-kit.js`, `src/navmesh-kit.js`, `src/procedural-kit.js`, `src/world-physics-kit.js`, selected smoke coverage
+- branch: DSK module-source proof boundary
+- owner: automation
+- priority: high
+- next files: sibling ProtoKits package resolution, sibling Experiments DSK proof route, public CDN/raw/GitHub Pages URLs
+- branch: DSK lifecycle/config promotion fixtures
+- owner: automation
+- priority: critical
+- next files: `src/companion-command-kit.js`, `src/corruption-world-kit.js`, `src/spatial-room-kit.js`, `src/tree-runner-kit.js`, selected smoke coverage
+- branch: DSK state-signal promotion fixtures
+- owner: automation
+- priority: critical
+- next files: `src/forest-placement-kit.js`, `src/interaction-kit.js`, `src/shrine-puzzle-kit.js`, `src/light-combat-kit.js`, `src/scenario-driver-kit.js`, `src/camera-occlusion-kit.js`, selected smoke coverage
+- branch: DSK bridge/state ownership promotion fixtures
+- owner: automation
+- priority: critical
+- next files: `src/surface-placement-kit.js`, `src/objective-flow-kit.js`, `src/ar-experience-kit.js`, `src/symbol-alignment-kit.js`, `src/lock-and-socket-kit.js`, `src/reveal-light-kit.js`, `src/sorting-kit.js`, `src/moving-target-kit.js`, `src/micro-platformer-kit.js`, selected smoke coverage
+- branch: DSK receipt integrity promotion fixtures
+- owner: automation
+- priority: critical
+- next files: `src/timing-window-kit.js`, `src/interaction-target-kit.js`, `src/collectible-kit.js`, `src/request-fulfillment-kit.js`, selected smoke coverage
+- branch: DSK spatial/mobility promotion fixtures
+- owner: automation
+- priority: high
+- next files: `src/spatial-scale-kit.js`, `src/scenario-duration-kit.js`, `src/hazard-field-kit.js`, `src/vehicle-dynamics-kit.js`, smoke coverage
+- branch: DSK promotion hardening fixture plan
+- owner: automation
+- priority: critical
+- next files: `src/domain-service-kit.js`, `src/runtime-kit.js`, `src/game-kit-composer.js`, `tests/domain-service-kit-smoke.mjs`, selected domain smoke coverage
+- branch: DSK release-head revalidation
+- owner: automation
+- priority: high
+- next files: `scripts/automation-preflight.mjs`, branch refs, current lane packets/nodes
 - branch: DSK operations data integrity promotion fixtures
 - owner: automation
 - priority: high
@@ -263,6 +1125,36 @@
 - next files: `docs/described_examples.md`, `docs/domain_ideas.md`, `docs/kits_ideas.md`, `tests/domain-service-kit-smoke.mjs`
 
 ## Resolved Or Superseded
+- id: dsk-ar-spatial-readmodel-tranche-root-2026-06-19-2125
+- reason: Superseded by `dsk-proof-signal-integrity-tranche-root-2026-06-19-2225`, which preserves AR/spatial read-model as tranche 7 while adding ARExperience terminal receipts, WebXR hit-test failure policy, monotonic normal tick time, and finite greybox/spatial scale as a later proof-signal integrity tranche.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T22-25-35-0400-dsk-architecture-state-packet.md` and `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T22-25-35-0400-dsk-architecture-node.md`.
+- id: dsk-read-model-orchestration-tranche-root-2026-06-19-1924
+- reason: Superseded by `dsk-compatibility-content-safety-tranche-root-2026-06-19-2024`, which preserves read-model/orchestration as a distinct follow-on tranche while adding legacy sequence and AR DOM content-safety rows as later compatibility inventory.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T20-24-13-0400-dsk-architecture-state-packet.md` and `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T20-24-13-0400-dsk-architecture-node.md`.
+- id: dsk-proof-readiness-queue-root-2026-06-19-1824
+- reason: Superseded by `dsk-read-model-orchestration-tranche-root-2026-06-19-1924`, which preserves proof-readiness as a separate claim-management layer while adding registry/surface/SequenceNode read-model-orchestration isolation as a distinct follow-on fixture tranche.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T19-24-37-0400-dsk-architecture-state-packet.md` and `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T19-24-37-0400-dsk-architecture-node.md`.
+- id: dsk-query-command-queue-split-root-2026-06-19-1722
+- reason: Superseded by `dsk-proof-readiness-queue-root-2026-06-19-1824`, which preserves the ordered runtime/lifecycle/query/experience fixture queue while adding proof-readiness queueing as a separate claim-management layer.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T18-24-11-0400-dsk-architecture-state-packet.md` and `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T18-24-11-0400-dsk-architecture-node.md`.
+- id: dsk-layered-fixture-queue-root-2026-06-19-1623
+- reason: Superseded by `dsk-query-command-queue-split-root-2026-06-19-1722`, which preserves the ordered fixture queue while adding query/command semantics as a distinct downstream category after runtime failure-boundary and lifecycle parity fixtures.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T17-22-41-0400-dsk-architecture-state-packet.md` and `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T17-22-41-0400-dsk-architecture-node.md`.
+- id: dsk-traversal-proof-fixture-root-2026-06-19-1324
+- reason: Superseded by `dsk-runtime-failure-boundary-root-2026-06-19-1424`, which preserves traversal proof integrity rows while adding runtime failure-boundary rows from the latest deep bug and idea lanes.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T14-24-17-0400-dsk-architecture-state-packet.md` and `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T14-24-17-0400-dsk-architecture-node.md`.
+- id: dsk-lifecycle-config-fixture-root-2026-06-19-1223
+- reason: Superseded by `dsk-traversal-proof-fixture-root-2026-06-19-1324`, which preserves lifecycle/config fixture rows while adding traversal proof integrity rows from the latest deep bug and idea lanes.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T13-24-43-0400-dsk-architecture-state-packet.md` and `state/automation/dsk_architecture_scout/knowledge_nodes/2026-06-19T13-24-43-0400-dsk-architecture-node.md`.
+- id: dsk-source-state-fixture-root-2026-06-19-0925
+- reason: Superseded by a follow-up that reran preflight/tests, reconfirmed base DSK hardening blockers, preserved source-state gates, and added state-signal contracts for descriptor invalidation, action repeats, state-machine transitions, coordinate axes, and derived-state boundaries as promotion fixture requirements.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T10-23-10-0400-dsk-architecture-state-packet.md`
+- id: dsk-receipt-integrity-fixture-root-2026-06-19-0724
+- reason: Superseded by a follow-up that reran preflight/tests, reconfirmed base DSK hardening blockers, preserved receipt-integrity gates, and added bridge phase delivery, step-transition receipts, delegated-action reconciliation, and wrapper state contracts as promotion fixture requirements.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T08-23-23-0400-dsk-architecture-state-packet.md`
+- id: dsk-spatial-mobility-fixture-root-2026-06-19-0624
+- reason: Superseded by a follow-up that reran preflight/tests, reconfirmed base DSK hardening blockers, preserved spatial/mobility gates, and added receipt identity, event idempotency, claim policy, and request identity as promotion fixture requirements.
+- evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T07-24-53-0400-dsk-architecture-state-packet.md`
 - id: dsk-promotion-policy-hardening-root-2026-06-19-0124
 - reason: Superseded by a follow-up that reran preflight/tests, reconfirmed namespace/install/dependency probes, and integrated fresher operations data integrity blockers around mutable config, generated identity, finite ledger state, and restored-state consistency.
 - evidence: `state/automation/dsk_architecture_scout/packets/2026-06-19T02-24-48-0400-dsk-architecture-state-packet.md`

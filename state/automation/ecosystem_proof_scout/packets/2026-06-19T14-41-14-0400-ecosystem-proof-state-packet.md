@@ -1,0 +1,141 @@
+# Ecosystem Proof State Packet
+
+Timestamp: 2026-06-19T14:41:14-0400
+Automation: Nexus Realtime: Ecosystem Proof State Packet
+Scope: NexusRealtime core, NexusRealtime-ProtoKits, NexusRealtime-Experiments
+Result: partial; core and local available-checkout DSK proof remain green, but latest sibling fetched-ref proof and public browser proof remain blocked by module-source resolution.
+
+## Lane Goal
+- Audit proof coverage across core, ProtoKits, Experiments, public routes, and DSK expansion ideas.
+
+## Prior State Context
+- Current lane tracker latest root before this run: `ecosystem-proof-015`.
+- Latest proof packet/node `2026-06-19T13-40-31-0400` kept the active blocker on module-source strategy: ProtoKits fetched-ref cannot resolve package `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, and the public route remains stuck at `Booting...`.
+- Latest ecosystem state node `2026-06-19T14-10-45-0400` confirms the same module-source gate and separates it from traversal and runtime failure-boundary hardening.
+- Latest DSK architecture node `2026-06-19T14-24-17-0400` adds runtime failure-boundary fixture rows: namespace reserved keys, failed-install rollback/retryability, dependency-policy parity, and scheduler failed-tick event lifetime.
+- Latest deep bug node `2026-06-19T13-53-17-0400` reports partial failed DSK installs, reserved `apiName:"__proto__"` prototype mutation, direct non-`n:` dependency bypass, and failed-tick event replay.
+- Latest domain idea node `2026-06-19T14-00-58-0400` maps those runtime failure-boundary bugs into planning inventory.
+- State packets were used for context only. Live source, fetched refs, commands, public URLs, and Playwright launch-state output are authority for this run.
+
+## Latest branch
+- `npm run automation:preflight` resolved `latestReleaseBranch: 0.0.2`.
+- Preflight timestamp: `2026-06-19T18:38:23.891Z`.
+- Preflight branch status: `current-is-latest-release-branch`.
+- Remote branches observed: `0.0.1`, `0.0.2`, `main`.
+- NexusRealtime local branch `0.0.2` at `96a0c16340c50832cdb5c4c81101b87b3f0c6fa0`, matching `origin/0.0.2`; ahead/behind `0/0`.
+- ProtoKits local branch `0.0.2` at `40d70b93bef6a0e88dadc48067aa4fd2844284f8`; fetched `origin/0.0.2` is `06f5f3bd35e3b4c2c24d49d4affbe026b0d92c8f`; ahead/behind `0/5`.
+- Experiments local branch `0.0.2` at `6d90b9b01a5aeac0209a2c8f2ce30f670be92a9f`; fetched `origin/0.0.2` is `799fad882461502faa84b132f70de011e7dbe0cb`; ahead/behind `0/24`.
+- Core package metadata remains `nexusrealtime@0.1.0`; raw public branch `0.0.2/package.json` is reachable.
+
+## Repos inspected
+- `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime`
+- `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-ProtoKits`
+- `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-Experiments`
+
+## Commands run
+- NexusRealtime: `npm run automation:preflight` -> passed; latest branch `0.0.2`; required GitHub/raw/jsDelivr links OK; optional npm metadata 404.
+- NexusRealtime/ProtoKits/Experiments: `git fetch --prune origin`, `git status --short --branch`, `git rev-parse HEAD origin/0.0.2`, `git rev-list --left-right --count HEAD...origin/0.0.2`.
+- NexusRealtime: `npm test` -> passed 8 smoke tests.
+- ProtoKits local available checkout: `npm run check` -> passed; checked 294 JavaScript modules, imported 236 ProtoKit indexes, skipped 2 remote URL forwarders, and ran the local smoke chain through fluid/water kit composition.
+- ProtoKits local available checkout: `node tests/dsk-first-wave.test.mjs` -> passed.
+- Experiments local available checkout: `node tests/dsk-first-wave-experiment-smoke.mjs` -> passed.
+- ProtoKits disposable fetched-ref worktree at `origin/0.0.2`: `npm run check` -> failed after checking 296 JavaScript modules because `smoke:imports` had 110 import failures rooted in `ERR_MODULE_NOT_FOUND` for package `nexusrealtime`.
+- ProtoKits disposable fetched-ref targeted DSK smoke: `node tests/dsk-first-wave.test.mjs` -> failed with `ERR_MODULE_NOT_FOUND` for package `nexusrealtime`.
+- Experiments disposable fetched-ref worktree at `origin/0.0.2`: `npm run check` -> passed after generating 100 flat route wrappers in the disposable worktree.
+- Experiments disposable fetched-ref targeted DSK smoke: `node tests/dsk-first-wave-experiment-smoke.mjs` -> failed because `experiments/dsk-first-wave-proof/src/proof.js` imports `../../../../NexusRealtime/src/index.js`, resolving to missing `/private/tmp/NexusRealtime/src/index.js`.
+- Public URL checks used direct `curl -L -s -o /dev/null -w "%{http_code}"`.
+- Human-view validation used Playwright CLI: opened the public DSK proof route, captured snapshot/console/request state, closed the browser, and removed `.playwright-cli` scratch artifacts.
+- Targeted `rg`/file inspections checked DSK aliases, `engine.n.*`, compatibility shims, public import maps, stale pins, aggregate scripts, proof coverage, and ownership docs.
+
+## Public links checked
+- `https://github.com/LuminaryLabs-Dev/NexusRealtime` -> 200 by preflight.
+- `https://raw.githubusercontent.com/LuminaryLabs-Dev/NexusRealtime/0.0.2/package.json` -> 200 by preflight.
+- `https://cdn.jsdelivr.net/gh/LuminaryLabs-Dev/NexusRealtime@0.0.2/src/index.js` -> 200 by preflight.
+- `https://registry.npmjs.org/nexusrealtime` -> 404 optional preflight link.
+- `https://luminarylabs-agents.github.io/NexusRealtime-Experiments/experiments/dsk-first-wave-proof/` -> 200 by curl and Playwright navigation; visible state remained `Booting...`.
+- `https://raw.githubusercontent.com/LuminaryLabs-Agents/NexusRealtime-Experiments/0.0.2/experiments/dsk-first-wave-proof/index.html` -> 200.
+- `https://raw.githubusercontent.com/LuminaryLabs-Agents/NexusRealtime-Experiments/0.0.2/experiments/dsk-first-wave-proof/src/proof.js` -> 200.
+- `https://raw.githubusercontent.com/LuminaryLabs-Agents/NexusRealtime-ProtoKits/0.0.2/docs/DSK-FIRST-WAVE-LEDGER.md` -> 200.
+- `https://raw.githubusercontent.com/LuminaryLabs-Agents/NexusRealtime-ProtoKits/0.0.2/protokits/nexus-dsk-adapter/index.js` -> 200.
+- `https://cdn.jsdelivr.net/gh/LuminaryLabs-Agents/NexusRealtime-ProtoKits@0.0.2/protokits/scan-survey-kit/index.js` -> 200.
+- `https://luminarylabs-agents.github.io/NexusRealtime/src/index.js` -> 404.
+- `https://luminarylabs-agents.github.io/NexusRealtime-ProtoKits/protokits/domain-foundation/index.js` -> 404.
+- `https://luminarylabs-agents.github.io/NexusRealtime-ProtoKits/protokits/domain-service-kits/index.js` -> 404.
+
+## ProtoKits migration state
+- First-wave DSK ledger remains public on raw `0.0.2` and lists seven `promoted-candidate` kits: token-registry, completion-ledger, scan-survey, route-checkpoint, resource-pressure, zone-field, and hazard-director.
+- Ledger still says all first-wave kits install through `nexus-dsk-adapter`, return `defineDomainServiceKit()` objects with the real NexusRealtime runtime, keep old injected-runtime calls as migration shims, and defer promotion into core.
+- Direct-import aliases remain present locally: `createNZoneFieldKit`, `createNScanSurveyKit`, `createNRouteCheckpointKit`, `createNResourcePressureKit`, `createNHazardDirectorKit`, `createNTokenRegistryKit`, and `createNCompletionLedgerKit`.
+- Local available-checkout first-wave migration test passed and still proves direct `createN...Kit()` usage, `engine.n.*` APIs, compatibility `engine.*` APIs, serializable snapshots, and missing-token failure.
+- Fetched ProtoKits `origin/0.0.2` is 5 commits ahead and includes 296 JavaScript modules, but disposable latest-ref aggregate and targeted DSK validation fail before source behavior can be assessed because `nexusrealtime` is not resolvable as a package.
+- Compatibility shim risk remains: old injected-runtime and legacy `engine.*` APIs are intentional migration support, but no removal condition was found in this scout pass.
+
+## Experiment proof state
+- Local targeted DSK proof passes on the available Experiments checkout: `node tests/dsk-first-wave-experiment-smoke.mjs`.
+- The available Experiments checkout is clean but behind fetched `origin/0.0.2` by 24 commits, so local targeted proof is not latest-ref proof.
+- Fetched Experiments aggregate `npm run check` passed in a disposable worktree, including `tests/tropical-island-scene-static-smoke.mjs`, but still does not include `tests/dsk-first-wave-experiment-smoke.mjs`.
+- Fetched Experiments targeted DSK proof failed in a disposable worktree for the same sibling relative-path assumption used by the public browser route.
+- Local aggregate `check` includes `tests/fluid-water-lab-static-smoke.mjs`; fetched aggregate `check` includes `tests/tropical-island-scene-static-smoke.mjs`.
+- Public proof route loads its HTML but remains human-visible stuck at `Booting...`.
+- Playwright snapshot showed heading `DSK first-wave proof`, description text, and `Booting...`; console/request output showed 404s for sibling NexusRealtime and ProtoKits module paths plus favicon.
+- Local and fetched proof files still import from sibling relative paths:
+  - import map maps `nexusrealtime` to `../../../NexusRealtime/src/index.js`.
+  - `src/proof.js` imports `../../../../NexusRealtime/src/index.js`.
+  - `src/proof.js` imports ProtoKits from `../../../../NexusRealtime-ProtoKits/protokits/...`.
+
+## Domain and kit proof coverage
+- Core DSK API smoke remains green through `tests/domain-service-kit-smoke.mjs` as part of core `npm test`.
+- ProtoKits first-wave service coverage is green on the local available checkout only; fetched latest-ref aggregate and targeted proof are blocked by standalone package resolution.
+- Experiments first-wave proof is green only as a targeted local available-checkout smoke; it is not aggregate proof, latest-ref targeted proof, or browser-complete public proof.
+- Fetched Experiments aggregate proof is green for the current aggregate script, but that script omits the DSK first-wave smoke.
+- Expanded proof inventory now includes runtime failure-boundary rows alongside traversal proof integrity, lifecycle/config, source-state integrity, state-signal contracts, bridge-state ownership, receipt integrity, spatial/mobility, operations data, and public distribution categories.
+- Coverage categories remain separate: local command proof, latest release-ref command proof, aggregate command proof, targeted DSK command proof, raw-public file proof, CDN import proof, npm availability, browser-complete human proof, and runtime hardening fixture proof.
+
+## Runtime ownership drift
+- `docs/how-to-protokit.md`, `docs/how-to-experiment.md`, `docs/protokit-boundaries.md`, and `docs/protokit-experiment-loop.md` still keep the core/ProtoKits/Experiments split explicit.
+- New reusable kit implementations should target ProtoKits by default.
+- New playable/browser proofs should target Experiments by default.
+- Core should stay focused on ECS/runtime/DSK/composer primitives, invariants, exports, and validation.
+- Current public proof blockers do not justify moving product routes, browser proof wiring, or reusable implementation into core.
+- Runtime failure-boundary rows are core validation concerns because they describe DSK/scheduler invariants, but they are separate from the public route import strategy.
+
+## Broken/stale proof paths
+- Broken public proof paths remain:
+  - `https://luminarylabs-agents.github.io/NexusRealtime/src/index.js`
+  - `https://luminarylabs-agents.github.io/NexusRealtime-ProtoKits/protokits/domain-foundation/index.js`
+  - `https://luminarylabs-agents.github.io/NexusRealtime-ProtoKits/protokits/domain-service-kits/index.js`
+- Disposable latest-ref targeted proof failed on analogous sibling/package resolution paths.
+- Stale public pins remain visible in Experiments scans, including `main`, `0.0.1`, and commit-pinned CDN references in legacy routes/configs.
+- Branch/package mismatch remains: release branch `0.0.2` serves core package version `0.1.0`.
+- Optional npm metadata remains 404, so npm-backed consumption is not proven.
+
+## Risks
+- A public route returning HTTP 200 can still fail for users if module paths are not deployed.
+- Aggregate validation can stay green while omitting the DSK first-wave proof smoke.
+- Available-checkout targeted proof can be mistaken for latest-ref proof when sibling repos are behind fetched release refs.
+- Disposable validation can fail because package/sibling resolution is not modeled; that must be reported separately from source regression.
+- Validation commands that generate flat routes can violate scout-lane write boundaries unless run in disposable worktrees or paired with cleanup policy.
+- Compatibility shims can blur promoted `engine.n.*` DSK APIs and legacy `engine.*` migration APIs.
+- Public consumption language can overclaim if it does not distinguish GitHub/jsDelivr branch availability from npm registry availability.
+- DSK first-wave migration proof should not be mistaken for production-hardening proof; namespace, install rollback, dependency parity, failed-tick semantics, traversal integrity, lifecycle/config, source-state, state-signal, receipt, bridge, wrapper-state, operations, and spatial gates remain open.
+
+## Blockers
+- ProtoKits fetched `origin/0.0.2` needs validation in an environment that resolves `nexusrealtime`, or package/dependency metadata needs to make standalone validation possible.
+- Experiments fetched `origin/0.0.2` needs targeted DSK validation with a sibling layout or revised module-source strategy.
+- Public proof import-map/module source strategy remains unresolved: CDN `0.0.2`, same-origin deployed assets, package/workspace dependency, or build-step import mapping.
+- `tests/dsk-first-wave-experiment-smoke.mjs` is not wired into Experiments aggregate validation or documented as a required targeted command.
+- npm metadata for `nexusrealtime` is unavailable.
+- DSK promotion hardening lacks executable fixture coverage for runtime failure-boundary rows plus traversal integrity and earlier namespace/install/dependency/state/receipt/bridge/wrapper/source-state/state-signal/operations/spatial/lifecycle rows.
+
+## Suggested next review item
+- Define one module-source strategy, then validate ProtoKits fetched-ref package resolution, Experiments fetched-ref targeted DSK smoke, and public browser loading against that same model.
+
+## Not claimed
+- This packet does not fix, publish, pull, merge, rebase, deploy, or update public claims.
+- This packet does not claim ProtoKits fetched `origin/0.0.2` passed validation.
+- This packet does not claim Experiments fetched `origin/0.0.2` passed targeted DSK validation.
+- This packet does not claim Experiments aggregate validation covers DSK first-wave proof.
+- This packet does not claim the public DSK proof works in-browser.
+- This packet does not prove npm installability.
+- This packet does not promote ProtoKits into core or retire compatibility shims.
+- This packet does not claim DSK hardening blockers are fixed.

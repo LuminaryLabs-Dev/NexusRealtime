@@ -1,8 +1,128 @@
 # Master Ecosystem Proof Tracker
 
 ## Current Root Lessons
-- id: ecosystem-proof-006
+- id: ecosystem-proof-030
 - status: active
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-20T06-40-01-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-20T06-40-01-0400-ecosystem-proof-node.md`
+- summary: Core remains latest-ref aligned and smoke-green, and ProtoKits remains aligned with fetched `origin/0.0.2` at `3d42b725dd166274ff6c5452beef86ef17863852`, but first-wave DSK ecosystem proof is still blocked by one module-source strategy gap: ProtoKits local/latest-ref checks cannot resolve package `nexusrealtime`, Experiments local targeted proof fails through ProtoKits, Experiments fetched aggregate passes at `3e047f693f3ed58cab1c362deb09a597398d05e5` while targeted proof fails on sibling paths, public browser proof still stalls at `Booting...`, and scheduler/world mutation isolation remains separate hardening inventory.
+- id: ecosystem-proof-029
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-20T05-39-53-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-20T05-39-53-0400-ecosystem-proof-node.md`
+- summary: Core remains latest-ref aligned and smoke-green, and ProtoKits now matches fetched `origin/0.0.2` at `3d42b725dd166274ff6c5452beef86ef17863852`, but first-wave DSK ecosystem proof is still blocked by one module-source strategy gap: ProtoKits local/latest-ref checks cannot resolve package `nexusrealtime`, Experiments local targeted proof fails through ProtoKits, Experiments fetched aggregate passes at `3e047f693f3ed58cab1c362deb09a597398d05e5` while targeted proof fails on sibling paths, public browser proof still stalls at `Booting...`, and query read-model isolation remains separate hardening inventory.
+- id: ecosystem-proof-028
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-20T04-42-18-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-20T04-42-18-0400-ecosystem-proof-node.md`
+- summary: Core remains latest-ref aligned and smoke-green, but first-wave DSK ecosystem proof is still blocked by one module-source strategy gap: ProtoKits local/fetched checks cannot resolve package `nexusrealtime` even though local/fetched package metadata now both report `0.0.2`, Experiments local/fetched targeted proof fails through package/sibling paths, fetched Experiments aggregate passes at `3e047f693f3ed58cab1c362deb09a597398d05e5`, public browser proof still stalls at `Booting...`, and content-boundary/objective hardening remains separate inventory.
+- id: ecosystem-proof-027
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-20T03-41-33-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-20T03-41-33-0400-ecosystem-proof-node.md`
+- summary: Core remains latest-ref aligned and smoke-green, but first-wave DSK ecosystem proof is still blocked by one module-source strategy gap: ProtoKits local/fetched checks cannot resolve package `nexusrealtime`, local ProtoKits package metadata is still `0.0.1` while fetched `origin/0.0.2` is `0.0.2`, Experiments local/fetched targeted proof fails through package/sibling paths, fetched Experiments aggregate passes at `3e047f693f3ed58cab1c362deb09a597398d05e5`, public browser proof still stalls at `Booting...`, and runtime identity/lifecycle hardening remains separate inventory.
+- id: ecosystem-proof-026
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-20T02-40-59-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-20T02-40-59-0400-ecosystem-proof-node.md`
+- summary: Core remains latest-ref aligned and smoke-green, but first-wave DSK ecosystem proof is still blocked by one module-source strategy gap: ProtoKits local/fetched checks cannot resolve package `nexusrealtime`, local Experiments targeted proof fails through ProtoKits, fetched Experiments aggregate passes at advanced ref `81b39bccadf2cdf8269df24cd4970a5b2d7ebbd9` while targeted DSK proof fails on sibling paths, public browser proof still stalls at `Booting...`, and composition-proof ownership remains separate hardening inventory.
+- id: ecosystem-proof-025
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-20T01-59-45-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-20T01-59-45-0400-ecosystem-proof-node.md`
+- summary: Core remains latest-ref aligned and smoke-green, but first-wave DSK ecosystem proof is now blocked earlier than the last packet: ProtoKits local/fetched checks fail on missing package `nexusrealtime`, Experiments local targeted proof fails through that ProtoKits package-resolution issue, Experiments fetched aggregate passes while targeted DSK proof fails on sibling paths, public browser proof still stalls at `Booting...`, and proof-signal/AR-spatial rows remain separate hardening inventory.
+- id: ecosystem-proof-024
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T22-40-52-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T22-40-52-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source strategy; ProtoKits fetched `origin/0.0.2` remains 26 commits ahead locally while disposable fetched-ref validation still fails on missing package `nexusrealtime`, Experiments fetched-ref targeted DSK proof still fails on missing sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and proof-signal integrity rows now join hardening inventory without replacing distribution proof.
+- id: ecosystem-proof-023
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T21-41-45-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T21-41-45-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source strategy; ProtoKits fetched `origin/0.0.2` remains 26 commits ahead locally while disposable fetched-ref validation still fails on missing package `nexusrealtime`, Experiments fetched-ref targeted DSK proof still fails on missing sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and AR/spatial read-model rows now join hardening inventory without replacing distribution proof.
+- id: ecosystem-proof-022
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T20-39-49-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T20-39-49-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source strategy; ProtoKits fetched `origin/0.0.2` advanced to 26 commits ahead locally while disposable fetched-ref validation still fails on missing package `nexusrealtime`, Experiments fetched-ref targeted DSK proof still fails on missing sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and compatibility/content-safety now joins hardening inventory without replacing distribution proof.
+- id: ecosystem-proof-021
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T19-40-15-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T19-40-15-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source strategy; ProtoKits fetched `origin/0.0.2` advanced to 18 commits ahead locally while disposable fetched-ref validation still fails on missing package `nexusrealtime`, Experiments fetched-ref targeted DSK proof still fails on missing sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and read-model/orchestration isolation now joins hardening inventory without replacing distribution proof.
+- id: ecosystem-proof-020
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T18-39-22-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T18-39-22-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source resolution: standalone ProtoKits cannot resolve `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and proof-readiness queueing now joins claim-management inventory without replacing module-source, aggregate parity, npm, package-version, or hardening proof.
+- id: ecosystem-proof-019
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T17-39-50-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T17-39-50-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source resolution: standalone ProtoKits cannot resolve `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and query/command semantics rows now join proof inventory while remaining separate from distribution proof.
+- id: ecosystem-proof-018
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T16-39-19-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T16-39-19-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source resolution: standalone ProtoKits cannot resolve `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and lifecycle parity rows now join proof inventory while remaining separate from distribution proof.
+- id: ecosystem-proof-017
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T15-40-03-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T15-40-03-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source resolution: standalone ProtoKits cannot resolve `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and experience-edge rows now join proof inventory while remaining separate from distribution proof.
+- id: ecosystem-proof-016
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T14-41-14-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T14-41-14-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source resolution: standalone ProtoKits cannot resolve `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and runtime failure-boundary gates now join promotion proof boundaries.
+- id: ecosystem-proof-015
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T13-40-31-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T13-40-31-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof are still blocked by module-source resolution: standalone ProtoKits cannot resolve `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and traversal hardening gates now join promotion proof boundaries.
+- id: ecosystem-proof-014
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T12-39-48-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T12-39-48-0400-ecosystem-proof-node.md`
+- summary: Core and local available-checkout DSK proof remain green, but fetched-ref and public proof point to module-resolution blockers: standalone ProtoKits cannot resolve `nexusrealtime`, Experiments fetched-ref targeted DSK proof cannot resolve sibling `NexusRealtime`, public browser proof still stalls at `Booting...`, and lifecycle/config hardening gates remain open.
+- id: ecosystem-proof-013
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T11-40-11-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T11-40-11-0400-ecosystem-proof-node.md`
+- summary: Core remains latest-ref aligned and validation-green, but fetched ProtoKits `origin/0.0.2` advanced 5 commits ahead and fetched Experiments remains 24 commits ahead; local available-checkout DSK proof passes, public browser proof still stalls at `Booting...`, aggregate Experiments DSK proof remains separate, and runtime hardening gates remain open.
+- id: ecosystem-proof-012
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T10-45-02-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T10-45-02-0400-ecosystem-proof-node.md`
+- summary: Core and ProtoKits remain latest-ref aligned and validation-green, including ProtoKits aggregate proof, but Experiments remains 22 commits behind fetched `origin/0.0.2`, public browser proof still stalls at `Booting...`, Experiments aggregate DSK proof remains separate, and state-signal contract hardening now joins DSK promotion gates.
+- id: ecosystem-proof-011
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T09-44-04-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T09-44-04-0400-ecosystem-proof-node.md`
+- summary: Core and ProtoKits are latest-ref aligned and validation-green, including ProtoKits aggregate proof, but Experiments remains 22 commits behind fetched `origin/0.0.2`, public browser proof still stalls at `Booting...`, Experiments aggregate DSK proof remains separate, and source-state hardening now joins DSK promotion gates.
+- id: ecosystem-proof-010
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T08-48-39-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T08-48-39-0400-ecosystem-proof-node.md`
+- summary: Core and ProtoKits still align with the latest release ref and targeted DSK proof passes, but Experiments is 22 commits behind fetched `origin/0.0.2`, public browser proof still stalls at `Booting...`, aggregate DSK proof remains separate, and aggregate ProtoKits validation was incomplete this run.
+- id: ecosystem-proof-009
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T07-42-18-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T07-42-18-0400-ecosystem-proof-node.md`
+- summary: Local latest-ref proof is green across core, ProtoKits, and Experiments, but public browser proof still stalls at `Booting...`, aggregate DSK smoke coverage remains separate, and DSK hardening gates now include receipt integrity.
+- id: ecosystem-proof-008
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T06-46-32-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T06-46-32-0400-ecosystem-proof-node.md`
+- summary: Core remains aligned and available-checkout validations pass, but sibling checkouts are still behind fetched `origin/0.0.2`, public DSK proof still stalls at `Booting...`, and aggregate DSK smoke coverage remains separate.
+- id: ecosystem-proof-007
+- status: superseded-by-refresh
+- latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T05-42-20-0400-ecosystem-proof-state-packet.md`
+- latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T05-42-20-0400-ecosystem-proof-node.md`
+- summary: Core remains aligned and available-checkout DSK smokes pass, but fetched ProtoKits and Experiments `origin/0.0.2` advanced beyond local checkouts; the public proof route still stalls at `Booting...`.
+- id: ecosystem-proof-006
+- status: superseded-by-refresh
 - latest packet: `state/automation/ecosystem_proof_scout/packets/2026-06-19T01-44-00-0400-ecosystem-proof-state-packet.md`
 - latest node: `state/automation/ecosystem_proof_scout/knowledge_nodes/2026-06-19T01-44-00-0400-ecosystem-proof-node.md`
 - summary: Local/raw DSK proof remains green and all repos match `origin/0.0.2`, but the public GitHub Pages proof route still stalls at `Booting...`; Experiments aggregate validation still omits the DSK first-wave smoke, and sibling worktrees are dirty.
@@ -33,6 +153,754 @@
 - summary: Local DSK ecosystem proofs pass, but public/raw `0.0.2` proof artifacts are missing or stale.
 
 ## Branch Tree
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-b
+- relationship: protokits-ref-aligned-package-resolution-blocked
+- look further: Treat ProtoKits as latest-ref aligned but unvalidated until `nexusrealtime` resolves under the intended release-consumption model.
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-c
+- relationship: protokits-targeted-dsk-still-red
+- look further: Re-run targeted DSK proof only after package/workspace/CDN/link resolution is defined.
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-d
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` at `3e047f693f3ed58cab1c362deb09a597398d05e5` after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-e
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-g
+- relationship: scheduler-world-hardening-separate-layer
+- look further: Keep active scheduler mutation, phase topology, `runSystem()` membership, and event queue payload isolation separate from public route loading and distribution proof.
+- parent: ecosystem-proof-030
+- child: ecosystem-proof-030-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/composer primitives and invariant fixtures.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-b
+- relationship: protokits-ref-aligned-package-resolution-blocked
+- look further: Treat ProtoKits as latest-ref aligned but unvalidated until `nexusrealtime` resolves under the intended release-consumption model.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-c
+- relationship: protokits-targeted-dsk-still-red
+- look further: Re-run targeted DSK proof only after package/workspace/CDN/link resolution is defined.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-d
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` at `3e047f693f3ed58cab1c362deb09a597398d05e5` after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-e
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-g
+- relationship: query-read-model-hardening-separate-layer
+- look further: Keep public query helper, engine read-method, nested metadata/hazard, and stored query snapshot isolation separate from public route loading and distribution proof.
+- parent: ecosystem-proof-029
+- child: ecosystem-proof-029-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/composer primitives and invariant fixtures.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-b
+- relationship: protokits-local-and-fetched-package-resolution
+- look further: Validate ProtoKits local and fetched `origin/0.0.2` with a package/workspace/CDN/link model that resolves `nexusrealtime`.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-c
+- relationship: protokits-package-version-policy-improved-but-not-proof
+- look further: ProtoKits local package metadata now matches `0.0.2`, but local/fetched proof still requires package-resolution validation before release proof language uses it.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-d
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` at `3e047f693f3ed58cab1c362deb09a597398d05e5` after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-e
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-g
+- relationship: content-boundary-objective-hardening-separate-layer
+- look further: Keep ReefRescue/Fishing boundary, preset identity, objective, and content validation rows separate from public route loading and distribution proof.
+- parent: ecosystem-proof-028
+- child: ecosystem-proof-028-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/composer primitives and invariant fixtures.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-b
+- relationship: protokits-local-and-fetched-package-resolution
+- look further: Validate ProtoKits local and fetched `origin/0.0.2` with a package/workspace/CDN/link model that resolves `nexusrealtime`.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-c
+- relationship: protokits-package-version-policy
+- look further: Decide whether local ProtoKits package metadata `0.0.1` versus fetched `0.0.2` is expected or stale before local checkout proof is used for release review.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-d
+- relationship: experiments-fetched-ref-advanced-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` at `3e047f693f3ed58cab1c362deb09a597398d05e5` after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-e
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-g
+- relationship: runtime-identity-lifecycle-hardening-separate-layer
+- look further: Keep binding ownership, ECS definition identity, SequenceNode install-only idempotency, and event-bus disposed parity separate from public route loading and distribution proof.
+- parent: ecosystem-proof-027
+- child: ecosystem-proof-027-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/composer primitives and invariant fixtures.
+- parent: ecosystem-proof-026
+- child: ecosystem-proof-026-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-026
+- child: ecosystem-proof-026-b
+- relationship: protokits-local-and-fetched-package-resolution
+- look further: Validate ProtoKits local and fetched `origin/0.0.2` with a package/workspace/CDN/link model that resolves `nexusrealtime`.
+- parent: ecosystem-proof-026
+- child: ecosystem-proof-026-c
+- relationship: experiments-fetched-ref-advanced-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` at `81b39bccadf2cdf8269df24cd4970a5b2d7ebbd9` after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-026
+- child: ecosystem-proof-026-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-026
+- child: ecosystem-proof-026-e
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-026
+- child: ecosystem-proof-026-f
+- relationship: composition-proof-ownership-separate-layer
+- look further: Keep provider ownership, SequenceNode type/history isolation, and AR runtime-source consistency separate from public route loading and distribution proof.
+- parent: ecosystem-proof-026
+- child: ecosystem-proof-026-g
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/composer primitives and invariant fixtures.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-b
+- relationship: protokits-local-package-resolution-regression
+- look further: Validate ProtoKits local checkout with an explicit package/workspace/CDN/link model that resolves `nexusrealtime`.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-c
+- relationship: protokits-fetched-ref-package-resolution-drift
+- look further: Validate ProtoKits fetched `origin/0.0.2` at `b1d69099392a144a999cac824d344c403fe762d8` or newer with the same module-source model.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-d
+- relationship: experiments-targeted-dsk-blocked-local-and-fetched
+- look further: Re-run local and fetched Experiments targeted DSK proof after package/sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-e
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-f
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for local, fetched-ref, and browser proof modules.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-g
+- relationship: proof-signal-and-ar-spatial-proof-separation
+- look further: Keep proof-signal and AR/spatial hardening separate from public route loading and distribution proof.
+- parent: ecosystem-proof-025
+- child: ecosystem-proof-025-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/composer primitives and invariant fixtures.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-b
+- relationship: protokits-fetched-ref-package-resolution-drift
+- look further: Validate ProtoKits fetched `origin/0.0.2` at `f0fa45a75eea2c4b88683fe3bf146b0453812820` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-g
+- relationship: proof-signal-integrity-proof-separation
+- look further: Keep ARExperience terminal receipt idempotency, WebXR hit-test source policy, monotonic tick time, and finite spatial scale separate from public route loading and distribution proof.
+- parent: ecosystem-proof-024
+- child: ecosystem-proof-024-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler/AR/spatial/proof-signal invariant fixtures.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-b
+- relationship: protokits-fetched-ref-package-resolution-drift
+- look further: Validate ProtoKits fetched `origin/0.0.2` at `f0fa45a75eea2c4b88683fe3bf146b0453812820` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-g
+- relationship: ar-spatial-read-model-proof-separation
+- look further: Keep ARKit preconditions, preferred-mode fallback policy, launch-state isolation, and SpatialRoom getter isolation separate from public route loading and distribution proof.
+- parent: ecosystem-proof-023
+- child: ecosystem-proof-023-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler/AR/spatial invariant fixtures.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-b
+- relationship: protokits-fetched-ref-package-resolution-drift
+- look further: Validate ProtoKits fetched `origin/0.0.2` at `f0fa45a75eea2c4b88683fe3bf146b0453812820` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-g
+- relationship: compatibility-content-safety-proof-separation
+- look further: Keep legacy sequence replay/reset, any cleanup, owning-kit lookup, and AR text safety separate from public route loading and distribution proof.
+- parent: ecosystem-proof-022
+- child: ecosystem-proof-022-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler/read-model/compatibility invariant fixtures.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-b
+- relationship: protokits-fetched-ref-package-resolution-drift
+- look further: Validate ProtoKits fetched `origin/0.0.2` at `fd42188ea9b94bd25f4d5339c2888f150a687984` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-g
+- relationship: read-model-orchestration-proof-separation
+- look further: Keep registry descriptor isolation, surface snapshot isolation, SequenceNode race cleanup, and SequenceNode `any` receipt policy separate from public route loading and distribution proof.
+- parent: ecosystem-proof-021
+- child: ecosystem-proof-021-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler/read-model invariant fixtures.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-b
+- relationship: protokits-fetched-ref-package-resolution
+- look further: Validate ProtoKits fetched `origin/0.0.2` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-g
+- relationship: proof-readiness-queue-separate-layer
+- look further: Keep hardening fixture order, proof claim taxonomy, module-source gate, aggregate/targeted parity, and release evidence as claim-management inventory until they become executable evidence.
+- parent: ecosystem-proof-020
+- child: ecosystem-proof-020-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler invariant fixtures.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-b
+- relationship: protokits-fetched-ref-package-resolution
+- look further: Validate ProtoKits fetched `origin/0.0.2` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-g
+- relationship: query-command-semantics-proof-separation
+- look further: Keep terminal receipts, query/transition split, rejected-command state, and query snapshot isolation separate from public route loading and distribution proof.
+- parent: ecosystem-proof-019
+- child: ecosystem-proof-019-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler invariant fixtures.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-b
+- relationship: protokits-fetched-ref-package-resolution
+- look further: Validate ProtoKits fetched `origin/0.0.2` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-g
+- relationship: lifecycle-parity-proof-separation
+- look further: Keep held-glide receipts, terrain query/chunk parity, camera-overlay partial-start cleanup, and AR stop-state semantics separate from public route loading and distribution proof.
+- parent: ecosystem-proof-018
+- child: ecosystem-proof-018-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler invariant fixtures.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-b
+- relationship: protokits-fetched-ref-package-resolution
+- look further: Validate ProtoKits fetched `origin/0.0.2` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-g
+- relationship: experience-edge-proof-separation
+- look further: Keep repeated ragdoll receipts, AR launch fallback, RealismKit custom profile policy, and FishingKit empty-content semantics separate from public route loading and distribution proof.
+- parent: ecosystem-proof-017
+- child: ecosystem-proof-017-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler invariant fixtures.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-b
+- relationship: protokits-fetched-ref-package-resolution
+- look further: Validate ProtoKits fetched `origin/0.0.2` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-g
+- relationship: runtime-failure-boundary-proof-separation
+- look further: Keep namespace reserved-key, install rollback, dependency parity, and failed-tick lifetime fixture proof separate from browser public proof and distribution proof.
+- parent: ecosystem-proof-016
+- child: ecosystem-proof-016-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, while core owns runtime/DSK/scheduler invariant fixtures.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-b
+- relationship: protokits-fetched-ref-package-resolution
+- look further: Validate ProtoKits fetched `origin/0.0.2` with a package/workspace/CDN/link model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-e
+- relationship: module-source-strategy-unified
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, workspace/package dependency, or build-step mapping for fetched-ref and browser proof modules.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-g
+- relationship: traversal-proof-hardening-separation
+- look further: Keep cost, identity, signature, and recovery receipt/state fixture proof separate from browser public proof and distribution proof.
+- parent: ecosystem-proof-015
+- child: ecosystem-proof-015-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, not NexusRealtime core.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-b
+- relationship: protokits-fetched-ref-module-resolution
+- look further: Validate ProtoKits fetched `origin/0.0.2` with a package-resolution model that can resolve `nexusrealtime`.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-c
+- relationship: experiments-fetched-ref-targeted-dsk-blocked
+- look further: Validate Experiments fetched `origin/0.0.2` targeted DSK proof after sibling relative paths or module-source strategy are resolved.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-e
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-f
+- relationship: aggregate-green-targeted-dsk-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-g
+- relationship: lifecycle-config-hardening-proof-separation
+- look further: Keep command lifecycle, elapsed-rate, descriptor normalization, and finite-geometry fixture proof separate from browser public proof and distribution proof.
+- parent: ecosystem-proof-014
+- child: ecosystem-proof-014-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, not NexusRealtime core.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-a
+- relationship: core-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-b
+- relationship: protokits-latest-ref-drift
+- look further: Validate ProtoKits fetched `origin/0.0.2` in a disposable or fast-forwarded clean worktree.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-c
+- relationship: experiments-latest-ref-drift
+- look further: Validate Experiments fetched `origin/0.0.2` in a disposable or fast-forwarded clean worktree.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-e
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-f
+- relationship: experiment-local-protokit-boundary
+- look further: Classify fetched tropical-island prototype kits as experiment-local or extractable reusable ProtoKits.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-g
+- relationship: dsk-hardening-fixture-boundary
+- look further: Keep namespace/install/dependency/source-state/state-signal fixture proof separate from browser public proof and distribution proof.
+- parent: ecosystem-proof-013
+- child: ecosystem-proof-013-h
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, not NexusRealtime core.
+- parent: ecosystem-proof-012
+- child: ecosystem-proof-012-a
+- relationship: core-protokits-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-012
+- child: ecosystem-proof-012-b
+- relationship: protokits-aggregate-green-experiments-aggregate-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-012
+- child: ecosystem-proof-012-c
+- relationship: experiments-latest-ref-drift
+- look further: Validate Experiments at fetched `origin/0.0.2` in a disposable or fast-forwarded clean worktree.
+- parent: ecosystem-proof-012
+- child: ecosystem-proof-012-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-012
+- child: ecosystem-proof-012-e
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-012
+- child: ecosystem-proof-012-f
+- relationship: state-signal-contract-hardening-proof-separation
+- look further: Keep invalidation/action/transition/coordinate/derived-state fixtures separate from browser public proof and distribution proof.
+- parent: ecosystem-proof-012
+- child: ecosystem-proof-012-g
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, not NexusRealtime core.
+- parent: ecosystem-proof-011
+- child: ecosystem-proof-011-a
+- relationship: core-protokits-latest-ref-green
+- look further: Keep resolving latest refs every run because sibling refs and non-release branches continue to drift.
+- parent: ecosystem-proof-011
+- child: ecosystem-proof-011-b
+- relationship: protokits-aggregate-green-experiments-aggregate-open
+- look further: Wire or document the Experiments DSK first-wave smoke before aggregate proof is claimed.
+- parent: ecosystem-proof-011
+- child: ecosystem-proof-011-c
+- relationship: experiments-latest-ref-drift
+- look further: Validate Experiments at fetched `origin/0.0.2` in a disposable or fast-forwarded clean worktree.
+- parent: ecosystem-proof-011
+- child: ecosystem-proof-011-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-011
+- child: ecosystem-proof-011-e
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-011
+- child: ecosystem-proof-011-f
+- relationship: source-state-hardening-proof-separation
+- look further: Keep source/reset/retention/initial-terminal fixtures separate from browser public proof and distribution proof.
+- parent: ecosystem-proof-011
+- child: ecosystem-proof-011-g
+- relationship: ownership-boundary-still-valid
+- look further: Keep reusable implementation in ProtoKits and playable/browser proof routing in Experiments, not NexusRealtime core.
+- parent: ecosystem-proof-010
+- child: ecosystem-proof-010-a
+- relationship: experiments-latest-ref-drift
+- look further: Fast-forward or separately validate Experiments at fetched `origin/0.0.2` before claiming latest-ref ecosystem proof.
+- parent: ecosystem-proof-010
+- child: ecosystem-proof-010-b
+- relationship: targeted-proof-green-aggregate-incomplete
+- look further: Keep targeted DSK smokes distinct from aggregate checks, especially when aggregate commands are long-running or write generated artifacts.
+- parent: ecosystem-proof-010
+- child: ecosystem-proof-010-c
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-010
+- child: ecosystem-proof-010-d
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-010
+- child: ecosystem-proof-010-e
+- relationship: aggregate-dsk-proof-validation-gap
+- look further: Add `tests/dsk-first-wave-experiment-smoke.mjs` to an aggregate check or document it as required targeted evidence.
+- parent: ecosystem-proof-010
+- child: ecosystem-proof-010-f
+- relationship: local-vs-fetched-experiments-proof-drift
+- look further: Reconcile local `fluid-water-lab` proof surface with fetched `tropical-island-scene` release-ref surface before promotion review.
+- parent: ecosystem-proof-010
+- child: ecosystem-proof-010-g
+- relationship: bridge-state-hardening-proof-separation
+- look further: Keep bridge phase, step receipt, delegated wrapper state, and runtime fixture proof separate from public route loading and distribution proof.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-a
+- relationship: latest-ref-aligned
+- look further: Keep checking all three repos against the preflight-resolved latest branch because sibling refs have drifted in prior runs.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-b
+- relationship: local-validation-green
+- look further: Keep targeted DSK smokes distinct from aggregate checks until they are wired or documented.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-c
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-d
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-e
+- relationship: aggregate-validation-gap
+- look further: Add `tests/dsk-first-wave-experiment-smoke.mjs` to an aggregate check or document it as required targeted evidence.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-f
+- relationship: expanded-protokits-proof-coverage
+- look further: Add browser-visible proof rows for expanded fluid/water/domain surfaces after first-wave public loading works.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-g
+- relationship: dsk-hardening-proof-separation
+- look further: Keep runtime-hardening fixture proof separate from public route loading and distribution proof.
+- parent: ecosystem-proof-009
+- child: ecosystem-proof-009-h
+- relationship: generated-flat-route-cleanliness
+- look further: Decide whether Experiments flat-route generation should be idempotent or paired with cleanup.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-a
+- relationship: core-branch-aligned
+- look further: Recheck core against the preflight-resolved latest branch before promotion review.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-b
+- relationship: sibling-local-behind-release-ref
+- look further: Fast-forward or separately validate ProtoKits and Experiments against fetched `origin/0.0.2`.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-c
+- relationship: available-checkout-validation-green
+- look further: Keep available-checkout local validation separate from latest-ref validation.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-e
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-f
+- relationship: aggregate-validation-gap
+- look further: Add `tests/dsk-first-wave-experiment-smoke.mjs` to an aggregate check or document it as a required targeted proof command.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-g
+- relationship: expanded-protokits-proof-coverage
+- look further: Map new fluid/water/domain surfaces to executable proof rows after latest-ref validation and public loading are resolved.
+- parent: ecosystem-proof-008
+- child: ecosystem-proof-008-h
+- relationship: dsk-hardening-proof-separation
+- look further: Keep runtime-hardening invariant fixtures separate from public route loading and distribution proof.
+- parent: ecosystem-proof-007
+- child: ecosystem-proof-007-a
+- relationship: core-branch-aligned
+- look further: Recheck core against the preflight-resolved latest branch before promotion review.
+- parent: ecosystem-proof-007
+- child: ecosystem-proof-007-b
+- relationship: sibling-local-behind-release-ref
+- look further: Fast-forward or separately validate ProtoKits and Experiments against fetched `origin/0.0.2`.
+- parent: ecosystem-proof-007
+- child: ecosystem-proof-007-c
+- relationship: available-checkout-validation-green
+- look further: Keep available-checkout local validation separate from latest-ref validation.
+- parent: ecosystem-proof-007
+- child: ecosystem-proof-007-d
+- relationship: public-route-runtime-failure
+- look further: Fix or validate the DSK proof route import-map/module path shape outside this scout lane.
+- parent: ecosystem-proof-007
+- child: ecosystem-proof-007-e
+- relationship: import-map-public-shape
+- look further: Choose CDN `0.0.2`, same-origin deployed assets, or build-step mapping for browser proof modules.
+- parent: ecosystem-proof-007
+- child: ecosystem-proof-007-f
+- relationship: aggregate-validation-gap
+- look further: Add `tests/dsk-first-wave-experiment-smoke.mjs` to an aggregate check or document it as a required targeted proof command.
+- parent: ecosystem-proof-007
+- child: ecosystem-proof-007-g
+- relationship: expanded-protokits-proof-coverage
+- look further: Map new fluid/water/domain surfaces to executable proof rows after latest-ref validation and public loading are resolved.
 - parent: ecosystem-proof-006
 - child: ecosystem-proof-006-a
 - relationship: branch-aligned
@@ -163,6 +1031,30 @@
 - look further: Decide which `main`/`0.0.1` CDN pins remain valid legacy demos.
 
 ## Open Search Branches
+- branch: composition-proof-boundary
+- owner: next scout
+- priority: medium
+- next files: `src/game-kit-composer.js`, `src/sequence-node-library.js`, `src/sequence-node.js`, `src/ar-launcher.js`, neighboring DSK/deep-bug nodes.
+- branch: proof-signal-integrity-proof
+- owner: next scout
+- priority: medium
+- next files: `src/ar-experience-kit.js`, `src/ar-session.js`, `src/engine.js`, `src/greybox-building-kit.js`, `src/spatial-room-kit.js`, proof fixtures.
+- branch: module-source-strategy
+- owner: next scout
+- priority: high
+- next files: `package.json`, sibling package metadata, Experiments proof import maps, public CDN/raw URLs, package/workspace/link validation setup.
+- branch: protokits-package-version-policy
+- owner: next scout
+- priority: high
+- next files: `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-ProtoKits/package.json`, fetched `origin/0.0.2`, first-wave DSK adapter metadata.
+- branch: protokits-fetched-ref-module-resolution
+- owner: next scout
+- priority: high
+- next files: `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-ProtoKits/package.json`, `protokits/nexus-dsk-adapter/index.js`, fetched `origin/0.0.2`, package/link/CDN resolution setup.
+- branch: experiments-targeted-dsk-fetched-ref
+- owner: next scout
+- priority: high
+- next files: `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-Experiments`, fetched `origin/0.0.2`, `tests/dsk-first-wave-experiment-smoke.mjs`, `experiments/dsk-first-wave-proof/src/proof.js`, sibling path layout.
 - branch: public-proof-import-shape
 - owner: next scout
 - priority: high
@@ -170,15 +1062,19 @@
 - branch: aggregate-dsk-proof-validation
 - owner: next scout
 - priority: high
-- next files: `NexusRealtime-Experiments/package.json`, `NexusRealtime-Experiments/tests/dsk-first-wave-experiment-smoke.mjs`, `NexusRealtime-Experiments/tests/`.
-- branch: sibling-worktree-dirt
+- next files: `NexusRealtime-Experiments/package.json`, `NexusRealtime-Experiments/tests/dsk-first-wave-experiment-smoke.mjs`, `NexusRealtime-ProtoKits/package.json`, aggregate command split or disposable validation worktree.
+- branch: ar-spatial-read-model-proof
 - owner: next scout
-- priority: high
-- next files: `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-ProtoKits`, `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-Experiments`.
+- priority: medium
+- next files: `src/ar-launcher.js`, `src/ar-device.js`, `src/ar-modes/`, `src/spatial-room-kit.js`, AR/spatial proof fixtures.
 - branch: import-map-public-shape
 - owner: next scout
 - priority: high
 - next files: `experiments/dsk-first-wave-proof/index.html`, ProtoKits README import-map guidance, public CDN URLs.
+- branch: sibling-release-alignment-watch
+- owner: next scout
+- priority: medium
+- next files: `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-ProtoKits`, `/Users/crimsonwheeler/Documents/GitHub/NexusRealtime-Experiments`.
 - branch: stale-cdn-pins
 - owner: next scout
 - priority: medium
@@ -191,8 +1087,75 @@
 - owner: next scout
 - priority: medium
 - next files: `docs/described_examples.md`, `docs/domain_ideas.md`, `docs/kits_ideas.md`, `examples/described-examples/`, sibling ProtoKits/Experiments proof paths.
+- branch: dsk-hardening-proof-separation
+- owner: next scout
+- priority: medium
+- next files: `src/domain-service-kit.js`, `src/runtime-kit.js`, `src/game-kit-composer.js`, `src/engine.js`, `src/ecs.js`, selected domain kits, sibling proof routes.
+- branch: runtime-identity-lifecycle-boundary
+- owner: next scout
+- priority: medium
+- next files: `src/game-kit-composer.js`, `src/runtime-kit.js`, `src/ecs.js`, `src/sequence-node-kit.js`, `src/sequence-node.js`, neighboring DSK/deep-bug/domain nodes.
+- branch: service-lifecycle-config-hardening
+- owner: next scout
+- priority: medium
+- next files: `src/companion-command-kit.js`, `src/corruption-world-kit.js`, `src/spatial-room-kit.js`, `src/tree-runner-kit.js`, proof fixtures.
+- branch: state-signal-contract-proof
+- owner: next scout
+- priority: medium
+- next files: `src/forest-placement-kit.js`, `src/interaction-kit.js`, `src/shrine-puzzle-kit.js`, `src/light-combat-kit.js`, `src/scenario-driver-kit.js`, `src/camera-occlusion-kit.js`, proof fixtures.
+- branch: receipt-integrity-hardening
+- owner: next scout
+- priority: medium
+- next files: `src/timing-window-kit.js`, `src/interaction-target-kit.js`, `src/collectible-kit.js`, `src/request-fulfillment-kit.js`, proof fixtures.
+- branch: generated-flat-route-cleanliness
+- owner: next scout
+- priority: low
+- next files: `NexusRealtime-Experiments/scripts/generate-flat-experiment-routes.mjs`, `NexusRealtime-Experiments/package.json`.
+- branch: experiment-local-protokit-boundary
+- owner: next scout
+- priority: medium
+- next files: fetched `NexusRealtime-Experiments/protokits/*`, `docs/how-to-protokit.md`, `docs/protokit-boundaries.md`, ProtoKits extraction paths.
 
 ## Resolved Or Superseded
+- id: ecosystem-proof-025
+- reason: superseded by 2026-06-20T02-40-59 refresh; current evidence preserves the same module-source blocker, updates Experiments fetched `origin/0.0.2` to `81b39bccadf2cdf8269df24cd4970a5b2d7ebbd9`, confirms fetched aggregate still passes while targeted DSK proof and public browser proof fail, and keeps composition-proof ownership separate from distribution proof.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-20T02-40-59-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-016
+- reason: superseded by 2026-06-19T15-40-03 refresh; current evidence reproduces the same module-source blocker across ProtoKits fetched-ref validation, Experiments fetched-ref targeted DSK validation, and public browser proof, while experience-edge rows join proof inventory separately from distribution proof.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T15-40-03-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-015
+- reason: superseded by 2026-06-19T14-41-14 refresh; current evidence reproduces the same module-source blocker across ProtoKits fetched-ref validation, Experiments fetched-ref targeted DSK validation, and public browser proof, while runtime failure-boundary hardening joins proof boundaries.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T14-41-14-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-014
+- reason: superseded by 2026-06-19T13-40-31 refresh; current evidence reproduces the module-source blocker across ProtoKits fetched-ref validation, Experiments fetched-ref targeted DSK validation, and public browser proof, while traversal hardening joins proof boundaries.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T13-40-31-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-013
+- reason: superseded by 2026-06-19T12-39-48 refresh; disposable fetched-ref validation shows ProtoKits `origin/0.0.2` is blocked by missing `nexusrealtime` package resolution, Experiments fetched-ref aggregate passes but targeted DSK proof fails on sibling relative paths, public browser proof still fails on sibling module 404s, and lifecycle/config hardening joins proof boundaries.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T12-39-48-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-012
+- reason: superseded by 2026-06-19T11-40-11 refresh; fetched ProtoKits `origin/0.0.2` advanced 5 commits beyond the local checkout, fetched Experiments remains 24 commits ahead, public browser proof still fails on sibling module 404s, and runtime hardening proof remains separate.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T11-40-11-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-011
+- reason: superseded by 2026-06-19T10-45-02 refresh; core and ProtoKits remain validation-green, Experiments latest-ref proof remains open, public browser proof still fails on sibling module 404s, and state-signal contract hardening joins proof boundaries.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T10-45-02-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-009
+- reason: superseded by 2026-06-19T08-48-39 refresh; Experiments latest-ref drift reopened at 22 commits behind fetched `origin/0.0.2`, public browser proof still fails on sibling module 404s, aggregate DSK proof remains separate, and ProtoKits aggregate validation was incomplete this run.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T08-48-39-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-008
+- reason: superseded by 2026-06-19T07-42-18 refresh; sibling latest-ref drift is resolved for this run and all three repos validate locally, but public browser proof still fails on sibling module 404s, aggregate Experiments validation still omits the DSK first-wave smoke, and receipt integrity joins DSK hardening gates.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T07-42-18-0400-ecosystem-proof-state-packet.md`
+- id: sibling-latest-ref-validation
+- reason: resolved for this run; ProtoKits and Experiments both matched fetched `origin/0.0.2` with ahead/behind `0 0` and clean final status.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T07-42-18-0400-ecosystem-proof-state-packet.md`
+- id: sibling-worktree-dirt
+- reason: resolved for this run after removing validation-generated flat-route scratch artifacts from Experiments; final sibling statuses were clean.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T07-42-18-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-007
+- reason: superseded by 2026-06-19T06-46-32 refresh; core remains branch-aligned and available-checkout validations still pass, but sibling local checkouts remain behind fetched release refs, public browser proof still fails on sibling module 404s, and aggregate Experiments validation still omits the DSK first-wave smoke.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T06-46-32-0400-ecosystem-proof-state-packet.md`
+- id: ecosystem-proof-006
+- reason: superseded by 2026-06-19T05-42-20 refresh; core remains branch-aligned and available-checkout DSK smokes still pass, but fetched ProtoKits and Experiments release refs advanced beyond local checkouts while public browser proof still fails on sibling module 404s.
+- evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T05-42-20-0400-ecosystem-proof-state-packet.md`
 - id: ecosystem-proof-005
 - reason: superseded by 2026-06-19T01-44-00 refresh; branch and validation state remain green, public route still fails in-browser, Experiments aggregate validation still omits the DSK first-wave smoke, and sibling worktree dirt is now part of proof review state.
 - evidence: `state/automation/ecosystem_proof_scout/packets/2026-06-19T01-44-00-0400-ecosystem-proof-state-packet.md`

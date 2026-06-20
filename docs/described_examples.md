@@ -452,3 +452,691 @@ operations-data-integrity-harness
    ├─ proof-coverage-matrix-kit
    └─ telemetry-kit
 ```
+
+## 15. Spatial Mobility Invariant Harness
+
+Domain: `spatial-mobility-invariants`
+
+Intent: a reusable validation composition for AR training, rescue mobility, hazard fields, runners, and spatial guidance flows where query state must not hide transition events, immediate time thresholds must settle deterministically, generated hazards need stable ids, and movement resources must respect capacity before simulation uses them.
+
+```txt
+spatial-mobility-invariant-harness
+├─ spatial-transition-domain
+│  ├─ transition-state-policy-kit
+│  ├─ spatial-scale-kit
+│  └─ landmark-guidance-kit
+├─ time-threshold-domain
+│  ├─ immediate-threshold-policy-kit
+│  ├─ scenario-duration-kit
+│  └─ timing-window-kit
+├─ hazard-identity-domain
+│  ├─ hazard-identity-policy-kit
+│  ├─ hazard-field-kit
+│  └─ stable-id-allocation-kit
+├─ mobility-resource-domain
+│  ├─ resource-bound-normalization-kit
+│  ├─ vehicle-dynamics-kit
+│  └─ resource-pressure-kit
+└─ proof-domain
+   ├─ spatial-mobility-invariant-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 16. Receipt Integrity Harness
+
+Domain: `receipt-integrity`
+
+Intent: a reusable validation composition for timing, interaction, reward, and logistics flows where action result ids, completion events, claim events, and request ids must stay stable and idempotent before they feed telemetry, replay, rewards, or public proof rows.
+
+```txt
+receipt-integrity-harness
+├─ receipt-domain
+│  ├─ receipt-identity-kit
+│  ├─ timing-window-kit
+│  └─ telemetry-kit
+├─ event-idempotency-domain
+│  ├─ event-idempotency-kit
+│  ├─ interaction-target-kit
+│  └─ completion-idempotency-kit
+├─ reward-domain
+│  ├─ claim-receipt-policy-kit
+│  ├─ collectible-kit
+│  └─ economy-ledger-kit
+├─ request-domain
+│  ├─ request-identity-policy-kit
+│  ├─ request-fulfillment-kit
+│  └─ stable-id-allocation-kit
+└─ proof-domain
+   ├─ receipt-integrity-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ scenario-driver-kit
+```
+
+## 17. Bridge State Ownership Harness
+
+Domain: `bridge-state-ownership`
+
+Intent: a reusable validation composition for AR placement, objective lessons, puzzle wrappers, platformer wrappers, telemetry, and proof surfaces where emitted bridge events must reach their consumers, step transitions must emit receipts once, and wrapper snapshots must reflect real owned state or declare themselves stateless adapters.
+
+```txt
+bridge-state-ownership-harness
+├─ bridge-phase-domain
+│  ├─ bridge-phase-policy-kit
+│  ├─ event-handoff-kit
+│  └─ surface-placement-kit
+├─ step-receipt-domain
+│  ├─ step-transition-receipt-kit
+│  ├─ objective-flow-kit
+│  └─ ar-experience-kit
+├─ delegated-action-domain
+│  ├─ delegated-action-reconciliation-kit
+│  ├─ interaction-target-kit
+│  └─ receipt-identity-kit
+├─ wrapper-state-domain
+│  ├─ wrapper-state-contract-kit
+│  ├─ symbol-alignment-kit
+│  └─ micro-platformer-kit
+└─ proof-domain
+   ├─ bridge-state-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 18. Source State Integrity Harness
+
+Domain: `source-state-integrity`
+
+Intent: a reusable validation composition for dataset-heavy, ledger, pressure, replay, and proof services where runtime mutation must not leak into authored config, reset must rebuild from clean source data, retention limits must mean what they say, and initial terminal states must emit or record consistent receipts.
+
+```txt
+source-state-integrity-harness
+├─ authored-source-domain
+│  ├─ authored-source-isolation-kit
+│  ├─ immutable-config-kit
+│  └─ config-normalization-kit
+├─ reset-source-domain
+│  ├─ reset-source-policy-kit
+│  ├─ water-surface-kit
+│  └─ route-field-kit
+├─ retention-domain
+│  ├─ retention-limit-policy-kit
+│  ├─ economy-ledger-kit
+│  └─ telemetry-kit
+├─ initial-terminal-domain
+│  ├─ initial-terminal-receipt-kit
+│  ├─ pursuit-pressure-kit
+│  └─ terminal-state-policy-kit
+└─ proof-domain
+   ├─ source-state-integrity-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ render-descriptor-kit
+```
+
+## 19. State Signal Contract Harness
+
+Domain: `state-signal-contract`
+
+Intent: a reusable validation composition for placement, interaction, puzzle/combat, validation-driver, and camera safety services where changes must emit clear signals: descriptors rebuild when meaningful inputs change, held actions do not accidentally repeat one-shot work, state machines emit transition receipts once, coordinate axes are normalized, and camera/presentation adjustments publish derived state without corrupting source targets.
+
+```txt
+state-signal-contract-harness
+├─ invalidation-domain
+│  ├─ descriptor-invalidation-kit
+│  ├─ forest-placement-kit
+│  └─ terrain-data-kit
+├─ action-semantics-domain
+│  ├─ action-repeat-policy-kit
+│  ├─ input-edge-semantics-kit
+│  └─ interaction-target-kit
+├─ state-machine-domain
+│  ├─ state-machine-transition-kit
+│  ├─ shrine-puzzle-kit
+│  └─ light-combat-kit
+├─ coordinate-domain
+│  ├─ coordinate-axis-policy-kit
+│  ├─ scenario-driver-kit
+│  └─ route-field-kit
+├─ derived-state-domain
+│  ├─ derived-state-boundary-kit
+│  ├─ camera-kit
+│  └─ camera-occlusion-kit
+└─ proof-domain
+   ├─ state-signal-contract-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 20. Service Lifecycle Config Harness
+
+Domain: `service-lifecycle-config`
+
+Intent: a reusable validation composition for companion/guide, world-state, spatial-room, and generated traversal services where command lifecycle, elapsed-time progression, descriptor normalization, and generated geometry bounds must be explicit before DSK promotion or public proof claims.
+
+```txt
+service-lifecycle-config-harness
+├─ command-lifecycle-domain
+│  ├─ command-lifecycle-kit
+│  ├─ companion-command-kit
+│  └─ receipt-identity-kit
+├─ elapsed-time-domain
+│  ├─ elapsed-rate-policy-kit
+│  ├─ corruption-world-kit
+│  └─ time-step-catchup-kit
+├─ descriptor-normalization-domain
+│  ├─ descriptor-normalization-kit
+│  ├─ spatial-room-kit
+│  └─ authored-source-isolation-kit
+├─ generated-geometry-domain
+│  ├─ generated-geometry-bounds-kit
+│  ├─ tree-runner-kit
+│  └─ config-normalization-kit
+└─ proof-domain
+   ├─ service-lifecycle-config-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 21. Traversal Proof Integrity Harness
+
+Domain: `traversal-proof-integrity`
+
+Intent: a reusable validation composition for pathfinding, navmesh, procedural generation, and physics recovery services where traversal costs must be valid, graph ids must be stable and unique, procedural signatures must reflect proof-relevant generator changes, and recovery events must publish one receipt with final state that matches the recovered entity.
+
+```txt
+traversal-proof-integrity-harness
+├─ navigation-cost-domain
+│  ├─ navigation-cost-policy-kit
+│  ├─ pathfinding-kit
+│  └─ route-field-kit
+├─ navmesh-identity-domain
+│  ├─ navmesh-identity-policy-kit
+│  ├─ navmesh-kit
+│  └─ stable-id-allocation-kit
+├─ procedural-signature-domain
+│  ├─ procedural-signature-taxonomy-kit
+│  ├─ procedural-kit
+│  └─ descriptor-invalidation-kit
+├─ recovery-state-domain
+│  ├─ recovery-receipt-state-kit
+│  ├─ physics-kit
+│  └─ event-idempotency-kit
+└─ proof-domain
+   ├─ traversal-proof-integrity-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 22. Runtime Failure Boundary Harness
+
+Domain: `runtime-failure-boundary`
+
+Intent: a reusable validation composition for DSK install and scheduler failure surfaces where service namespaces must be prototype-safe, failed installs must roll back or remain retryable, direct and composed dependencies must agree, and thrown ticks must not leak failed events into later success proof.
+
+```txt
+runtime-failure-boundary-harness
+├─ namespace-policy-domain
+│  ├─ dsk-namespace-policy-kit
+│  ├─ service-registry-kit
+│  └─ composition-audit-kit
+├─ install-rollback-domain
+│  ├─ dsk-install-rollback-kit
+│  ├─ install-transaction-kit
+│  └─ event-handoff-kit
+├─ dependency-policy-domain
+│  ├─ dsk-dependency-parity-kit
+│  ├─ service-registry-kit
+│  └─ composition-audit-kit
+├─ scheduler-failure-domain
+│  ├─ scheduler-failure-lifetime-kit
+│  ├─ event-handoff-kit
+│  └─ telemetry-kit
+└─ proof-domain
+   ├─ runtime-failure-boundary-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ proof-surface-kit
+```
+
+## 23. Experience Edge Contract Harness
+
+Domain: `experience-edge-contract`
+
+Intent: a reusable validation composition for character control, AR launch, presentation quality, and content-driven kits where one-shot receipts must not repeat every frame, start-time launch failures must fall back or diagnose clearly, custom visual profiles must be explicit, and empty authored datasets must not create placeholder simulation state.
+
+```txt
+experience-edge-contract-harness
+├─ control-receipt-domain
+│  ├─ control-recovery-receipt-kit
+│  ├─ recovery-receipt-state-kit
+│  └─ event-idempotency-kit
+├─ launch-fallback-domain
+│  ├─ launch-fallback-chain-kit
+│  ├─ bridge-phase-policy-kit
+│  └─ proof-surface-kit
+├─ presentation-profile-domain
+│  ├─ quality-profile-contract-kit
+│  ├─ config-normalization-kit
+│  └─ derived-state-boundary-kit
+├─ content-contract-domain
+│  ├─ content-dataset-contract-kit
+│  ├─ authored-source-isolation-kit
+│  └─ immutable-config-kit
+└─ proof-domain
+   ├─ experience-edge-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 24. Lifecycle Parity Cleanup Harness
+
+Domain: `lifecycle-parity-cleanup`
+
+Intent: a reusable validation composition for locomotion, terrain streaming, camera startup, and AR/session lifecycle services where state receipts, query output, acquired resources, and stopped-session snapshots must agree before proof routes or promoted DSK compositions can rely on them.
+
+```txt
+lifecycle-parity-cleanup-harness
+├─ movement-receipt-domain
+│  ├─ movement-receipt-transition-kit
+│  ├─ action-repeat-policy-kit
+│  └─ event-idempotency-kit
+├─ terrain-parity-domain
+│  ├─ terrain-query-chunk-parity-kit
+│  ├─ terrain-data-kit
+│  └─ procedural-signature-taxonomy-kit
+├─ startup-cleanup-domain
+│  ├─ partial-start-cleanup-kit
+│  ├─ launch-fallback-chain-kit
+│  └─ proof-surface-kit
+├─ session-stop-domain
+│  ├─ session-stop-state-kit
+│  ├─ state-machine-transition-kit
+│  └─ event-handoff-kit
+└─ proof-domain
+   ├─ lifecycle-parity-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 25. Query Command Semantics Harness
+
+Domain: `query-command-semantics`
+
+Intent: a reusable validation composition for spatial guidance, affordance, route, and read API services where query calls must not masquerade as transitions, rejected commands must preserve active state, terminal targets must not emit fresh receipts, and public read results must be snapshots before telemetry, replay, or DSK promotion can trust them.
+
+```txt
+query-command-semantics-harness
+├─ terminal-receipt-domain
+│  ├─ terminal-receipt-policy-kit
+│  ├─ landmark-guidance-kit
+│  └─ event-idempotency-kit
+├─ proximity-query-domain
+│  ├─ proximity-query-transition-kit
+│  ├─ environmental-affordance-kit
+│  └─ transition-state-policy-kit
+├─ rejected-command-domain
+│  ├─ rejected-command-state-kit
+│  ├─ accepted-mutation-kit
+│  └─ command-lifecycle-kit
+├─ query-isolation-domain
+│  ├─ query-snapshot-isolation-kit
+│  ├─ route-field-kit
+│  └─ authored-source-isolation-kit
+└─ proof-domain
+   ├─ query-command-semantics-proof-kit
+   ├─ proof-coverage-matrix-kit
+   └─ telemetry-kit
+```
+
+## 26. Proof Readiness Queue Harness
+
+Domain: `proof-readiness-queue`
+
+Intent: a reusable validation composition for DSK promotion and public proof review where hardening fixtures, local/fetched/browser proof, aggregate scripts, targeted smokes, module-source strategy, npm availability, package-version policy, blockers, and not-claimed rows stay separate until each claim has direct evidence.
+
+```txt
+proof-readiness-queue-harness
+|-- fixture-queue-domain
+|   |-- hardening-fixture-queue-kit
+|   |-- runtime-failure-boundary-proof-kit
+|   |-- lifecycle-parity-proof-kit
+|   |-- query-command-semantics-proof-kit
+|   `-- experience-edge-proof-kit
+|-- claim-taxonomy-domain
+|   |-- proof-claim-taxonomy-kit
+|   |-- proof-coverage-matrix-kit
+|   `-- proof-surface-kit
+|-- module-source-domain
+|   |-- module-source-gate-kit
+|   |-- proof-surface-kit
+|   `-- telemetry-kit
+|-- aggregate-targeted-domain
+|   |-- aggregate-targeted-proof-parity-kit
+|   |-- proof-coverage-matrix-kit
+|   `-- telemetry-kit
+`-- release-evidence-domain
+    |-- release-evidence-checklist-kit
+    |-- proof-claim-taxonomy-kit
+    `-- hardening-fixture-queue-kit
+```
+
+## 27. Read Model Orchestration Isolation Harness
+
+Domain: `read-model-orchestration-isolation`
+
+Intent: a reusable validation composition for renderer registries, engine surfaces, and SequenceNode orchestration where descriptors, snapshots, sibling lifecycle state, and child receipt counts must be isolated before proof harnesses, telemetry, debug tools, or promoted DSK flows can trust read surfaces.
+
+```txt
+read-model-orchestration-isolation-harness
+|-- registry-isolation-domain
+|   |-- registry-descriptor-isolation-kit
+|   |-- descriptor-normalization-kit
+|   `-- derived-state-boundary-kit
+|-- surface-read-model-domain
+|   |-- surface-snapshot-isolation-kit
+|   |-- event-handoff-kit
+|   `-- query-snapshot-isolation-kit
+|-- sequence-race-domain
+|   |-- sequence-race-cleanup-kit
+|   |-- scheduler-failure-lifetime-kit
+|   `-- event-idempotency-kit
+|-- sequence-any-domain
+|   |-- sequence-any-receipt-policy-kit
+|   |-- event-idempotency-kit
+|   `-- receipt-identity-kit
+`-- proof-domain
+    |-- read-model-orchestration-proof-kit
+    |-- proof-coverage-matrix-kit
+    `-- telemetry-kit
+```
+
+## 28. Legacy Sequence AR Compatibility Harness
+
+Domain: `legacy-sequence-ar-compatibility`
+
+Intent: a reusable validation composition for legacy sequence runtime, multi-kit compatibility, FishingKit sequence defaults, and AR DOM rendering where replay/reset behavior, `AnyChild` loser cleanup, owning-kit action lookup, and authored AR text safety must be explicit before older exported surfaces can support composed DSK or public browser proof flows.
+
+```txt
+legacy-sequence-ar-compatibility-harness
+|-- replay-reset-domain
+|   |-- legacy-sequence-replay-reset-kit
+|   |-- terminal-state-policy-kit
+|   `-- event-handoff-kit
+|-- any-cleanup-domain
+|   |-- legacy-any-sibling-cleanup-kit
+|   |-- event-idempotency-kit
+|   `-- receipt-identity-kit
+|-- owning-kit-domain
+|   |-- legacy-sequence-owning-kit-context-kit
+|   |-- service-registry-kit
+|   `-- composition-audit-kit
+|-- ar-content-safety-domain
+|   |-- ar-default-text-safety-kit
+|   |-- proof-surface-kit
+|   `-- quality-profile-contract-kit
+`-- proof-domain
+    |-- compatibility-content-safety-proof-kit
+    |-- proof-coverage-matrix-kit
+    `-- telemetry-kit
+```
+
+## 29. AR Launch Spatial Read Model Harness
+
+Domain: `ar-launch-spatial-read-model`
+
+Intent: a reusable validation composition for AR launcher, AR device selection, launch-state callbacks, and SpatialRoom descriptors where missing AR composition, explicit mode fallback, live support state, and mutable room/anchor getters must be explicit before browser AR proof routes or spatial inspectors can trust capability claims.
+
+```txt
+ar-launch-spatial-read-model-harness
+|-- launch-precondition-domain
+|   |-- ar-launch-precondition-kit
+|   |-- service-registry-kit
+|   `-- proof-surface-kit
+|-- mode-selection-domain
+|   |-- ar-mode-selection-policy-kit
+|   |-- launch-fallback-chain-kit
+|   `-- proof-claim-taxonomy-kit
+|-- launch-state-domain
+|   |-- ar-launch-state-isolation-kit
+|   |-- surface-snapshot-isolation-kit
+|   `-- derived-state-boundary-kit
+|-- spatial-read-model-domain
+|   |-- spatial-room-getter-isolation-kit
+|   |-- query-snapshot-isolation-kit
+|   `-- authored-source-isolation-kit
+`-- proof-domain
+    |-- ar-spatial-read-model-proof-kit
+    |-- proof-coverage-matrix-kit
+    `-- telemetry-kit
+```
+
+## 30. Proof Signal Integrity Harness
+
+Domain: `proof-signal-integrity`
+
+Intent: a reusable validation composition for AR experience flows, WebXR helpers, engine time, and spatial descriptors where proof signals must be one-shot, nullable or structured on device failure, monotonic in normal ticks, and finite before telemetry, reward flows, browser proof, or DSK hardening reviews rely on them.
+
+```txt
+proof-signal-integrity-harness
+|-- terminal-receipt-domain
+|   |-- experience-terminal-receipt-kit
+|   |-- event-idempotency-kit
+|   `-- terminal-state-policy-kit
+|-- device-helper-domain
+|   |-- webxr-hit-test-failure-policy-kit
+|   |-- launch-fallback-chain-kit
+|   `-- proof-claim-taxonomy-kit
+|-- time-policy-domain
+|   |-- monotonic-tick-time-kit
+|   |-- scheduler-failure-lifetime-kit
+|   `-- proof-surface-kit
+|-- spatial-config-domain
+|   |-- finite-spatial-scale-kit
+|   |-- descriptor-normalization-kit
+|   `-- config-normalization-kit
+`-- proof-domain
+    |-- proof-signal-integrity-kit
+    |-- proof-coverage-matrix-kit
+    `-- telemetry-kit
+```
+
+## 31. Composition Proof Ownership Harness
+
+Domain: `composition-proof-ownership`
+
+Intent: a reusable validation composition for composer capability graphs, SequenceNode type registries, event-bus proof history, and AR launcher device sources where provider ownership, type meaning, diagnostic history, and support/session state must be explicit before large DSK graphs or browser proof routes can trust composition evidence.
+
+```txt
+composition-proof-ownership-harness
+|-- provider-ownership-domain
+|   |-- capability-provider-ownership-kit
+|   |-- service-registry-kit
+|   `-- composition-audit-kit
+|-- sequence-type-domain
+|   |-- sequence-type-registry-policy-kit
+|   |-- sequence-node-kit
+|   `-- legacy-sequence-owning-kit-context-kit
+|-- event-history-domain
+|   |-- sequence-event-history-isolation-kit
+|   |-- surface-snapshot-isolation-kit
+|   `-- event-idempotency-kit
+|-- ar-runtime-source-domain
+|   |-- ar-runtime-source-consistency-kit
+|   |-- ar-mode-selection-policy-kit
+|   `-- ar-launch-state-isolation-kit
+`-- proof-domain
+    |-- composition-proof-ownership-kit
+    |-- proof-coverage-matrix-kit
+    `-- telemetry-kit
+```
+
+## 32. Runtime Identity Lifecycle Harness
+
+Domain: `runtime-identity-lifecycle-ownership`
+
+Intent: a reusable validation composition for runtime kit bindings, ECS definition names, SequenceNode install-only adapters, and event-bus teardown where ownership and lifecycle policy must be explicit before composed DSK graphs or proof harnesses can trust binding services, state isolation, repeated deployments, or disposed listener counts.
+
+```txt
+runtime-identity-lifecycle-harness
+|-- binding-ownership-domain
+|   |-- runtime-binding-ownership-kit
+|   |-- capability-provider-ownership-kit
+|   `-- service-registry-kit
+|-- definition-identity-domain
+|   |-- ecs-definition-identity-kit
+|   |-- authored-source-isolation-kit
+|   `-- query-snapshot-isolation-kit
+|-- sequence-install-domain
+|   |-- sequence-install-only-idempotency-kit
+|   |-- sequence-type-registry-policy-kit
+|   `-- install-transaction-kit
+|-- event-bus-lifecycle-domain
+|   |-- event-bus-disposed-parity-kit
+|   |-- sequence-event-history-isolation-kit
+|   `-- lifecycle-parity-proof-kit
+`-- proof-domain
+    |-- runtime-identity-lifecycle-proof-kit
+    |-- proof-coverage-matrix-kit
+    `-- telemetry-kit
+```
+
+## 33. Content Boundary Objective Harness
+
+Domain: `content-boundary-objective-contract`
+
+Intent: a reusable validation composition for public API boundary, content-kit preset identity, objective thresholds, and authored dataset validation where a kit can look reusable or complete while exporting themed presets from core, sharing runtime ids, or accepting invalid completion criteria.
+
+```txt
+content-boundary-objective-harness
+|-- public-api-boundary-domain
+|   |-- public-api-product-boundary-kit
+|   |-- proof-claim-taxonomy-kit
+|   `-- release-evidence-checklist-kit
+|-- preset-identity-domain
+|   |-- preset-runtime-identity-kit
+|   |-- runtime-binding-ownership-kit
+|   `-- service-registry-kit
+|-- objective-policy-domain
+|   |-- objective-threshold-policy-kit
+|   |-- terminal-state-policy-kit
+|   `-- config-normalization-kit
+|-- content-validation-domain
+|   |-- content-dataset-validation-kit
+|   |-- content-dataset-contract-kit
+|   `-- authored-source-isolation-kit
+`-- proof-domain
+    |-- content-boundary-objective-proof-kit
+    |-- proof-coverage-matrix-kit
+    `-- telemetry-kit
+```
+
+## 34. Query Read Model Isolation Harness
+
+Domain: `query-read-model-isolation`
+
+Intent: a reusable validation composition for public query helpers and engine read methods where read-only APIs must return isolated snapshots before renderers, dashboards, telemetry, AI adapters, or proof harnesses can inspect logistics, spatial, hazard, and water state safely.
+
+```txt
+query-read-model-isolation-harness
+|-- public-helper-domain
+|   |-- public-query-helper-contract-kit
+|   |-- query-snapshot-isolation-kit
+|   `-- authored-source-isolation-kit
+|-- engine-read-domain
+|   |-- engine-read-method-snapshot-kit
+|   |-- accepted-mutation-kit
+|   `-- query-snapshot-isolation-kit
+|-- metadata-isolation-domain
+|   |-- nested-metadata-read-isolation-kit
+|   |-- content-dataset-validation-kit
+|   `-- immutable-config-kit
+|-- stored-query-domain
+|   |-- stored-query-proof-snapshot-kit
+|   |-- surface-snapshot-isolation-kit
+|   `-- telemetry-kit
+`-- proof-domain
+    |-- query-read-model-isolation-proof-kit
+    |-- query-command-semantics-proof-kit
+    `-- proof-coverage-matrix-kit
+```
+
+## 35. Scheduler World Mutation Isolation Harness
+
+Domain: `scheduler-world-mutation-isolation`
+
+Intent: a reusable validation composition for ECS scheduler and world APIs where one simulation pass must have explicit topology, membership, and event-read mutation boundaries before DSK installers, proof adapters, cleanup systems, or SequenceNode bridges can trust tick evidence.
+
+```txt
+scheduler-world-mutation-isolation-harness
+|-- scheduler-topology-domain
+|   |-- scheduler-active-run-policy-kit
+|   |-- scheduler-phase-topology-kit
+|   `-- scheduler-failure-lifetime-kit
+|-- system-iteration-domain
+|   |-- runsystem-membership-snapshot-kit
+|   |-- accepted-mutation-kit
+|   `-- state-snapshot-isolation-kit
+|-- event-queue-domain
+|   |-- event-queue-payload-isolation-kit
+|   |-- event-handoff-kit
+|   `-- surface-snapshot-isolation-kit
+`-- proof-domain
+    |-- scheduler-world-mutation-proof-kit
+    |-- runtime-failure-boundary-proof-kit
+    `-- proof-coverage-matrix-kit
+```
+
+## 36. Procedural Navigation State Ownership Harness
+
+Domain: `procedural-navigation-state-ownership`
+
+Intent: a reusable validation composition for generated space and navigation APIs where queued command payloads, path snapshots, procedural snapshots, and regenerate return values must be isolated before traversal proof, editor tooling, render adapters, or DSK promotion can trust generated-world evidence.
+
+```txt
+procedural-navigation-state-ownership-harness
+|-- navigation-command-domain
+|   |-- navigation-command-payload-ownership-kit
+|   |-- accepted-mutation-kit
+|   `-- event-queue-payload-isolation-kit
+|-- navigation-read-domain
+|   |-- navigation-proof-snapshot-isolation-kit
+|   |-- query-snapshot-isolation-kit
+|   `-- navigation-cost-policy-kit
+|-- procedural-read-domain
+|   |-- procedural-proof-snapshot-isolation-kit
+|   |-- procedural-signature-taxonomy-kit
+|   `-- authored-source-isolation-kit
+|-- procedural-command-domain
+|   |-- procedural-command-return-state-kit
+|   |-- config-normalization-kit
+|   `-- state-snapshot-isolation-kit
+`-- proof-domain
+    |-- procedural-navigation-ownership-proof-kit
+    |-- traversal-proof-integrity-kit
+    `-- proof-coverage-matrix-kit
+```
+
+## 37. Telemetry Command Evidence Ownership Harness
+
+Domain: `telemetry-command-evidence-ownership`
+
+Intent: a reusable validation composition for telemetry, service commands, and input submissions where selected proof values, nested path reads, submitted metadata, returned command state, and current input frames must be isolated before operations proof, replay, automation, or DSK promotion can trust evidence.
+
+```txt
+telemetry-command-evidence-ownership-harness
+|-- telemetry-snapshot-domain
+|   |-- telemetry-selected-value-snapshot-kit
+|   |-- telemetry-path-selector-isolation-kit
+|   `-- proof-signal-integrity-kit
+|-- service-command-domain
+|   |-- service-command-payload-ownership-kit
+|   |-- accepted-mutation-kit
+|   `-- event-queue-payload-isolation-kit
+|-- input-frame-domain
+|   |-- input-frame-ownership-kit
+|   |-- input-edge-semantics-kit
+|   `-- state-snapshot-isolation-kit
+`-- proof-domain
+    |-- telemetry-command-evidence-proof-kit
+    |-- query-read-model-isolation-proof-kit
+    `-- proof-coverage-matrix-kit
+```

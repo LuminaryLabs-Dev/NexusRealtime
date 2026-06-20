@@ -1,6 +1,116 @@
 # Master Deep Bug Reports Tracker
 
 ## Current Root Lessons
+- id: deep-bug-root-2026-06-20-telemetry-command-payload-ownership
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-20T17-54-14-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-20T17-54-14-0400-deep-bug-node.md`
+- summary: Telemetry proof snapshots and non-navigation command APIs have fresh ownership gaps: telemetry history stores live selected resources, telemetry path selectors expose nested live objects, RequestQueue/TransportRoute retain caller-owned metadata after command submission, and InputIntent retains caller-owned metadata plus returns live state.
+- id: deep-bug-root-2026-06-20-procedural-navigation-state-ownership
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-20T06-54-16-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-20T06-54-16-0400-deep-bug-node.md`
+- summary: Procedural and navigation public APIs have fresh state-ownership proof gaps: `requestPath()` stores caller-owned endpoint objects and returns the same queued request, navigation snapshot/query APIs expose live resources, procedural snapshots expose live cell/walkability objects, and `regenerate()` returns live pending state.
+- id: deep-bug-root-2026-06-20-scheduler-world-mutation-isolation
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-20T05-53-01-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-20T05-53-01-0400-deep-bug-node.md`
+- summary: Scheduler/world mutation boundaries have fresh proof gaps: systems and phases added during `scheduler.run()` can execute in the same pass, `runSystem()` can process removed entities with undefined component values, and `readEvents()` exposes mutable queued payload objects.
+- id: deep-bug-root-2026-06-20-query-read-model-isolation
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-20T04-54-16-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-20T04-54-16-0400-deep-bug-node.md`
+- summary: Public query helpers and engine read methods have fresh read-model proof gaps: RequestFulfillment, CargoManifest, LandmarkGuidance, EnvironmentalAffordance, HazardField, and WaterSurface query outputs can mutate live runtime state or caller-owned source state through returned nested metadata and hazard objects.
+- id: deep-bug-root-2026-06-20-fishing-boundary-identity-content
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-20T03-55-08-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-20T03-55-08-0400-deep-bug-node.md`
+- summary: Fishing-family public API and content contracts have fresh proof gaps: ReefRescue is exported as a product-themed core preset, FishingKit ignores caller ids and gives generic/themed presets the same runtime id, zero/negative objectives complete with zero catches, and content validation remains split across placeholder entities and invalid objective thresholds.
+- id: deep-bug-root-2026-06-20-runtime-identity-lifecycle-ownership
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-20T02-54-27-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-20T02-54-27-0400-deep-bug-node.md`
+- summary: Runtime binding ownership, ECS definition identity, SequenceNode install-only kit state, and disposed event-bus listener parity have fresh proof gaps: duplicate binding names overwrite silently, same-named ECS definitions from separate kits alias one store or queue, install-only SequenceNode kits reinstall on repeated deployments, and disposed event buses still accept `onAny()` listeners.
+- id: deep-bug-root-2026-06-20-composer-sequence-ar-proof-isolation
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-20T01-55-55-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-20T01-55-55-0400-deep-bug-node.md`
+- summary: Composer capability ownership, SequenceNode registry/history isolation, and AR launch device-source consistency have fresh proof gaps: duplicate capability providers install together without owner diagnostics, duplicate SequenceNode types overwrite silently, event-bus history snapshots mutate live event objects, and override-based AR launch support can disagree with camera-overlay startup.
+- id: deep-bug-root-2026-06-19-ar-experience-time-spatial-config
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T21-55-21-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T21-55-21-0400-deep-bug-node.md`
+- summary: AR experience receipts, WebXR hit-test setup, engine time policy, and greybox spatial scale have fresh proof gaps: ARExperience repeats final completion and double-emits from `complete()`, `createHitTestSource()` throws on hit-test-source rejection, normal ticks can publish negative elapsed time, and greybox/SpatialRoom scale can become `NaN`.
+- id: deep-bug-root-2026-06-19-ar-launch-spatial-readmodel
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T20-53-37-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T20-53-37-0400-deep-bug-node.md`
+- summary: AR launch capability contracts and SpatialRoom descriptor getters have fresh proof gaps: launch runtimes can crash later when `createARKit()` was not installed, launcher `getState()` exposes mutable `ARSupportState`, explicit preferred-mode lists silently degrade to fallback, and SpatialRoom read getters return live building/anchor objects.
+- id: deep-bug-root-2026-06-19-legacy-sequence-ar-dom-compat
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T19-54-18-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T19-54-18-0400-deep-bug-node.md`
+- summary: Legacy sequence runtime and AR DOM renderer defaults have fresh proof gaps: root restart can skip descendant replay, legacy `AnyChild` can leave losers running under completed parents, legacy controllers depend on the latest installed `engine.kit`, and default AR renderer templates insert authored text as raw HTML.
+- id: deep-bug-root-2026-06-19-registry-surface-sequence-isolation
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T18-55-33-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T18-55-33-0400-deep-bug-node.md`
+- summary: Registry descriptors, engine surfaces, and SequenceNode sibling lifecycle receipts have fresh proof gaps: shader/material registries share nested descriptor objects, surface snapshots can mutate live resource/event payload state, race failure leaves sibling nodes running under failed parents, and `any` skips can overcount child-finished receipts.
+- id: deep-bug-root-2026-06-19-guidance-affordance-route-query
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T16-54-05-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T16-54-05-0400-deep-bug-node.md`
+- summary: Guidance, affordance, and route query APIs have fresh proof gaps: inactive completed landmarks still emit normal transition receipts, repeated affordance proximity queries emit repeated entered receipts, missing affordance activation corrupts active state, and RouteField nearest-marker query results can mutate live route state.
+- id: deep-bug-root-2026-06-19-locomotion-terrain-ar-lifecycle
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T15-53-59-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T15-53-59-0400-deep-bug-node.md`
+- summary: Locomotion, terrain streaming, and AR lifecycle have fresh proof gaps: held glide emits repeated `GlideStarted` receipts, far spline carve chunks can bake without the carve, camera-overlay partial start can retain an acquired stream after failure, and AR launch stop leaves session state running.
+- id: deep-bug-root-2026-06-19-presentation-ar-content-control
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T14-54-04-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T14-54-04-0400-deep-bug-node.md`
+- summary: Presentation, AR launch, content-driven fishing, and character-control kits have fresh proof gaps: CharacterRagdoll repeats `Staggered` every settled tick, AR launch does not fall back after selected WebXR start failure, RealismKit silently replaces custom quality objects with built-in `high`, and FishingKit empty content still spawns incomplete fish/lure entities.
+- id: deep-bug-root-2026-06-19-dsk-scheduler-failure-boundaries
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T13-53-17-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T13-53-17-0400-deep-bug-node.md`
+- summary: DSK namespace/install and scheduler failure boundaries have fresh proof gaps: failed late DSK API collision leaves partial installed state and false same-object reinstall success, `apiName:"__proto__"` mutates the namespace prototype, direct DSK install ignores missing non-`n:` runtime requirements, and thrown systems can replay failed-tick events on the next successful tick.
+- id: deep-bug-root-2026-06-19-navigation-procedural-physics
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T12-54-22-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T12-54-22-0400-deep-bug-node.md`
+- summary: Navigation, procedural generation, and physics recovery have fresh proof gaps: Pathfinding accepts negative traversal costs and returns negative route totals, NavMesh duplicate source keys collapse stable ids, Procedural signatures ignore algorithm descriptors, and WorldPhysics fall recovery double-emits respawn receipts while leaving final player-position state stale.
+- id: deep-bug-root-2026-06-19-command-time-descriptor-generation
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T11-55-07-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T11-55-07-0400-deep-bug-node.md`
+- summary: Companion command lifecycle, world-state timing, spatial-room descriptor normalization, and runner generation bounds have fresh proof gaps: CompanionCommand ignores later targets after first arrival, CorruptionWorld progresses by tick count instead of elapsed time, SpatialRoom can retain non-numeric anchors and mutate caller config, and TreeRunner can crash or emit non-finite geometry from invalid config.
+- id: deep-bug-root-2026-06-19-placement-interaction-driver-camera
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T09-54-20-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T09-54-20-0400-deep-bug-node.md`
+- summary: Placement invalidation, base interaction, small state-machine transitions, scenario steering, and camera safety have fresh proof gaps: ForestPlacement ignores same-length route content changes, Interaction held booleans repeat gather/activate receipts, Shrine charged receipts repeat while LightCombat can start with zero health but not defeated, ScenarioDriver ignores `z`, and CameraOcclusion cumulatively mutates `lookAt`.
+- id: deep-bug-root-2026-06-19-config-ledger-pursuit-state
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T08-56-02-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T08-56-02-0400-deep-bug-node.md`
+- summary: Dataset/reset, economy ledger retention, and pursuit pressure initial-state contracts are weak: WaterSurface/RouteField/RenderDescriptor can leak nested runtime mutations into caller config and reset output, EconomyKit `ledgerLimit:0` still retains a transaction, and PursuitPressure can start in caught band with `caught:false` then recover without caught/recovered receipts.
+- id: deep-bug-root-2026-06-19-bridge-phase-wrapper-state
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T07-53-41-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T07-53-41-0400-deep-bug-node.md`
+- summary: AR/objective bridge and wrapper state contracts are weak: raw ARAnchorPlaced events do not advance SurfacePlacement/Objectives, ObjectiveFlow and ARExperience step-completion events do not emit on normal transitions, and puzzle/platformer wrappers delegate actions while their own progress state stays inert.
+- id: deep-bug-root-2026-06-19-receipt-identity-idempotency
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T06-53-41-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T06-53-41-0400-deep-bug-node.md`
+- summary: Timing, interaction, collectible, and request kits have receipt identity and idempotency bugs: TimingWindow overwrites action result ids with window ids, InteractionTarget repeats completion events for explicit completed targets, Collectible repeats claim events for already-collected ids, and RequestFulfillment can generate duplicate request ids.
+- id: deep-bug-root-2026-06-19-spatial-hazard-mobility-time
+- status: open
+- latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T05-53-25-0400-deep-bug-report-packet.md`
+- latest node: `state/automation/deep_bug_report_scout/knowledge_nodes/2026-06-19T05-53-25-0400-deep-bug-node.md`
+- summary: Spatial, hazard, mobility, and scenario-time kits have transition-state and invariant bugs: SpatialScale can miss anchor-entry events, ScenarioDuration leaves zero-duration gates incomplete until positive time advances, HazardField can duplicate generated ids, and VehicleDynamics can grant one boosted frame with zero max boost.
 - id: deep-bug-root-2026-06-19-occupant-facility-pressure
 - status: open
 - latest packet: `state/automation/deep_bug_report_scout/packets/2026-06-19T01-53-53-0400-deep-bug-report-packet.md`
@@ -38,6 +148,354 @@
 - summary: Current smoke tests pass, but validation and cleanup boundaries still allow invalid SequenceNode side effects, unbounded terrain cache growth, stale AR sessions, and DSK install rollback risk.
 
 ## Branch Tree
+- parent: deep-bug-root-2026-06-20-telemetry-command-payload-ownership
+- child: deep-bug-telemetry-live-resource-snapshot-001
+- relationship: telemetry proof snapshot isolation bug
+- look further: Add telemetry fixtures for whole-resource selectors, system snapshots, manual snapshots, nested arrays, history mutation, and source-resource mutation through snapshot values.
+- parent: deep-bug-root-2026-06-20-telemetry-command-payload-ownership
+- child: deep-bug-telemetry-path-live-object-001
+- relationship: telemetry selector path ownership bug
+- look further: Add path-selector fixtures for nested objects, arrays, primitives, missing paths, and mutation attempts.
+- parent: deep-bug-root-2026-06-20-telemetry-command-payload-ownership
+- child: deep-bug-operations-command-metadata-alias-001
+- relationship: operations command payload ownership bug
+- look further: Add operation command fixtures for request add/fulfill, transport call/arrival, reward/penalty metadata, returned state mutation, and event payload isolation.
+- parent: deep-bug-root-2026-06-20-telemetry-command-payload-ownership
+- child: deep-bug-input-intent-metadata-alias-001
+- relationship: input command payload ownership bug
+- look further: Add input fixtures for submitted metadata cloning, returned state mutation, event payload mutation, and immutable per-frame input snapshots.
+- parent: deep-bug-root-2026-06-20-procedural-navigation-state-ownership
+- child: deep-bug-navigation-request-alias-001
+- relationship: navigation command payload ownership bug
+- look further: Add path command fixtures for returned request mutation, original endpoint mutation, event payload mutation, queued-state mutation, and replay determinism.
+- parent: deep-bug-root-2026-06-20-procedural-navigation-state-ownership
+- child: deep-bug-navigation-snapshot-live-001
+- relationship: navigation proof snapshot isolation bug
+- look further: Add read-model fixtures for navigation path history, `lastPath`, state requests, debug raw graphs, and agent path arrays.
+- parent: deep-bug-root-2026-06-20-procedural-navigation-state-ownership
+- child: deep-bug-procedural-snapshot-live-001
+- relationship: procedural proof snapshot isolation bug
+- look further: Add procedural snapshot clone/freeze fixtures for cells, walkability, render descriptors, regions, objective markers, and world positions.
+- parent: deep-bug-root-2026-06-20-procedural-navigation-state-ownership
+- child: deep-bug-procedural-regenerate-live-state-001
+- relationship: procedural command return-state ownership bug
+- look further: Add regenerate return-value fixtures for `dirty`, seed/config mutation, invalidation event payloads, and same-frame generation.
+- parent: deep-bug-root-2026-06-20-scheduler-world-mutation-isolation
+- child: deep-bug-active-phase-system-add-001
+- relationship: active scheduler phase mutation bug
+- look further: Add scheduler fixtures for same-phase add, self-add, duplicate add, and deferred mutation policy.
+- parent: deep-bug-root-2026-06-20-scheduler-world-mutation-isolation
+- child: deep-bug-dynamic-phase-same-run-001
+- relationship: scheduler phase topology mutation bug
+- look further: Add phase topology fixtures for add during run, lifecycle ordering, duplicate phases, and next-pass-only policy.
+- parent: deep-bug-root-2026-06-20-scheduler-world-mutation-isolation
+- child: deep-bug-runsystem-removed-entity-001
+- relationship: ECS query iteration membership bug
+- look further: Add query iteration fixtures for entity removal, component removal, stable value snapshots, and live membership rechecks.
+- parent: deep-bug-root-2026-06-20-scheduler-world-mutation-isolation
+- child: deep-bug-read-events-live-payload-001
+- relationship: low-level event queue read-model isolation bug
+- look further: Add event queue isolation fixtures for nested payload mutation before scheduler consumers, journal drain, and surface publication.
+- parent: deep-bug-root-2026-06-20-query-read-model-isolation
+- child: deep-bug-request-query-live-metadata-001
+- relationship: request/logistics query read-model isolation bug
+- look further: Add query isolation fixtures for `nearestOpen()` and `queryNearestOpenRequest()` with nested metadata mutation.
+- parent: deep-bug-root-2026-06-20-query-read-model-isolation
+- child: deep-bug-cargo-query-live-items-001
+- relationship: cargo/inventory read-model isolation bug
+- look further: Add cargo read-model fixtures for `availableItems()`, `nearestAvailable()`, and `queryNearestCargo()`.
+- parent: deep-bug-root-2026-06-20-query-read-model-isolation
+- child: deep-bug-spatial-query-shallow-metadata-001
+- relationship: spatial guidance and affordance query metadata isolation bug
+- look further: Add landmark/affordance query fixtures for engine methods, exported helpers, nested metadata, and `lastQuery`.
+- parent: deep-bug-root-2026-06-20-query-read-model-isolation
+- child: deep-bug-hazard-water-query-live-hazards-001
+- relationship: hazard/water query nested object isolation bug
+- look further: Add hazard/water query isolation fixtures for nested hazard metadata, `lastCollision`, `lastQuery`, and exported helper outputs.
+- parent: deep-bug-root-2026-06-20-fishing-boundary-identity-content
+- child: deep-bug-reef-rescue-core-export-001
+- relationship: core/product boundary drift
+- look further: Add a public API boundary fixture and decide whether ReefRescue moves to Experiments/ProtoKits or becomes deprecated compatibility.
+- parent: deep-bug-root-2026-06-20-fishing-boundary-identity-content
+- child: deep-bug-fishing-fixed-kit-id-001
+- relationship: first-party factory runtime identity bug
+- look further: Add FishingKit identity fixtures for default id, caller id, multiple instances, composer/direct install parity, and metadata ownership.
+- parent: deep-bug-root-2026-06-20-fishing-boundary-identity-content
+- child: deep-bug-fishing-zero-objective-complete-001
+- relationship: content objective normalization bug
+- look further: Define objective target normalization for missing, zero, negative, fractional, string, NaN, and explicitly disabled objectives.
+- parent: deep-bug-root-2026-06-20-fishing-boundary-identity-content
+- child: deep-bug-fishing-content-contract-split-001
+- relationship: content dataset contract gap
+- look further: Add one FishingKit content-contract fixture spanning species, lures, objectives, duplicate ids, unknown ids, disabled content, and diagnostics.
+- parent: deep-bug-root-2026-06-20-runtime-identity-lifecycle-ownership
+- child: deep-bug-binding-name-overwrite-001
+- relationship: runtime binding ownership bug
+- look further: Add binding collision fixtures for composer, direct install, intentional override, and owner diagnostics.
+- parent: deep-bug-root-2026-06-20-runtime-identity-lifecycle-ownership
+- child: deep-bug-ecs-definition-name-alias-001
+- relationship: ECS definition identity collision bug
+- look further: Add duplicate component/resource/event name fixtures across direct and composed installs, plus explicit shared-definition policy.
+- parent: deep-bug-root-2026-06-20-runtime-identity-lifecycle-ownership
+- child: deep-bug-sequence-install-only-repeat-001
+- relationship: SequenceNode install-only idempotency bug
+- look further: Record install-only kit state or normalize raw kits into runtime kits before repeated deployments.
+- parent: deep-bug-root-2026-06-20-runtime-identity-lifecycle-ownership
+- child: deep-bug-sequence-eventbus-onany-disposed-001
+- relationship: disposed event-bus lifecycle parity bug
+- look further: Add disposed lifecycle fixtures for `subscribe`, `once`, `onAny`, dispatch, clear, snapshot, and repeated dispose.
+- parent: deep-bug-root-2026-06-20-composer-sequence-ar-proof-isolation
+- child: deep-bug-composer-duplicate-provider-001
+- relationship: capability ownership ambiguity bug
+- look further: Add composer fixtures for duplicate providers, owner lookup, intentional override policy, provider diagnostics, and direct-install parity.
+- parent: deep-bug-root-2026-06-20-composer-sequence-ar-proof-isolation
+- child: deep-bug-sequence-type-overwrite-001
+- relationship: SequenceNode type registry overwrite bug
+- look further: Add duplicate built-in/custom type registration, same-object reinstall, explicit override, and kit install ordering fixtures.
+- parent: deep-bug-root-2026-06-20-composer-sequence-ar-proof-isolation
+- child: deep-bug-sequence-event-history-live-001
+- relationship: SequenceNode proof-history read-model isolation bug
+- look further: Clone/freeze remembered events and snapshot history across payload, meta, returned event, listeners, and disposed bus fixtures.
+- parent: deep-bug-root-2026-06-20-composer-sequence-ar-proof-isolation
+- child: deep-bug-ar-launch-device-source-mismatch-001
+- relationship: AR launch support/session source mismatch bug
+- look further: Add override navigator, global navigator, unsupported global, failed start reconciliation, and support/session consistency fixtures.
+- parent: deep-bug-root-2026-06-19-ar-experience-time-spatial-config
+- child: deep-bug-ar-experience-completion-repeat-001
+- relationship: AR terminal receipt idempotency bug
+- look further: Add ARExperience final-step, manual complete, repeated tick, reset-after-complete, and event-count fixtures.
+- parent: deep-bug-root-2026-06-19-ar-experience-time-spatial-config
+- child: deep-bug-hit-test-source-rejection-001
+- relationship: WebXR helper failure-policy bug
+- look further: Add hit-test helper fixtures for missing methods, viewer-space rejection, hit-test-source rejection, empty results, and valid poses.
+- parent: deep-bug-root-2026-06-19-ar-experience-time-spatial-config
+- child: deep-bug-engine-negative-delta-001
+- relationship: engine monotonic time bug
+- look further: Define tick policy for negative deltas and verify scheduler, surfaces, and SequenceNode propagation.
+- parent: deep-bug-root-2026-06-19-ar-experience-time-spatial-config
+- child: deep-bug-greybox-spatial-scale-nan-001
+- relationship: spatial descriptor finite-config bug
+- look further: Normalize or reject invalid, zero, negative, infinite, and string building scale before SpatialRoom/render descriptor consumption.
+- parent: deep-bug-root-2026-06-19-ar-launch-spatial-readmodel
+- child: deep-bug-ar-launch-missing-arkit-001
+- relationship: AR launch composition precondition bug
+- look further: Add plain-engine, ARKit-installed, fallback-preview, camera-overlay, page-marker, and webxr-plane launcher precondition fixtures.
+- parent: deep-bug-root-2026-06-19-ar-launch-spatial-readmodel
+- child: deep-bug-ar-launch-support-live-state-001
+- relationship: AR launch read-model isolation bug
+- look further: Clone/freeze launcher state passed through `getState()`, `render`, and `onUpdate`, including support, placement, objective, interactions, collectibles, and render descriptors.
+- parent: deep-bug-root-2026-06-19-ar-launch-spatial-readmodel
+- child: deep-bug-ar-preferred-mode-silent-fallback-001
+- relationship: AR mode fallback policy bug
+- look further: Define strict versus permissive fallback behavior for explicit preferred modes and add unknown/unsupported/explicit-fallback fixtures.
+- parent: deep-bug-root-2026-06-19-ar-launch-spatial-readmodel
+- child: deep-bug-spatial-room-live-getters-001
+- relationship: spatial descriptor read-model isolation bug
+- look further: Add SpatialRoom getter isolation fixtures for `getState()`, `getActiveBuilding()`, `getAnchor()`, `setActiveBuilding()`, and `snapshot()`.
+- parent: deep-bug-root-2026-06-19-legacy-sequence-ar-dom-compat
+- child: deep-bug-legacy-sequence-restart-descendants-001
+- relationship: legacy sequence replay/reset bug
+- look further: Add root restart, nested restart, event-wait restart, skipped child restart, and explicit reset-policy fixtures.
+- parent: deep-bug-root-2026-06-19-legacy-sequence-ar-dom-compat
+- child: deep-bug-legacy-any-loser-running-001
+- relationship: legacy sequence sibling cleanup bug
+- look further: Add `AnyChild` fixtures for one winner, multiple losers, nested any, event-wait losers, and loser lifecycle event counts.
+- parent: deep-bug-root-2026-06-19-legacy-sequence-ar-dom-compat
+- child: deep-bug-legacy-sequence-latest-kit-lookup-001
+- relationship: multi-kit legacy sequence controller bug
+- look further: Add UIControllerSequence and EntityControllerSequence fixtures for owning-kit context, trailing-kit install, `engine.kits` lookup, and conflict diagnostics.
+- parent: deep-bug-root-2026-06-19-legacy-sequence-ar-dom-compat
+- child: deep-bug-ar-renderer-raw-default-html-001
+- relationship: AR DOM renderer content-safety bug
+- look further: Add escaping/sanitization fixtures for default title, instruction, prompt, scene, preview, trusted callback, and event-handler markup behavior.
+- parent: deep-bug-root-2026-06-19-registry-surface-sequence-isolation
+- child: deep-bug-registry-descriptor-aliasing-001
+- relationship: renderer/proof descriptor isolation bug
+- look further: Add fixtures for nested uniforms, metadata arrays, registry `get()`, `list()`, `register()`, and `createProgram()` isolation.
+- parent: deep-bug-root-2026-06-19-registry-surface-sequence-isolation
+- child: deep-bug-surface-snapshot-live-payload-001
+- relationship: engine surface read-model isolation bug
+- look further: Add surface read-model isolation fixtures for event, resource, lifecycle, and query batches with nested payloads.
+- parent: deep-bug-root-2026-06-19-registry-surface-sequence-isolation
+- child: deep-bug-sequence-race-failure-orphan-001
+- relationship: SequenceNode race sibling cleanup bug
+- look further: Add race fixtures for child success, child failure, manual failure, nested race, and sibling cancellation event counts.
+- parent: deep-bug-root-2026-06-19-registry-surface-sequence-isolation
+- child: deep-bug-sequence-any-child-finished-overcount-001
+- relationship: SequenceNode parent receipt overcount bug
+- look further: Add `Any` fixtures for one winner, skipped losers, nested any, manual skip, and child-finished event counts.
+- parent: deep-bug-root-2026-06-19-guidance-affordance-route-query
+- child: deep-bug-landmark-terminal-receipts-001
+- relationship: spatial guidance terminal-state receipt bug
+- look further: Define inactive, already-discovered, already-reached, already-completed, missing, duplicate id, reset, and event-count behavior.
+- parent: deep-bug-root-2026-06-19-guidance-affordance-route-query
+- child: deep-bug-affordance-nearby-repeat-entered-001
+- relationship: proximity query versus entered-transition bug
+- look further: Split query refreshes from entered/exited transitions and test repeated same-position proximity reads.
+- parent: deep-bug-root-2026-06-19-guidance-affordance-route-query
+- child: deep-bug-affordance-missing-active-id-001
+- relationship: affordance command validation bug
+- look further: Reject or explicitly record missing/inactive/completed activation commands without corrupting active target state.
+- parent: deep-bug-root-2026-06-19-guidance-affordance-route-query
+- child: deep-bug-routefield-live-query-mutation-001
+- relationship: route query snapshot isolation bug
+- look further: Return cloned query snapshots and test public read API isolation across route, landmark, affordance, water, and other query services.
+- parent: deep-bug-root-2026-06-19-locomotion-terrain-ar-lifecycle
+- child: deep-bug-action-glide-held-repeat-001
+- relationship: locomotion held-input receipt bug
+- look further: Define movement receipt transitions for jump, dash, glide, land, boundary, and respawn separately from held state.
+- parent: deep-bug-root-2026-06-19-locomotion-terrain-ar-lifecycle
+- child: deep-bug-terrain-spline-carve-culling-001
+- relationship: terrain chunk/query parity bug
+- look further: Compute spline/path layer influence against chunk bounds or include long path carve layers conservatively.
+- parent: deep-bug-root-2026-06-19-locomotion-terrain-ar-lifecycle
+- child: deep-bug-camera-overlay-partial-start-stream-001
+- relationship: AR partial-start cleanup bug
+- look further: Stop acquired tracks and clear retained streams whenever camera-overlay start returns `ok:false` after media acquisition.
+- parent: deep-bug-root-2026-06-19-locomotion-terrain-ar-lifecycle
+- child: deep-bug-ar-launch-stop-running-state-001
+- relationship: AR stop lifecycle-state bug
+- look further: Add AR stopped/ended state semantics and clear session handles on launch runtime stop.
+- parent: deep-bug-root-2026-06-19-presentation-ar-content-control
+- child: deep-bug-ragdoll-stagger-repeat-001
+- relationship: character-control repeated receipt bug
+- look further: Define which ragdoll/recovery events are edge-triggered receipts versus persistent state, then add event-count fixtures.
+- parent: deep-bug-root-2026-06-19-presentation-ar-content-control
+- child: deep-bug-ar-launch-start-fallback-001
+- relationship: AR launch fallback-chain bug
+- look further: Try lower preferred modes after start failures and update selected mode/support diagnostics, or document no-fallback policy explicitly.
+- parent: deep-bug-root-2026-06-19-presentation-ar-content-control
+- child: deep-bug-realism-custom-quality-001
+- relationship: presentation quality profile contract bug
+- look further: Accept normalized custom quality objects, register named profiles, or reject unknown quality ids with diagnostics.
+- parent: deep-bug-root-2026-06-19-presentation-ar-content-control
+- child: deep-bug-fishing-empty-content-001
+- relationship: content-driven kit normalization bug
+- look further: Validate empty/malformed species and lure datasets before spawning/casting, or expose explicit disabled content states.
+- parent: deep-bug-root-2026-06-19-dsk-scheduler-failure-boundaries
+- child: deep-bug-dsk-failed-install-partial-001
+- relationship: DSK install transaction bug
+- look further: Preflight or rollback every install mutation before recording kit metadata, bindings, world state, scheduler systems, registries, sequence runtimes, and namespace APIs.
+- parent: deep-bug-root-2026-06-19-dsk-scheduler-failure-boundaries
+- child: deep-bug-dsk-reserved-api-prototype-001
+- relationship: namespace reserved-key/prototype bug
+- look further: Reject `__proto__`, `constructor`, `prototype`, inherited keys, and non-own API slots, or move `engine.n` to a null-prototype namespace.
+- parent: deep-bug-root-2026-06-19-dsk-scheduler-failure-boundaries
+- child: deep-bug-dsk-direct-requires-bypass-001
+- relationship: direct-install dependency parity bug
+- look further: Decide whether direct install enforces all requires tokens or composer-only dependency enforcement is the documented contract.
+- parent: deep-bug-root-2026-06-19-dsk-scheduler-failure-boundaries
+- child: deep-bug-scheduler-failed-tick-event-replay-001
+- relationship: scheduler failure/event lifetime bug
+- look further: Define failed-tick clock commit, journal clearing, event clearing, lifecycle diagnostics, and normal surface publication boundaries.
+- parent: deep-bug-root-2026-06-19-navigation-procedural-physics
+- child: deep-bug-pathfinding-negative-cost-001
+- relationship: navigation cost policy bug
+- look further: Reject or normalize negative, non-finite, and unbounded costs across grid, navmesh2d, navmesh3d, terrain, and route adapters.
+- parent: deep-bug-root-2026-06-19-navigation-procedural-physics
+- child: deep-bug-navmesh-duplicate-key-001
+- relationship: stable graph identity bug
+- look further: Validate unique source keys/coordinates and assert unique navmesh cell, portal, waypoint, and link ids.
+- parent: deep-bug-root-2026-06-19-navigation-procedural-physics
+- child: deep-bug-procedural-signature-algorithms-001
+- relationship: procedural signature/proof metadata bug
+- look further: Define content, topology, algorithm/config, and proof signatures explicitly before cache/proof consumers depend on snapshot signatures.
+- parent: deep-bug-root-2026-06-19-navigation-procedural-physics
+- child: deep-bug-world-physics-respawn-receipts-001
+- relationship: recovery receipt and final-state bug
+- look further: Emit one recovery receipt per fall/boundary recovery and update final physics state before early returns.
+- parent: deep-bug-root-2026-06-19-command-time-descriptor-generation
+- child: deep-bug-companion-command-lifecycle-001
+- relationship: command lifecycle reuse bug
+- look further: Define accepted, duplicate, retargeted, arrived, and reset receipts for companion/guide command services.
+- parent: deep-bug-root-2026-06-19-command-time-descriptor-generation
+- child: deep-bug-corruption-world-tick-rate-001
+- relationship: elapsed-time policy bug
+- look further: Normalize progress rates as per-second or document fixed-step per-tick policy before proof harness use.
+- parent: deep-bug-root-2026-06-19-command-time-descriptor-generation
+- child: deep-bug-spatial-room-normalization-source-001
+- relationship: descriptor normalization and source-state bug
+- look further: Preserve numeric normalized fields and clone/freeze authored spatial datasets for room/building descriptors.
+- parent: deep-bug-root-2026-06-19-command-time-descriptor-generation
+- child: deep-bug-tree-runner-config-bounds-001
+- relationship: generated geometry bounds bug
+- look further: Reject or clamp generation bounds and assert finite branch/player snapshots.
+- parent: deep-bug-root-2026-06-19-placement-interaction-driver-camera
+- child: deep-bug-forest-route-signature-001
+- relationship: descriptor invalidation bug
+- look further: Include route content, route safe/accent widths, max slope, terrain query identity, and other output-affecting inputs in placement signatures.
+- parent: deep-bug-root-2026-06-19-placement-interaction-driver-camera
+- child: deep-bug-interaction-held-repeat-001
+- relationship: base interaction edge/held semantics bug
+- look further: Define edge-triggered, held-triggered, repeat, accepted, rejected, and duplicate receipts for InteractionKit and CharacterInteractionKit.
+- parent: deep-bug-root-2026-06-19-placement-interaction-driver-camera
+- child: deep-bug-shrine-combat-transition-001
+- relationship: transition receipt and initial terminal-state bug
+- look further: Emit Shrine charged only on false-to-true transition and normalize/reject LightCombat initial defeated state.
+- parent: deep-bug-root-2026-06-19-placement-interaction-driver-camera
+- child: deep-bug-scenario-driver-z-axis-001
+- relationship: coordinate axis policy bug
+- look further: Normalize `z ?? y` for validation steering or split route-2D and world-3D driver APIs.
+- parent: deep-bug-root-2026-06-19-placement-interaction-driver-camera
+- child: deep-bug-camera-occlusion-lookat-drift-001
+- relationship: source/derived camera state bug
+- look further: Keep source lookAt stable and publish derived occlusion view state, or recompute base camera before occlusion.
+- parent: deep-bug-root-2026-06-19-config-ledger-pursuit-state
+- child: deep-bug-nested-config-reset-leak-001
+- relationship: immutable config/reset bug
+- look further: Clone or freeze authored datasets and add nested reset/config isolation fixtures for dataset-heavy kits.
+- parent: deep-bug-root-2026-06-19-config-ledger-pursuit-state
+- child: deep-bug-economy-ledger-limit-zero-001
+- relationship: ledger retention normalization bug
+- look further: Normalize zero, negative, and non-finite ledger retention limits before slicing.
+- parent: deep-bug-root-2026-06-19-config-ledger-pursuit-state
+- child: deep-bug-pursuit-initial-caught-contradiction-001
+- relationship: initial terminal-state receipt bug
+- look further: Derive initial caught boolean from start distance and define caught/recovered receipts for initial and drift transitions.
+- parent: deep-bug-root-2026-06-19-bridge-phase-wrapper-state
+- child: deep-bug-surface-placement-phase-001
+- relationship: scheduler bridge phase bug
+- look further: Ensure AR placement bridge actions are consumed in the same tick or persisted explicitly for the next tick.
+- parent: deep-bug-root-2026-06-19-bridge-phase-wrapper-state
+- child: deep-bug-step-completion-events-001
+- relationship: missing transition receipt bug
+- look further: Emit ObjectiveFlow and ARExperience step-completion events on incomplete-to-complete transitions.
+- parent: deep-bug-root-2026-06-19-bridge-phase-wrapper-state
+- child: deep-bug-wrapper-owned-state-inert-001
+- relationship: wrapper state ownership bug
+- look further: Decide whether puzzle/platformer wrappers are stateless adapters or stateful domains with owned progress.
+- parent: deep-bug-root-2026-06-19-receipt-identity-idempotency
+- child: deep-bug-timing-result-id-overwrite-001
+- relationship: receipt identity bug
+- look further: Preserve TimingWindow action/result ids separately from active window snapshot ids.
+- parent: deep-bug-root-2026-06-19-receipt-identity-idempotency
+- child: deep-bug-interaction-repeat-completed-001
+- relationship: completion idempotency bug
+- look further: Emit `InteractionTargetCompleted` only on incomplete-to-complete transitions and define already-complete receipts.
+- parent: deep-bug-root-2026-06-19-receipt-identity-idempotency
+- child: deep-bug-collectible-duplicate-claim-event-001
+- relationship: claim event idempotency bug
+- look further: Align `CollectibleClaimed` emission with actual collected-state changes or add explicit duplicate-claim receipts.
+- parent: deep-bug-root-2026-06-19-receipt-identity-idempotency
+- child: deep-bug-request-fulfillment-id-collision-001
+- relationship: stable identity bug
+- look further: Allocate generated request ids through collision checks against authored, restored, and manual requests.
+- parent: deep-bug-root-2026-06-19-spatial-hazard-mobility-time
+- child: deep-bug-spatial-anchor-enter-transition-001
+- relationship: transition-state bug
+- look further: Separate nearest-anchor state from inside/entered anchor state or compare previous inside status before emitting `SpatialScaleAnchorEntered`.
+- parent: deep-bug-root-2026-06-19-spatial-hazard-mobility-time
+- child: deep-bug-scenario-duration-zero-time-001
+- relationship: immediate-threshold time policy bug
+- look further: Decide whether zero-duration scenarios and zero-time checkpoints settle at init/reset or on zero-delta validation ticks.
+- parent: deep-bug-root-2026-06-19-spatial-hazard-mobility-time
+- child: deep-bug-hazard-generated-id-collision-001
+- relationship: stable identity bug
+- look further: Initialize hazard generated ids from existing hazards or allocate through collision checks.
+- parent: deep-bug-root-2026-06-19-spatial-hazard-mobility-time
+- child: deep-bug-vehicle-zero-max-boost-001
+- relationship: resource-bound config normalization bug
+- look further: Clamp boost value to max at init/reset and compute boost activation from normalized available capacity.
 - parent: deep-bug-root-2026-06-19-occupant-facility-pressure
 - child: deep-bug-occupant-reset-mutable-rule-001
 - relationship: immutable-config/reset bug
@@ -152,6 +610,274 @@
 - look further: Stage or roll back runtime/DSK install mutations.
 
 ## Open Search Branches
+- branch: navigation-command-payload-ownership
+- owner: pathfinding/navigation
+- priority: high
+- next files: `src/pathfinding-kit.js`, path command ownership fixtures, `tests/procedural-navigation-smoke.mjs`
+- branch: navigation-proof-snapshot-isolation
+- owner: pathfinding/navigation
+- priority: high
+- next files: `src/pathfinding-kit.js`, `src/navmesh-kit.js`, navigation proof snapshot fixtures
+- branch: procedural-proof-snapshot-isolation
+- owner: procedural/navigation
+- priority: high
+- next files: `src/procedural-kit.js`, `src/navmesh-kit.js`, generated-space proof fixtures
+- branch: procedural-command-state-return
+- owner: procedural/runtime
+- priority: high
+- next files: `src/procedural-kit.js`, procedural regenerate command fixtures
+- branch: scheduler-active-run-mutation
+- owner: ECS scheduler
+- priority: high
+- next files: `src/ecs.js`, `src/engine.js`, scheduler mutation fixtures
+- branch: runsystem-membership-snapshot
+- owner: ECS query iteration
+- priority: high
+- next files: `src/ecs.js`, cleanup/despawn-heavy kit fixtures
+- branch: event-queue-read-isolation
+- owner: ECS event handoff/proof
+- priority: medium
+- next files: `src/ecs.js`, `src/engine.js`, `src/surfaces.js`, SequenceNode bridge fixtures
+- branch: lifecycle-topology-proof
+- owner: scheduler/lifecycle surfaces
+- priority: medium
+- next files: `src/ecs.js`, `src/engine.js`, lifecycle surface fixtures
+- branch: exported-query-helper-isolation
+- owner: query/read-model proof
+- priority: high
+- next files: `src/*-kit.js`, `src/index.js`, public query helper fixtures
+- branch: engine-read-method-isolation
+- owner: DSK read-model surfaces
+- priority: high
+- next files: `src/request-fulfillment-kit.js`, `src/cargo-manifest-kit.js`, `src/landmark-guidance-kit.js`, `src/hazard-field-kit.js`, `src/water-surface-kit.js`
+- branch: stored-query-snapshot-policy
+- owner: proof/read-model snapshots
+- priority: medium
+- next files: `src/water-surface-kit.js`, `src/hazard-field-kit.js`, `src/landmark-guidance-kit.js`, route/query state kits
+- branch: metadata-clone-policy
+- owner: metadata-heavy dataset kits
+- priority: medium
+- next files: metadata-heavy dataset kits, query helper fixtures, DSK validation fixtures
+- branch: runtime-binding-ownership
+- owner: composer/runtime kit
+- priority: high
+- next files: `src/game-kit-composer.js`, `src/runtime-kit.js`, binding collision fixtures
+- branch: ecs-definition-identity-policy
+- owner: ECS/runtime kit validation
+- priority: high
+- next files: `src/ecs.js`, `src/runtime-kit.js`, DSK definition identity fixtures
+- branch: sequence-install-only-idempotency
+- owner: SequenceNode deploy/install
+- priority: high
+- next files: `src/sequence-node-kit.js`, `src/sequence-node.js`, SequenceNode install-only fixtures
+- branch: event-bus-disposed-parity
+- owner: SequenceNode lifecycle
+- priority: medium
+- next files: `src/sequence-node.js`, event bus lifecycle fixtures
+- branch: ar-experience-terminal-idempotency
+- owner: AR experience/proof
+- priority: high
+- next files: `src/ar-experience-kit.js`, AR/objective receipt fixtures
+- branch: webxr-hit-test-failure-policy
+- owner: AR session/WebXR
+- priority: medium
+- next files: `src/ar-session.js`, `src/ar-modes/webxr-plane.js`, browser AR proof fixtures
+- branch: engine-monotonic-time-policy
+- owner: engine/scheduler/time
+- priority: high
+- next files: `src/engine.js`, `src/ecs.js`, `src/sequence-node.js`, elapsed-time domain kits
+- branch: greybox-spatial-finite-scale
+- owner: spatial/greybox descriptors
+- priority: medium
+- next files: `src/greybox-building-kit.js`, `src/spatial-room-kit.js`, `src/render-descriptor-kit.js`
+- branch: legacy-sequence-replay-reset
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/sequences.js`, legacy sequence fixtures, `tests/run-all.mjs`
+- branch: legacy-sequence-sibling-cleanup
+- owner: deep_bug_report_scout
+- priority: medium
+- next files: `src/sequences.js`, legacy sequence fixtures
+- branch: legacy-sequence-owning-kit-context
+- owner: deep_bug_report_scout
+- priority: medium
+- next files: `src/sequences.js`, `src/runtime-kit.js`, `src/fishing-kit.js`, multi-kit sequence fixtures
+- branch: ar-renderer-default-text-safety
+- owner: deep_bug_report_scout
+- priority: medium
+- next files: `src/ar-renderer.js`, AR renderer/browser fixtures
+- branch: registry-descriptor-isolation
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/shaders.js`, renderer proof fixtures
+- branch: surface-snapshot-read-model-isolation
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/ecs.js`, `src/engine.js`, `src/surfaces.js`, surface fixtures
+- branch: sequence-race-sibling-cleanup
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/sequence-node.js`, race lifecycle fixtures
+- branch: sequence-any-parent-receipt-policy
+- owner: deep_bug_report_scout
+- priority: medium
+- next files: `src/sequence-node.js`, any/sibling receipt fixtures
+- branch: spatial-guidance-terminal-receipts
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/landmark-guidance-kit.js`, spatial guidance terminal-state fixtures
+- branch: proximity-query-transition-policy
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/environmental-affordance-kit.js`, proximity query/entered transition fixtures
+- branch: affordance-command-validation
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/environmental-affordance-kit.js`, missing/inactive/completed activation fixtures
+- branch: public-query-snapshot-isolation
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/route-field-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, public read API isolation fixtures
+- branch: locomotion-receipt-transitions
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/action-movement-kit.js`, movement receipt fixtures, SequenceNode movement bridge proof
+- branch: terrain-spline-chunk-parity
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/terrain-kit.js`, terrain streaming fixtures, long shoreline/path carve scenarios
+- branch: ar-camera-partial-start-cleanup
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/ar-modes/camera-overlay.js`, AR start failure fixtures, media-track cleanup probes
+- branch: ar-launch-stop-state
+- owner: deep_bug_report_scout
+- priority: high
+- next files: `src/ar-launcher.js`, `src/ar-kit.js`, AR stop/end/restart fixtures
+- branch: dsk-install-transactions
+- owner: future implementation or hardening lane
+- priority: high
+- next files: `src/runtime-kit.js`, `src/domain-service-kit.js`, `src/game-kit-composer.js`, `tests/domain-service-kit-smoke.mjs`
+- branch: dsk-namespace-reserved-keys
+- owner: future implementation or hardening lane
+- priority: high
+- next files: `src/domain-service-kit.js`, `tests/domain-service-kit-smoke.mjs`
+- branch: dsk-dependency-policy-parity
+- owner: future implementation or hardening lane
+- priority: high
+- next files: `src/runtime-kit.js`, `src/game-kit-composer.js`, `tests/domain-service-kit-smoke.mjs`
+- branch: scheduler-failure-event-lifetime
+- owner: future implementation or hardening lane
+- priority: high
+- next files: `src/engine.js`, `src/ecs.js`, `src/surfaces.js`, `tests/sequence-node-surface-bridge-smoke.mjs`
+- branch: navigation-cost-policy
+- owner: pathfinding/navigation
+- priority: high
+- next files: `src/pathfinding-kit.js`, `src/navmesh-kit.js`, terrain/route adapter fixtures
+- branch: navmesh-stable-identity
+- owner: navmesh/procedural
+- priority: high
+- next files: `src/navmesh-kit.js`, `src/procedural-kit.js`, imported walkability fixtures
+- branch: procedural-signature-taxonomy
+- owner: procedural/proof
+- priority: medium
+- next files: `src/procedural-kit.js`, `src/forest-placement-kit.js`, `src/navmesh-kit.js`
+- branch: physics-recovery-receipts
+- owner: physics/traversal
+- priority: medium
+- next files: `src/world-physics-kit.js`, `src/action-movement-kit.js`, recovery smoke coverage
+- branch: command-lifecycle-reuse
+- owner: companion/guide/actions
+- priority: medium
+- next files: `src/companion-command-kit.js`, assistance/guide/interaction command services
+- branch: elapsed-time-policy
+- owner: world-state/progression
+- priority: medium
+- next files: `src/corruption-world-kit.js`, time/progression kits, scenario proof fixtures
+- branch: spatial-descriptor-source-isolation
+- owner: spatial-room/descriptors
+- priority: high
+- next files: `src/spatial-room-kit.js`, `src/greybox-building-kit.js`, room/building/AR descriptor fixtures
+- branch: generated-geometry-finite-bounds
+- owner: traversal/runner
+- priority: medium
+- next files: `src/tree-runner-kit.js`, traversal/runner/procedural generator fixtures
+- branch: placement-invalidation-signatures
+- owner: world-placement/streaming
+- priority: high
+- next files: `src/forest-placement-kit.js`, route-aware descriptor fixtures, terrain/placement invalidation policy
+- branch: base-interaction-edge-semantics
+- owner: interaction/inventory
+- priority: high
+- next files: `src/interaction-kit.js`, `src/input-intent-kit.js`, `src/interaction-target-kit.js`, interaction edge/held smokes
+- branch: small-state-machine-transition-receipts
+- owner: puzzle/combat
+- priority: medium
+- next files: `src/shrine-puzzle-kit.js`, `src/light-combat-kit.js`, puzzle/combat transition and initial-state smokes
+- branch: coordinate-axis-policy
+- owner: validation/mobility
+- priority: high
+- next files: `src/scenario-driver-kit.js`, route-field/terrain/mobility steering fixtures
+- branch: camera-source-derived-state
+- owner: camera/traversal
+- priority: medium
+- next files: `src/camera-occlusion-kit.js`, `src/camera-kit.js`, camera safety source-state fixtures
+- branch: dataset-reset-isolation
+- owner: state/reset/config
+- priority: high
+- next files: `src/water-surface-kit.js`, `src/route-field-kit.js`, `src/render-descriptor-kit.js`, dataset-heavy kit reset fixtures
+- branch: ledger-retention-normalization
+- owner: economy/proof/history
+- priority: medium
+- next files: `src/economy-kit.js`, `src/telemetry-kit.js`, retention-limit smoke coverage
+- branch: pursuit-pressure-initial-state
+- owner: pursuit/recovery/scenario
+- priority: medium
+- next files: `src/pursuit-pressure-kit.js`, scenario/recovery smoke coverage
+- branch: ar-objective-bridge-phase
+- owner: AR/objective/scheduler
+- priority: high
+- next files: `src/surface-placement-kit.js`, `src/ar-kit.js`, `src/objective-flow-kit.js`, AR placement smoke coverage
+- branch: step-completion-receipts
+- owner: objective/AR/telemetry
+- priority: high
+- next files: `src/objective-flow-kit.js`, `src/ar-experience-kit.js`, objective/AR receipt fixtures
+- branch: wrapper-owned-state-contract
+- owner: puzzle/platformer/interaction
+- priority: medium
+- next files: `src/symbol-alignment-kit.js`, `src/lock-and-socket-kit.js`, `src/reveal-light-kit.js`, `src/sorting-kit.js`, `src/moving-target-kit.js`, `src/micro-platformer-kit.js`
+- branch: receipt-identity-separation
+- owner: timing/action
+- priority: medium
+- next files: `src/timing-window-kit.js`, timing/action smoke coverage
+- branch: interaction-completion-idempotency
+- owner: interaction/objective
+- priority: high
+- next files: `src/interaction-target-kit.js`, `src/objective-flow-kit.js`, interaction/objective smoke coverage
+- branch: collectible-claim-idempotency
+- owner: reward/persistence
+- priority: medium
+- next files: `src/collectible-kit.js`, collectible/reward smoke coverage
+- branch: request-identity-allocation
+- owner: request/logistics
+- priority: high
+- next files: `src/request-fulfillment-kit.js`, request/logistics smoke coverage
+- branch: spatial-transition-state
+- owner: spatial guidance/proximity
+- priority: high
+- next files: `src/spatial-scale-kit.js`, `src/landmark-guidance-kit.js`, `src/environmental-affordance-kit.js`, spatial smoke coverage
+- branch: immediate-time-threshold-policy
+- owner: scenario/time/proof
+- priority: medium
+- next files: `src/scenario-duration-kit.js`, `src/timing-window-kit.js`, `src/objective-flow-kit.js`, proof harness coverage
+- branch: hazard-stable-identity
+- owner: hazard/director
+- priority: high
+- next files: `src/hazard-field-kit.js`, hazard smoke coverage, telemetry/collision attribution fixtures
+- branch: mobility-resource-normalization
+- owner: vehicle/mobility
+- priority: medium
+- next files: `src/vehicle-dynamics-kit.js`, `src/resource-pressure-kit.js`, mobility smoke coverage
 - branch: occupant-reset-and-identity
 - owner: occupant/population
 - priority: high

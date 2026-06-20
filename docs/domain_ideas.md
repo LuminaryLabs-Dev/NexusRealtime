@@ -572,3 +572,715 @@ world.operations.generatedIdentity
 world.operations.finiteTransactions
 world.operations.restoredConsistency
 ```
+
+## 21. Spatial Mobility Invariant Domain
+
+Purpose: owns transition-state, immediate-threshold, generated-identity, and resource-bound normalization policy for spatial, hazard, scenario-time, and mobility services.
+
+Possible services:
+
+- `n:spatial:transition`
+- `n:time:immediate-threshold`
+- `n:hazard:identity`
+- `n:mobility:resource-bound`
+- `n:proof:spatial-mobility-invariants`
+
+Fits:
+
+- spatial guidance where nearest, inside, entered, exited, reached, and completed state must stay distinct
+- zero-duration scenarios and zero-time checkpoints that must settle deterministically
+- hazard fields with authored, restored, and spawned ids
+- vehicle or mobility resources such as boost, stamina, fuel, and recovery capacity
+- proof harnesses that need transition and capacity rows before spatial or mobility DSK promotion
+
+Owned paths:
+
+```txt
+world.spatial.transitionState
+world.time.immediateThresholds
+world.hazards.generatedIdentity
+world.mobility.resourceBounds
+world.proof.spatialMobilityInvariants
+```
+
+## 22. Receipt Integrity Domain
+
+Purpose: owns stable result receipt identity, transition-only event emission, duplicate-claim policy, and generated request identity across action, interaction, reward, and logistics services.
+
+Possible services:
+
+- `n:receipt`
+- `n:receipt:identity`
+- `n:event:idempotency`
+- `n:reward:claim-policy`
+- `n:request:identity`
+
+Fits:
+
+- timing actions where result ids must stay separate from window ids
+- interaction targets that should emit completion only on incomplete-to-complete transitions
+- collectible and reward services that need stored-state idempotency to match event idempotency
+- request/logistics services with authored, restored, and manually generated ids
+- proof harnesses that need replayable action, reward, and request attribution rows
+
+Owned paths:
+
+```txt
+world.receipts.identity
+world.events.idempotency
+world.rewards.claimReceipts
+world.requests.generatedIdentity
+world.proof.receiptIntegrity
+```
+
+## 23. Bridge State Ownership Domain
+
+Purpose: owns phase-safe event bridges, direct-service versus event-relay policy, step transition receipts, delegated-action reconciliation, and truthful wrapper-owned state for composed domains.
+
+Possible services:
+
+- `n:bridge:phase`
+- `n:receipt:step-transition`
+- `n:adapter:state-contract`
+- `n:action:delegation`
+- `n:proof:bridge-state`
+
+Fits:
+
+- AR placement flows where raw anchor placement must advance objective state or explicitly stay AR-only
+- objective and AR lesson flows that need step-completion receipts exactly once
+- puzzle and platformer wrapper kits that delegate to interaction services but expose their own snapshots
+- SequenceNode, telemetry, proof, and tutorial bridges that depend on same-tick or next-tick event delivery
+- composition audits that must prove advertised state ownership matches real mutation paths
+
+Owned paths:
+
+```txt
+world.bridges.phasePolicy
+world.receipts.stepTransitions
+world.adapters.stateContracts
+world.actions.delegationReconciliation
+world.proof.bridgeState
+```
+
+## 24. Source State Integrity Domain
+
+Purpose: owns authored-source isolation, reset-from-source guarantees, retention-limit normalization, and initial terminal-state receipt policy across dataset-heavy, ledger, pressure, and proof services.
+
+Possible services:
+
+- `n:state:source-integrity`
+- `n:config:authored-isolation`
+- `n:state:retention-limit`
+- `n:state:initial-terminal`
+- `n:proof:source-state`
+
+Fits:
+
+- water, route, render descriptor, and other dataset services where nested runtime mutation must not mutate caller-owned config
+- economy, telemetry, and proof-history ledgers where zero, negative, and non-finite retention limits need shared semantics
+- pursuit, pressure, recovery, and scenario domains where initial terminal bands must match boolean state and receipts
+- reset/replay harnesses that need to prove reset output is rebuilt from immutable source data
+- public or local proof rows that distinguish retained evidence from pruned history intentionally
+
+Owned paths:
+
+```txt
+world.state.authoredSources
+world.state.resetSources
+world.state.retentionLimits
+world.state.initialTerminals
+world.proof.sourceStateIntegrity
+```
+
+## 25. State Signal Contract Domain
+
+Purpose: owns descriptor invalidation, edge/held/repeat action semantics, small state-machine transition receipts, coordinate-axis policy, and source-versus-derived state ownership across placement, interaction, validation, and presentation services.
+
+Possible services:
+
+- `n:signal:contract`
+- `n:signal:invalidation`
+- `n:action:repeat-policy`
+- `n:coordinate:axis-policy`
+- `n:state:derived-boundary`
+- `n:proof:signal-contract`
+
+Fits:
+
+- route-aware placement services where output changes depend on route contents, filters, terrain query behavior, or descriptor config rather than only counts
+- interaction, puzzle, and combat services where held booleans, one-shot actions, transition receipts, and initial terminal state must be explicit
+- scenario validation helpers that need a shared `{ x, y }` versus `{ x, z }` coordinate contract before proving route, terrain, camera, or mobility behavior
+- camera and presentation safety services where source authored state must stay separate from derived occlusion, framing, or render adjustment output
+- proof harnesses that need to explain why a service rebuilt, accepted, repeated, ignored, or derived state from another source
+
+Owned paths:
+
+```txt
+world.signals.invalidation
+world.actions.repeatPolicy
+world.stateMachines.transitionReceipts
+world.coordinates.axisPolicy
+world.state.derivedBoundaries
+world.proof.signalContracts
+```
+
+## 26. Service Lifecycle And Config Domain
+
+Purpose: owns reusable service lifecycle, elapsed-time progression, canonical descriptor normalization, finite generated-geometry bounds, and proof rows for small reusable kits that can otherwise pass public API shape while locking, drifting, leaking source data, or publishing invalid state.
+
+Possible services:
+
+- `n:service:lifecycle-config`
+- `n:command:lifecycle`
+- `n:time:elapsed-rate`
+- `n:descriptor:normalization`
+- `n:geometry:finite-bounds`
+- `n:proof:lifecycle-config`
+
+Fits:
+
+- companion, guide, assistance, and training services that must accept, reject, retarget, arrive, reset, or receipt multiple commands
+- world-state and progression services where equal elapsed time must produce deterministic terminal state across tick rates
+- room, building, AR, and descriptor services where normalization must preserve canonical numeric fields and isolate caller-owned nested data
+- runner, traversal, procedural, and generated-world services where invalid counts, lanes, spacing, or bounds must fail early or normalize before snapshots
+- DSK hardening fixtures that need lifecycle and config rows alongside install, source-state, signal, receipt, bridge, and spatial gates
+
+Owned paths:
+
+```txt
+world.services.commandLifecycle
+world.time.elapsedRates
+world.descriptors.normalizedSource
+world.geometry.finiteGeneration
+world.proof.lifecycleConfig
+```
+
+## 27. Traversal Proof Integrity Domain
+
+Purpose: owns navigation cost policy, navmesh identity, procedural signature taxonomy, recovery receipt/state consistency, and proof rows for traversal surfaces that can otherwise pass smoke tests while publishing invalid path costs, duplicate graph ids, stale signatures, or duplicate recovery events.
+
+Possible services:
+
+- `n:traversal:proof-integrity`
+- `n:navigation:cost-policy`
+- `n:navmesh:identity-policy`
+- `n:procedural:signature-taxonomy`
+- `n:recovery:state-consistency`
+- `n:proof:traversal-integrity`
+
+Fits:
+
+- pathfinding, terrain, route, and navigation adapters where traversal costs must be finite and non-negative before A* or proof uses them
+- walkability, navmesh, and graph services where source keys, coordinates, cell ids, waypoint ids, portal ids, and link ids must stay unique
+- procedural and generated-world services where content, topology, algorithm/config, and proof signatures must distinguish meaningful generation changes
+- physics, traversal, and recovery services where a fall or boundary recovery should emit one receipt and publish final state that matches the recovered player
+- DSK hardening fixtures that need cost, identity, signature, and recovery-state rows alongside lifecycle/config and state-signal gates
+
+Owned paths:
+
+```txt
+world.navigation.costPolicy
+world.navmesh.identityPolicy
+world.procedural.signatureTaxonomy
+world.recovery.stateConsistency
+world.proof.traversalIntegrity
+```
+
+## 28. Runtime Failure Boundary Domain
+
+Purpose: owns DSK namespace safety, failed-install transaction boundaries, dependency-policy parity, scheduler failure event lifetime, and proof rows for runtime surfaces that can otherwise appear installed or valid after a failed mutation.
+
+Possible services:
+
+- `n:runtime:failure-boundary`
+- `n:dsk:namespace-policy`
+- `n:dsk:install-rollback`
+- `n:dsk:dependency-parity`
+- `n:scheduler:failure-lifetime`
+- `n:proof:failure-boundary`
+
+Fits:
+
+- DSK graphs where service APIs must be own properties, never inherited through reserved keys or prototype mutation
+- runtime install flows where failed API collisions, init hooks, registries, schedulers, sequence runtimes, or install hooks must roll back or remain retryable
+- dependency-bearing DSKs where direct install and composer install must share a documented requirement policy
+- scheduler, event, lifecycle, SequenceNode, telemetry, replay, and proof surfaces where thrown systems must not replay failed-tick events as normal success evidence
+- DSK hardening fixtures that need namespace, install, dependency, and failed-tick rows alongside traversal, lifecycle/config, source-state, signal, receipt, bridge, operations, and spatial gates
+
+Owned paths:
+
+```txt
+world.runtime.failureBoundary
+world.dsk.namespacePolicy
+world.dsk.installRollback
+world.dsk.dependencyParity
+world.scheduler.failureLifetime
+world.proof.failureBoundary
+```
+
+## 29. Experience Edge Contract Domain
+
+Purpose: owns edge-case contracts for user-facing domain kits where receipts, launch fallback, presentation profiles, authored content, and proof rows must stay explicit before a composition can be treated as reliable.
+
+Possible services:
+
+- `n:experience:edge-contract`
+- `n:control:recovery-receipts`
+- `n:launch:fallback-chain`
+- `n:presentation:quality-profile`
+- `n:content:dataset-contract`
+- `n:proof:experience-edge`
+
+Fits:
+
+- character-control and recovery services where a persistent ready state must not emit unbounded one-shot receipts
+- AR launch flows where a supported preferred mode can fail at start time and must either fall back or publish an explicit no-fallback diagnostic
+- presentation services where custom quality/profile objects must be accepted, normalized, registered, or rejected instead of silently replaced
+- content-driven kits where empty or malformed authored datasets must disable behavior or fail before placeholder entities reach snapshots
+- proof harnesses that need receipt, fallback, presentation, and content edge rows separate from DSK runtime hardening and public module loading
+
+Owned paths:
+
+```txt
+world.control.recoveryReceipts
+world.launch.fallbackChain
+world.presentation.qualityProfiles
+world.content.datasetContracts
+world.proof.experienceEdgeContracts
+```
+
+## 30. Lifecycle Parity And Cleanup Domain
+
+Purpose: owns lifecycle parity for movement receipts, streamed terrain output, partial-start cleanup, stopped-session state, and proof rows where runtime state can disagree with visible or queryable behavior.
+
+Possible services:
+
+- `n:lifecycle:parity-cleanup`
+- `n:movement:receipt-transition`
+- `n:terrain:query-chunk-parity`
+- `n:startup:partial-cleanup`
+- `n:session:stop-state`
+- `n:proof:lifecycle-parity`
+
+Fits:
+
+- movement, locomotion, and character-control services where held inputs must not emit repeated start receipts unless explicitly modeled as held-state signals
+- terrain, route, shoreline, road, river, and world-streaming services where query fallback and baked chunk samples must include the same authored long-form layers
+- camera, AR, capture, audio, and device services where a failed partial start after acquiring resources must release them before retry or fallback
+- session, launch, overlay, and lifecycle services where stop/end actions must publish state that no longer reports the old session as running
+- proof harnesses that need receipt-transition, query/chunk parity, cleanup, and stopped-state rows separate from public module loading and base DSK install hardening
+
+Owned paths:
+
+```txt
+world.movement.receiptTransitions
+world.terrain.queryChunkParity
+world.startup.partialCleanup
+world.sessions.stopState
+world.proof.lifecycleParity
+```
+
+## 31. Query Command Semantics Domain
+
+Purpose: owns public query side effects, terminal command guards, rejected-command state, read snapshot isolation, and proof rows where query or command APIs can mutate state in ways callers do not expect.
+
+Possible services:
+
+- `n:query-command:semantics`
+- `n:guidance:terminal-receipts`
+- `n:proximity:query-transition`
+- `n:command:rejected-state`
+- `n:query:snapshot-isolation`
+- `n:proof:query-command-semantics`
+
+Fits:
+
+- landmark, waypoint, objective, and guidance services where inactive or completed targets must not emit normal transition receipts again
+- affordance, proximity, inspection, and spatial interaction services where passive reads must stay separate from entered/exited transition producers
+- command-driven services where missing, inactive, completed, duplicate, zero, or negative requests must not corrupt active target state
+- route, water, landmark, affordance, and nearest/nearby APIs where returned query objects must be snapshots instead of live mutable state handles
+- proof harnesses that need query/command semantics separate from public module loading, base DSK install hardening, lifecycle parity, and source-state isolation
+
+Owned paths:
+
+```txt
+world.guidance.terminalReceipts
+world.proximity.queryTransitions
+world.commands.rejectedState
+world.queries.snapshotIsolation
+world.proof.queryCommandSemantics
+```
+
+## 32. Proof Readiness Queue Domain
+
+Purpose: owns proof-readiness ordering, claim taxonomy, module-source gate decisions, aggregate-versus-targeted proof parity, and release evidence bundles so runtime hardening, lifecycle parity, query/command semantics, experience edges, fetched-ref validation, browser proof, npm metadata, and package-version policy stay separate until each has direct evidence.
+
+Possible services:
+
+- `n:proof:readiness-queue`
+- `n:proof:fixture-tranche`
+- `n:proof:claim-taxonomy`
+- `n:proof:module-source-gate`
+- `n:proof:aggregate-targeted-parity`
+- `n:proof:release-evidence`
+
+Fits:
+
+- DSK promotion reviews where base runtime failure-boundary fixtures must start before lifecycle, query/command, and experience-edge rows are treated as readiness proof
+- ecosystem proof lanes where local available-checkout success, fetched-ref success, public browser completion, aggregate command proof, targeted DSK proof, npm availability, and package-version policy must not collapse into one claim
+- public proof route work where module-source strategy needs a single declared model before fetched-ref and browser proof can converge
+- release review packets that need an explicit "not claimed" table for every hardening and distribution category
+- future proof harnesses that need to explain why a category is blocked, deferred, complete, or out of lane
+
+Owned paths:
+
+```txt
+world.proof.readinessQueue
+world.proof.fixtureTranches
+world.proof.claimTaxonomy
+world.proof.moduleSourceGate
+world.proof.aggregateTargetedParity
+world.proof.releaseEvidence
+```
+
+## 33. Read Model Orchestration Isolation Domain
+
+Purpose: owns registry descriptor isolation, engine surface snapshot read-models, SequenceNode sibling cleanup, `any` receipt semantics, and proof rows where inspection, rendering, analytics, or orchestration can mutate or overcount runtime state through read surfaces.
+
+Possible services:
+
+- `n:read-model:orchestration-isolation`
+- `n:registry:descriptor-isolation`
+- `n:surface:snapshot-isolation`
+- `n:sequence:race-cleanup`
+- `n:sequence:any-receipt-policy`
+- `n:proof:read-model-orchestration`
+
+Fits:
+
+- shader, material, renderer, and descriptor registries where `get()`, `list()`, `register()`, or program setup must not share nested descriptor objects with callers or mutable registry state
+- event, resource, query, and lifecycle surfaces where snapshots should be read models and not live mutation handles into ECS resources, event payloads, or proof batches
+- SequenceNode race flows where a failed or winning child must settle active siblings before the parent becomes terminal
+- SequenceNode `any` flows where skipped or cancelled losers must not emit duplicate child-finished receipts for one actual winner
+- proof harnesses that need read-model isolation and orchestration receipt counts separate from public module loading, query/command semantics, lifecycle parity, and base DSK install hardening
+
+Owned paths:
+
+```txt
+world.registries.descriptorIsolation
+world.surfaces.snapshotIsolation
+world.sequence.raceCleanup
+world.sequence.anyReceiptPolicy
+world.proof.readModelOrchestration
+```
+
+## 34. Legacy Sequence And AR Content Compatibility Domain
+
+Purpose: owns legacy sequence replay/reset, `AnyChild` sibling cleanup, sequence owning-kit lookup, AR default text safety, and proof rows where exported compatibility surfaces or browser render defaults can mislead composed DSK, tutorial, replay, or public proof flows.
+
+Possible services:
+
+- `n:compat:legacy-sequence-ar`
+- `n:sequence:legacy-replay-reset`
+- `n:sequence:legacy-any-cleanup`
+- `n:sequence:owning-kit-context`
+- `n:ar:default-text-safety`
+- `n:proof:compatibility-content-safety`
+
+Fits:
+
+- legacy `createSequenceRuntime()` replay flows where restarting a completed root must reset descendants or reject implicit replay before proof can claim behavior reran
+- legacy `AnyChild` flows where active losers must be skipped, cancelled, or unloaded before the parent becomes terminal
+- multi-kit compositions where legacy UI/entity controller sequences must resolve resources and invokes from the owning kit or a deterministic kit lookup instead of the most recently installed kit
+- AR DOM renderer defaults where authored labels, prompts, titles, and instructions must be treated as text unless a trusted render callback explicitly returns HTML
+- proof harnesses that need legacy compatibility and AR content-safety rows separate from public module-source loading, modern SequenceNode isolation, and base DSK install hardening
+
+Owned paths:
+
+```txt
+world.sequence.legacyReplayReset
+world.sequence.legacyAnyCleanup
+world.sequence.owningKitContext
+world.ar.defaultTextSafety
+world.proof.compatibilityContentSafety
+```
+
+## 35. AR Launch And Spatial Read Model Domain
+
+Purpose: owns AR launch composition preconditions, explicit preferred-mode fallback policy, launcher state read models, SpatialRoom getter isolation, and proof rows where AR/spatial browser flows can appear available while mutating live state or silently degrading capability claims.
+
+Possible services:
+
+- `n:ar-spatial:launch-read-model`
+- `n:ar:launch-precondition`
+- `n:ar:mode-selection-policy`
+- `n:ar:launch-state-isolation`
+- `n:spatial-room:getter-isolation`
+- `n:proof:ar-spatial-read-model`
+
+Fits:
+
+- AR launch runtimes where a host must have installed required AR resources before mode startup can call `engine.ar`
+- capability selectors where explicit preferred modes should either be honored, rejected, or labeled as fallback instead of silently becoming preview proof
+- AR launch render/update callbacks where support, placement, objective, interaction, collectible, or render descriptor state must be snapshots instead of live mutation handles
+- SpatialRoom and building descriptor services where read-named getters must not expose mutable building, room, or anchor objects to renderers and proof panels
+- proof harnesses that need AR/spatial capability and read-model rows separate from public module-source loading, AR DOM text safety, and general query snapshot isolation
+
+Owned paths:
+
+```txt
+world.ar.launchPreconditions
+world.ar.modeSelectionPolicy
+world.ar.launchStateIsolation
+world.spatialRoom.getterIsolation
+world.proof.arSpatialReadModel
+```
+
+## 36. Proof Signal Integrity Domain
+
+Purpose: owns receipt idempotency, nullable device helper failure policy, monotonic tick time, finite spatial config, and proof rows where runtime proof signals must be one-shot, forward-time, non-throwing, and finite before telemetry, tutorials, AR flows, or DSK reviews can trust them.
+
+Possible services:
+
+- `n:proof-signal:integrity`
+- `n:experience:terminal-receipts`
+- `n:webxr:hit-test-failure`
+- `n:time:monotonic-tick`
+- `n:spatial:finite-scale`
+- `n:proof:signal-integrity`
+
+Fits:
+
+- AR experience services where terminal completion events should be edge-triggered receipts instead of persistent-state emissions on every later tick
+- browser/device helpers where unavailable or denied hit-test setup should return nullable or structured unsupported results instead of escaping through mode startup
+- engine, scheduler, sequence, duration, and telemetry services where normal ticks must not publish negative elapsed time unless a separate replay API owns rewind semantics
+- greybox, SpatialRoom, AR anchor, and render descriptor services where scale and geometry inputs must become finite, bounded values before proof panels or renderers consume them
+- proof harnesses that need receipt counts, device degraded states, time policy, and finite geometry rows separate from public module-source proof and AR launch read-model proof
+
+Owned paths:
+
+```txt
+world.experience.terminalReceipts
+world.webxr.hitTestFailurePolicy
+world.time.monotonicTickPolicy
+world.spatial.finiteScalePolicy
+world.proof.signalIntegrity
+```
+
+## 37. Composition Proof Ownership Domain
+
+Purpose: owns capability provider ownership, SequenceNode type registration policy, event-history read-model isolation, AR runtime-source consistency, and proof rows where composed DSK graphs can appear valid while provider, orchestration, history, or device-source ownership is ambiguous.
+
+Possible services:
+
+- `n:composition-proof:ownership`
+- `n:composition:provider-ownership`
+- `n:sequence:type-registry-policy`
+- `n:sequence:event-history-isolation`
+- `n:ar:runtime-source-consistency`
+- `n:proof:composition-ownership`
+
+Fits:
+
+- composer and DSK graphs where duplicate capability providers must reject, namespace, or declare intentional override ownership before capability presence counts as proof
+- SequenceNode-backed kits where duplicate type names must reject or explicitly override before runtime plans can trust type semantics
+- SequenceNode event buses, diagnostics, telemetry, and proof panels where history snapshots must not expose mutable event objects
+- AR launch and browser/device proof harnesses where support classification and selected mode startup must use one runtime source or reconcile failed startup state
+- proof harnesses that need provider ownership, type registry, event history, and AR runtime-source rows separate from distribution proof, proof-signal integrity, and base runtime failure-boundary work
+
+Owned paths:
+
+```txt
+world.composition.providerOwnership
+world.sequence.typeRegistryPolicy
+world.sequence.eventHistoryIsolation
+world.ar.runtimeSourceConsistency
+world.proof.compositionOwnership
+```
+
+## 38. Runtime Identity And Lifecycle Ownership Domain
+
+Purpose: owns runtime binding ownership, ECS definition identity, SequenceNode install-only kit idempotency, event-bus disposed parity, and proof rows where composed graphs can silently share names, replay side effects, or mutate listener state after teardown.
+
+Possible services:
+
+- `n:runtime-identity:lifecycle-ownership`
+- `n:runtime:binding-ownership`
+- `n:ecs:definition-identity`
+- `n:sequence:install-only-idempotency`
+- `n:sequence:event-bus-disposed-parity`
+- `n:proof:runtime-identity-lifecycle`
+
+Fits:
+
+- runtime kit and composer graphs where duplicate binding names must reject, namespace, or declare intentional override ownership before bindings count as service proof
+- ECS-backed domain kits where same-named components, resources, and events must be intentionally shared or diagnosed before state isolation claims are trusted
+- SequenceNode-backed proof graphs where raw install-only adapters must be recorded or normalized so repeated deployments do not replay global side effects
+- SequenceNode event buses where every listener API must share disposed-state policy before lifecycle cleanup proof can trust listener counts
+- proof harnesses that need binding, definition identity, install idempotency, and disposed-listener rows separate from capability provider ownership, public module-source proof, and base runtime failure-boundary work
+
+Owned paths:
+
+```txt
+world.runtime.bindingOwnership
+world.ecs.definitionIdentity
+world.sequence.installOnlyIdempotency
+world.sequence.eventBusDisposedParity
+world.proof.runtimeIdentityLifecycle
+```
+
+## 39. Content Boundary And Objective Contract Domain
+
+Purpose: owns public API product-boundary checks, preset/runtime identity policy, objective threshold semantics, content dataset validation, and proof rows where content-driven kits can appear complete or reusable while leaking themed presets, sharing ids, or accepting invalid authored criteria.
+
+Possible services:
+
+- `n:content-boundary:objective-contract`
+- `n:public-api:product-boundary`
+- `n:kit:preset-identity`
+- `n:objective:threshold-policy`
+- `n:content:dataset-validation`
+- `n:proof:content-boundary-objective`
+
+Fits:
+
+- public core exports where authored product/theme presets should be absent, deprecated, or explicitly marked compatibility-only before core boundary claims are trusted
+- content kit factories where caller-provided ids, preset ids, and installed metadata must be honored, rejected, or diagnosed before multiple variants compose
+- objective and scenario services where zero, negative, missing, malformed, or disabled targets must have explicit semantics instead of completing proof state by accident
+- content-driven domains where species, lures, objectives, duplicate ids, unknown ids, disabled content, and generated entities need one validation/diagnostic path
+- proof harnesses that need public API boundary, kit identity, objective policy, and dataset contract rows separate from generic runtime identity, content-dataset placeholders, and public module-source proof
+
+Owned paths:
+
+```txt
+world.publicApi.productBoundary
+world.kit.presetIdentity
+world.objectives.thresholdPolicy
+world.content.datasetValidation
+world.proof.contentBoundaryObjective
+```
+
+## 40. Query Read Model Isolation Domain
+
+Purpose: owns public query helper outputs, engine read-method snapshots, nested metadata isolation, stored query snapshots, and proof rows where read-only APIs can mutate runtime or caller-owned state through returned objects.
+
+Possible services:
+
+- `n:query-read-model:isolation`
+- `n:query:helper-contract`
+- `n:engine-read:snapshot-contract`
+- `n:metadata:read-isolation`
+- `n:stored-query:proof-snapshot`
+- `n:proof:query-read-model-isolation`
+
+Fits:
+
+- request, cargo, route, guidance, affordance, hazard, water, and inspection services where `query*`, `nearest*`, `available*`, or collision APIs must return isolated read models
+- metadata-heavy authored datasets where shallow top-level clones still expose nested mutable metadata or hazard descriptors
+- runtime states with `lastQuery`, `lastCollision`, or similar audit fields that must store proof snapshots rather than aliases to returned objects
+- renderers, telemetry, AI adapters, dashboards, and proof harnesses that should inspect query output without becoming mutation paths
+- DSK hardening fixtures that need query read-model isolation separate from command rejection, proximity transition side effects, source-config isolation, surface snapshots, and public module-source proof
+
+Owned paths:
+
+```txt
+world.query.helperContracts
+world.engineRead.snapshotContracts
+world.metadata.readIsolation
+world.query.storedProofSnapshots
+world.proof.queryReadModelIsolation
+```
+
+## 41. Scheduler World Mutation Isolation Domain
+
+Purpose: owns scheduler active-run topology policy, phase mutation boundaries, ECS system iteration membership semantics, low-level event queue payload isolation, and proof rows where one tick can change execution shape or mutate queued evidence while appearing deterministic.
+
+Possible services:
+
+- `n:scheduler-world:mutation-isolation`
+- `n:scheduler:active-run-policy`
+- `n:scheduler:phase-topology`
+- `n:runsystem:membership-snapshot`
+- `n:event-queue:payload-isolation`
+- `n:proof:scheduler-world-mutation`
+
+Fits:
+
+- ECS scheduler runs where systems or phases added during an active pass must reject, defer to the next pass, or be explicitly documented as immediate
+- DSK installers, runtime kits, and proof adapters that attach systems during runtime and need deterministic same-tick ordering
+- cleanup, despawn, transfer, collision, and objective systems where `runSystem()` must either skip removed entities or provide stable component snapshots
+- SequenceNode bridges, diagnostics, telemetry, and proof probes that inspect queued events without mutating payloads before later systems read them
+- DSK hardening fixtures that need scheduler/world mutation isolation below query read models, surface snapshots, runtime identity, and public module-source proof
+
+Owned paths:
+
+```txt
+world.scheduler.activeRunPolicy
+world.scheduler.phaseTopology
+world.ecs.runSystemMembership
+world.events.queuePayloadIsolation
+world.proof.schedulerWorldMutation
+```
+
+## 42. Procedural Navigation State Ownership Domain
+
+Purpose: owns navigation command payload isolation, navigation proof snapshot isolation, procedural proof snapshot isolation, procedural command return-state policy, and proof rows where generated space and pathfinding can appear deterministic while callers mutate queued requests or live snapshots.
+
+Possible services:
+
+- `n:procedural-navigation:state-ownership`
+- `n:navigation:command-payload-ownership`
+- `n:navigation:proof-snapshot-isolation`
+- `n:procedural:proof-snapshot-isolation`
+- `n:procedural:command-return-state`
+- `n:proof:procedural-navigation-ownership`
+
+Fits:
+
+- navigation command APIs where caller-owned `start` or `goal` objects must be cloned, frozen, or explicitly treated as mutable handles before queued path work can count as replay-safe
+- navigation read APIs where path history, `lastPath`, request queues, debug graphs, and agent path arrays must return proof snapshots instead of live runtime resources
+- procedural generation services where cells, walkability, regions, render descriptors, objective markers, and world positions must not be mutable through read-only snapshot calls
+- procedural regeneration commands where returned state must be an isolated summary or documented handle so callers cannot cancel, retarget, or dirty pending generation by mutating a return value
+- DSK hardening fixtures that need procedural/navigation ownership rows separate from traversal cost policy, procedural signature taxonomy, query read-model isolation, scheduler/world mutation, and public module-source proof
+
+Owned paths:
+
+```txt
+world.navigation.commandPayloadOwnership
+world.navigation.proofSnapshotIsolation
+world.procedural.proofSnapshotIsolation
+world.procedural.commandReturnState
+world.proof.proceduralNavigationOwnership
+```
+
+## 43. Telemetry Command Evidence Ownership Domain
+
+Purpose: owns telemetry selected-value snapshots, telemetry path selector isolation, service command payload ownership, submitted input frame ownership, and returned command state policy where proof records or command APIs can retain caller-owned objects while looking like replay-safe evidence.
+
+Possible services:
+
+- `n:telemetry-command:evidence-ownership`
+- `n:telemetry:selected-value-snapshot`
+- `n:telemetry:path-selector-isolation`
+- `n:service-command:payload-ownership`
+- `n:input-frame:ownership`
+- `n:proof:telemetry-command-evidence`
+
+Fits:
+
+- telemetry services where selected resources, nested selector paths, manual snapshots, cleanup snapshots, and history entries must be cloned or frozen before they count as proof
+- queue, transport, request, operations, and service-flow commands where caller-owned metadata, reward, penalty, or payload objects must not mutate queued work after submission
+- input and replay services where submitted input metadata must become an immutable frame rather than a live host object or returned mutable state
+- command methods that return state summaries and need explicit snapshot versus mutable-handle semantics before automation, SequenceNode, or dashboards inspect them
+- DSK hardening fixtures that need telemetry and command evidence ownership separate from public query read models, procedural/navigation ownership, low-level event queue isolation, and public module-source proof
+
+Owned paths:
+
+```txt
+world.telemetry.selectedValueSnapshots
+world.telemetry.pathSelectorIsolation
+world.serviceCommands.payloadOwnership
+world.inputFrames.ownership
+world.proof.telemetryCommandEvidence
+```

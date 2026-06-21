@@ -10,16 +10,21 @@ This tracker records durable lessons from the idea expansion automation. It is a
 
 ## Latest Run
 
-- Status: thirtieth run complete.
-- Latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T18-00-21-0400-domain-kit-idea-expansion-packet.md`
-- Latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T18-00-21-0400-domain-kit-idea-node.md`
-- Added idea families: Telemetry Command Evidence Ownership for telemetry selected values/path selectors, service command payload ownership, input frame ownership, and proof rows.
-- Next search item: wait for newer neighboring evidence after telemetry/command ownership, or move command/evidence ownership into a non-scout fixture tranche.
+- Status: thirty-first run complete.
+- Latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T19-02-02-0400-domain-kit-idea-expansion-packet.md`
+- Latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T19-02-02-0400-domain-kit-idea-node.md`
+- Added idea families: none; refreshed proof-source drift already maps to Proof Readiness Queue and Telemetry Command Evidence Ownership.
+- Next search item: wait for a genuinely fresh neighboring bug/architecture family, or move module-source proof and telemetry/command ownership into non-scout lanes.
 
 ## Current Root Lessons
 
-- id: domain-kit-idea-root-2026-06-20-1800
+- id: domain-kit-idea-root-2026-06-20-1902
 - status: active
+- latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T19-02-02-0400-domain-kit-idea-expansion-packet.md`
+- latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T19-02-02-0400-domain-kit-idea-node.md`
+- summary: Fresh ecosystem proof sharpened ProtoKits release-source drift, unresolved `nexusrealtime` package resolution, Experiments targeted proof failure, and public `Booting...`, but these duplicate existing Proof Readiness Queue and Telemetry Command Evidence Ownership inventory.
+- id: domain-kit-idea-root-2026-06-20-1800
+- status: carried-by-proof-source-no-new-idea-root
 - latest packet: `state/automation/domain_kit_idea_expander/packets/2026-06-20T18-00-21-0400-domain-kit-idea-expansion-packet.md`
 - latest node: `state/automation/domain_kit_idea_expander/knowledge_nodes/2026-06-20T18-00-21-0400-domain-kit-idea-node.md`
 - summary: Fresh deep-bug evidence created a Telemetry Command Evidence Ownership planning family for telemetry selected-value/path snapshots and non-navigation service command/input metadata ownership.
@@ -171,6 +176,22 @@ This tracker records durable lessons from the idea expansion automation. It is a
 
 ## Branch Tree
 
+- parent: domain-kit-idea-root-2026-06-20-1902
+- child: no-new-release-source-proof-idea-2026-06-20-1902
+- relationship: ProtoKits local branch drift, fetched package-resolution failure, Experiments targeted proof failure, public `Booting...`, npm 404, package-version, and aggregate-vs-targeted gaps remain Proof Readiness Queue work.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, ecosystem proof/state lanes, sibling proof import strategy
+- parent: domain-kit-idea-root-2026-06-20-1902
+- child: no-new-telemetry-command-idea-2026-06-20-1902
+- relationship: Latest DSK architecture/proof packets confirm Telemetry Command Evidence Ownership rather than creating a new family.
+- look further: `docs/domain_ideas.md`, `docs/kits_ideas.md`, telemetry/command ownership fixtures
+- parent: domain-kit-idea-root-2026-06-20-1902
+- child: no-new-procedural-navigation-idea-2026-06-20-1902
+- relationship: Procedural/navigation ownership is still separate generated-world hardening inventory and is not affected by release-source proof drift.
+- look further: `src/pathfinding-kit.js`, `src/procedural-kit.js`, procedural/navigation fixture tranche
+- parent: domain-kit-idea-root-2026-06-20-1902
+- child: no-doc-row-boundary-2026-06-20-1902
+- relationship: Duplicate-only evidence should produce lane packet/node/tracker evidence without editing idea docs.
+- look further: fresh neighboring packets after `2026-06-20T18-41-30-0400`
 - parent: domain-kit-idea-root-2026-06-20-1800
 - child: telemetry-selected-value-snapshot-2026-06-20-1800
 - relationship: Telemetry selected resources and history entries need cloned/frozen proof values before telemetry evidence can be treated as immutable.

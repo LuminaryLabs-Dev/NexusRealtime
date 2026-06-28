@@ -14,6 +14,18 @@ The canonical rebuild docs live under:
 docs/0.0.3/
 ```
 
+## Core rule
+
+```txt
+Core domains expose composable pieces first.
+Umbrella factories are convenience only.
+Games and ProtoKits may use individual pieces, umbrella factories, or custom replacement kits.
+```
+
+`core-capability-kit.js` is the shared helper. Domain-specific logic lives inside each `src/core-kits/<core-kit>/` folder.
+
+`core-domains.js` is only a temporary compatibility bridge.
+
 ## Core capability domains
 
 ```txt
@@ -46,11 +58,14 @@ core-agent-kit
 ```txt
 [x] source folders created
 [x] source-local core-domain docs created
-[x] shared core capability factory added
-[x] first umbrella factories added
+[x] shared core capability helper added
+[x] umbrella factories moved into domain folders
+[x] composable pieces added for data/input/graphics/simulation/interaction/MLNN/agent
 [x] foundation primitives added
 [x] public exports added
-[x] smoke test added
+[x] package subpath exports added for core-kits
+[x] barrel smoke test added
+[x] per-domain piece smoke tests added
 [ ] individual public how-to docs expanded
 [ ] old flat import compatibility removed
 ```
@@ -80,6 +95,16 @@ const engine = createRealtimeGame({
     createCoreAgentKit({ agents: [{ id: "builder-agent" }] })
   ]
 });
+```
+
+## Piece import example
+
+```js
+import {
+  createResourceMeter,
+  createPressureChannel,
+  createProgressTimer
+} from "nexusrealtime/core-kits/core-simulation-kit";
 ```
 
 ## Next docs to expand

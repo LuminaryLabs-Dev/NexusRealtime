@@ -13,7 +13,34 @@ export * from "./sequence-node.js";
 export * from "./sequence-node-library.js";
 export * from "./sequence-node-kit.js";
 export * from "./foundation/index.js";
-export * from "./core-kits/index.js";
+
+export {
+  createCoreCapabilityDescriptor,
+  createCoreCapabilityKit
+} from "./core-kits/core-capability-kit.js";
+export { createCoreDataKit } from "./core-kits/core-data-kit/index.js";
+export { createCorePersistenceKit } from "./core-kits/core-persistence-kit/index.js";
+export { createCoreAssetsKit } from "./core-kits/core-assets-kit/index.js";
+export { createCorePlatformKit } from "./core-kits/core-platform-kit/index.js";
+export { createCoreInputKit } from "./core-kits/core-input-kit/index.js";
+export { createCoreSpatialKit } from "./core-kits/core-spatial-kit/index.js";
+export { createCoreSceneKit } from "./core-kits/core-scene-kit/index.js";
+export { createCorePhysicsKit } from "./core-kits/core-physics-kit/index.js";
+export { createCoreMotionKit } from "./core-kits/core-motion-kit/index.js";
+export { createCoreSimulationKit } from "./core-kits/core-simulation-kit/index.js";
+export { createCoreInteractionKit } from "./core-kits/core-interaction-kit/index.js";
+export { createCoreGraphicsKit } from "./core-kits/core-graphics-kit/index.js";
+export { createCoreCameraKit } from "./core-kits/core-camera-kit/index.js";
+export { createCoreAnimationKit } from "./core-kits/core-animation-kit/index.js";
+export { createCoreAudioKit } from "./core-kits/core-audio-kit/index.js";
+export { createCoreUIKit } from "./core-kits/core-ui-kit/index.js";
+export { createCoreNetworkKit } from "./core-kits/core-network-kit/index.js";
+export { createCoreDiagnosticsKit } from "./core-kits/core-diagnostics-kit/index.js";
+export { createCorePolicyKit } from "./core-kits/core-policy-kit/index.js";
+export { createCoreCompositionKit } from "./core-kits/core-composition-kit/index.js";
+export { createCoreMLNNKit } from "./core-kits/core-mlnn-kit/index.js";
+export { createCoreAgentKit } from "./core-kits/core-agent-kit/index.js";
+
 export * from "./fishing-kit.js";
 export * from "./reef-rescue-kit.js";
 export * from "./realism-kit.js";

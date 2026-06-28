@@ -10,7 +10,15 @@ const tests = [
   "tests/sequence-node-frame-driver-smoke.mjs",
   "tests/sequence-node-kit-deploy-smoke.mjs",
   "tests/sequence-node-surface-bridge-smoke.mjs",
-  "tests/core-capability-domain-barrels-smoke.mjs"
+  "tests/core-capability-domain-barrels-smoke.mjs",
+  "tests/core-kits/core-data-kit-smoke.mjs",
+  "tests/core-kits/core-input-kit-smoke.mjs",
+  "tests/core-kits/core-graphics-kit-smoke.mjs",
+  "tests/core-kits/core-simulation-kit-smoke.mjs",
+  "tests/core-kits/core-interaction-kit-smoke.mjs",
+  "tests/core-kits/core-mlnn-kit-smoke.mjs",
+  "tests/core-kits/core-agent-kit-smoke.mjs",
+  "tests/core-kits/core-custom-replacement-smoke.mjs"
 ];
 
 for (const test of tests) {

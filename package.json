@@ -9,6 +9,8 @@
     ".": "./src/index.js",
     "./foundation": "./src/foundation/index.js",
     "./core-kits": "./src/core-kits/index.js",
+    "./core-kits/core-capability-kit": "./src/core-kits/core-capability-kit.js",
+    "./core-kits/core-domains": "./src/core-kits/core-domains.js",
     "./core-kits/*": "./src/core-kits/*/index.js"
   },
   "scripts": {

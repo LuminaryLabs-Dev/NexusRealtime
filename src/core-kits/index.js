@@ -1,5 +1,4 @@
 export * from "./core-capability-kit.js";
-export * from "./core-domains.js";
 export * from "./core-data-kit/index.js";
 export * from "./core-persistence-kit/index.js";
 export * from "./core-assets-kit/index.js";

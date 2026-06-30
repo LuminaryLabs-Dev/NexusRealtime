@@ -18,7 +18,8 @@ const tests = [
   "tests/core-kits/core-interaction-kit-smoke.mjs",
   "tests/core-kits/core-mlnn-kit-smoke.mjs",
   "tests/core-kits/core-agent-kit-smoke.mjs",
-  "tests/core-kits/core-custom-replacement-smoke.mjs"
+  "tests/core-kits/core-custom-replacement-smoke.mjs",
+  "tests/obvious-place-first-playable-smoke.mjs"
 ];
 
 for (const test of tests) {

@@ -1,3 +1,4 @@
+export * from "./release.js";
 export * from "./ecs.js";
 export * from "./surfaces.js";
 export * from "./engine.js";
